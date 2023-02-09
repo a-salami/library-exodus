@@ -6,7 +6,7 @@ function dynamicRelativeReference(){
     rootFolder = ""; //holds relative file path for any href
     numSlashes = 0; //counts the number of [../] necessary to get to 'site'
 
-    var filename = location.pathname.split("name-theory")[1]; //gets the full file path, splits it, keeps the split only after the word 'site'
+    var filename = location.pathname.split("library-exodus")[1]; //gets the full file path, splits it, keeps the split only after the word 'site'
 
     //determine number of [/] present in the root folder filepath
     for (a in filename){ //step through each character in filename
