@@ -144,6 +144,10 @@ div[class^="col-sm"] h5{
     background-color: #0d1117;
 }
 
+.row-two{
+    background-color: #181c24;
+}
+
 .row-light-mode{
     background-color: antiquewhite;
 }
