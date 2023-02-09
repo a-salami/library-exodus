@@ -38,7 +38,7 @@ function setHeader(id){
 function setNavbar(id){
     content = `<ul>
         <li><a href = "` + dynamicRelativeReference() + `index.html">Home</a></li>
-        <li><a href = "` + dynamicRelativeReference() + `pages/look-book.html">Look at Books</a></li>
+        <li><a href = "` + dynamicRelativeReference() + `pages/look-books.html">Look at Books</a></li>
     </ul>`;
 
     document.getElementById(id).innerHTML += content;
