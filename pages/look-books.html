@@ -21,14 +21,41 @@
 
             <!-- "Body" -->
             <div class = "row">
-              <div class = "col-sm-12">
+              <div class = "col-sm-6">
                 <h3>-LOOK FOR BOOKS-</h3>
-                <p>-</p>
+                <p>Here, you can sort for books by the categories present in the button set to the right.</p>
+                <p>You can also search for certain books, authors, or genres, if you know what you're looking for. Search away!</p>
+                <p><i>add a search box here</i></p>
+              </div>
+
+              <div class = "col-sm-6">
+                <h3>-SORTING CATEGORIES-</h3>
+                <input type = "submit" id = "a-z-title" value = "A-Z: Book Title" onclick = "tableSort('a-z-title');">
+                <input type = "submit" id = "z-a-title" value = "Z-A: Book Title" onclick = "tableSort('z-a-title');">
+                <br>
+                <input type = "submit" id = "a-z-authFirst" value = "A-Z: Author's First Name" onclick = "tableSort('a-z-authFirst');">
+                <input type = "submit" id = "z-a-authFirst" value = "Z-A: Author's First Name" onclick = "tableSort('z-a-authFirst');">
+                <br>
+                <input type = "submit" id = "a-z-authLast" value = "A-Z: Author's Last Name" onclick = "tableSort('a-z-authLast');">
+                <input type = "submit" id = "z-a-authLast" value = "Z-A: Author's Last Name" onclick = "tableSort('z-a-authLast');">
+                <br>
+                <input type = "submit" id = "favorite-books" value = "All-Time Favorite Books" onclick = "tableSort('favorite-books');">
+                <input type = "submit" id = "favorites-authors" value = "All-Time Favorite Authors" onclick = "tableSort('favorites-authors');">
+
               </div>
             </div>
 
-            <div class = "row-two">
+            <div class = "row row-two">
+
+              <div id = "testing"></div>
               
+              <div id = "tableSpace"></div> <!-- table holder -->
+              
+              <div><p>&nbsp;</p></div> <!-- this is here because padding isn't working -->
+
+              <script>
+                setTable("tableSpace");
+              </script>
             </div>
 
             <!-- Footer -->

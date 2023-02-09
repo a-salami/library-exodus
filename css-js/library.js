@@ -167,6 +167,51 @@ function lightDarkMode(){
     document.getElementById("footer").classList.toggle("pageFooter-light-mode"); //change the footer background color
 }
 
+//adds different versions of sorting for the butttons on look-books.html
+function tableSort(sortType){
+    if (sortType == "a-z-authLast"){
+        // sort it accordingly
+    }
+    //put in the rest of the sorting categories here
+}
+
+//creates a table and populates it
+function setTable(id){
+    books = [
+        ["title", "author", "genre", "series", "pagecount", "authfirst", "authlast"],
+        ["title2", "author2", "genre2", "series2", "pagecount2", "authfirst2", "authlast2"]
+    ];
+
+    content = `<table> <tr> <th colspan = "5">BOOKS </th> </tr>`; //adding a row to the table for the title
+    content += `<tr> <th>Title</th> 
+    <th>Author</th> 
+    <th>Genre</th> 
+    <th>Series</th> 
+    <th>Page Count</th> 
+    </tr>`; //adding rows to the table for headings
+
+    for (book = 0; book < books.length; book++){ //iterate through the array of books
+        content += "<tr>"; //creating a new row for this book entry
+
+        // document.getElementById("testing").innerHTML += "Current Book: " + books[book][0] + "<br>"; //testing
+
+
+        //iterate through the info on one book held in a subarray. 
+        for (info = 0; info < books[book].length - 2; info++){ //-2 to exclude authFirst and authLast; only used for sorting
+            content += "<td>" + books[book][info] + "</td>";
+
+            // document.getElementById("testing").innerHTML += "-----Current Contents: " + books[book][info] + "<br><br>"; //testing
+
+            // content += "<td> hey </td>"; //testing
+        }
+        
+        content += "</tr>"; //ending the row for this table entry
+    }
+
+    content += `</table>`;
+    document.getElementById(id).innerHTML += content;
+}
+
 //creates the footer for all pages
 function setFooter(id){
     content = `

@@ -29,15 +29,15 @@
 
 /* DARK MODE COLORS
 -
-Deep, muted purple (header/footer background): #7b8cb6;
-Pastel lavender (navbar button background): #b4c2e4;
+Seafoam green (header/footer background): #b8e0d2;
+Light blue (navbar button background): #95b8d1;
 Pastel blue (button background): #b4e0e4;
 Blunted white (text color): rgb(241, 234, 234);
 
 LIGHT MODE COLORS
 -
-(header/footer background):
-(navbar button background):
+(header/footer background): #eac4d5
+(navbar button background): #b8e0d2
 (button background):
 (text color):
 */
@@ -56,11 +56,11 @@ body{
 /* styling the header */
 .pageHeader{
     padding: 20px;
-    background-color: #7b8cb6;
+    background-color: #b8e0d2;
 }
 
 .pageHeader-light-mode{
-    background-color: #b4c2e4;
+    background-color: #eac4d5;
 }
 
 .pageHeader a{
@@ -71,12 +71,12 @@ body{
 /* styling the navbar */
 .navbar{
     padding: 20px 0px 20px 8px; /*top, right, left, bottom*/
-    background-color: #7b8cb6;
+    background-color: #b8e0d2;
 }
 
 .navbar-light-mode{
     padding: 20px 0px 20px 8px; /*top, right, left, bottom*/
-    background-color: #b4c2e4;
+    background-color: #eac4d5;
 }
 
 .navbar ul{
@@ -90,14 +90,13 @@ body{
     list-style-type: none;
     text-align: center;
     display: inline;
-    background-color: #b4c2e4;
-    border: 2px solid black;
+    background-color: #95b8d1;
+    border: 1.5px solid black;
     font-weight: 600;
 }
 
 .navbar-light-mode li{
-    background-color: #b4e0e4;
-    border: 2px solid #7b8cb6;
+    background-color: #b8e0d2;
 }
 
 .navbar li:hover{
@@ -126,12 +125,12 @@ div[class^="col-sm"] a{
 
 div[class^="col-sm"] a:hover{
     text-decoration: none;
-    color: #b4c2e4;
+    color: #95b8d1;
 }
 
 div[class^="col-sm"] a:visited{
     text-decoration: none;
-    color: #b4c2e4;
+    color: #95b8d1;
 }
 
 div[class^="col-sm"] h5{
@@ -152,15 +151,19 @@ div[class^="col-sm"] h5{
     background-color: antiquewhite;
 }
 
+.row-two-light-mode{
+    background-color: aliceblue;
+}
+
 /* styling footer */
 .pageFooter{
     padding: 20px;
-    background-color: #7b8cb6;
+    background-color: #b8e0d2;
     color: black;
 }
 
 .pageFooter-light-mode{
-    background-color: #b4c2e4;
+    background-color: #eac4d5;
     color: black;
 }
 
@@ -189,11 +192,11 @@ div[class^="col-sm"] h5{
 
 .pageFooter .col-sm-7 h4 a:hover{
     text-decoration: underline;
-    color: #b4c2e4;
+    color: #95b8d1;
 }
 
 .pageFooter .col-sm-7 h4 a:visited{
-    color: #b4c2e4;
+    color: #95b8d1;
     text-decoration: underline;
 }
 
@@ -214,7 +217,7 @@ input[type="submit"], button{
 
 input[type="submit"]:hover, button:hover{
     border: 1px solid black;
-    background-color: #b4c2e4;
+    background-color: #95b8d1;
     color: black;
     font-style: italic;
     font-weight: bold;
@@ -226,7 +229,28 @@ input[class="inputText"]{
     font-size: smaller;
 }
 
-.clickHover{ /* sets the cursor to the mouse if hovering over "welcome" on index.html */
-    cursor: pointer;
+/* styling tables */
+tr, th, td{
+    border: 1.5px solid #95b8d1;
+    padding: 2px;
+    text-align: center;
 }
 
+th{
+    font-size: 18px;
+}
+
+tr:hover{
+    background-color: #95b8d1;
+    color: black;
+    border: 1.5px solid rgb(241, 234, 234); /* isn't working */
+}
+
+td{
+    font-size: 16px;
+    width: 350px;
+}
+/* uncomment this if you can figure out how to make this respond to light mode
+tr:nth-child(odd) {
+    background-color: #0d1117;
+} */
