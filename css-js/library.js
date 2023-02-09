@@ -28,8 +28,8 @@ function dynamicRelativeReference(){
 //creates the header for all pages
 function setHeader(id){
     content = `<a href = "` + dynamicRelativeReference() + `index.html">
-    <h1 id = "pageTitle">Name Theory</h1>
-    <h5 id = "pageSubtitle" class = "subheader"><i>Considering whether people who share the same name share the same traits</i></h5></a>`;
+    <h1 id = "pageTitle">Library Exodus</h1>
+    <h5 id = "pageSubtitle" class = "subheader"><i>Cataloguing the contents of my personal library</i></h5></a>`;
 
     document.getElementById(id).innerHTML += content;
 }
