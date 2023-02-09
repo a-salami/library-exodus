@@ -174,7 +174,7 @@ function fetchBooks(){
         ["B1 Title", "Allison Tan", "G1", "S1", "20", "Allison", "Tan"],
         ["B2 Title", "Allison Tan", "G2", "S1", "30", "Allison", "Tan"],
         ["C1 Title", "Rosewood Dawkins", "G3", "S4", "40", "Rosewood", "Dawkins"],
-        ["A1 Title", "Rosaline Lucius", "G3", "S4", "50", "Rosaline", "A"],
+        ["A1 Title", "Rosaline Lucius", "G3", "S4", "50", "Rosaline", "Lucius"],
         ["B3 Title", "Phaedra Dee", "G1", "-", "60", "Phaedra", "Dee"]
     ];
 
@@ -187,7 +187,13 @@ function bookSortBy(books, criteria){
     sortIndex = -1; //variable to hold index of the sorting criteria to sort by
 
     if (criteria == ("a-z-authFirst" || "z-a-authFirst")){ //if the criteria is sorting by author's first name (a-z/z-a is handled by tableSort())
-        sortIndex = 5; //that correlates to index 5 in the array
+        sortIndex = 5; //that correlates to index 5 in books[]
+    }
+    else if (criteria == ("a-z-authLast" || "z-a-authLast")){ //if the criteria is sorting by author's last name
+        sortIndex = 6; //that correlates to index 6 in books[]
+    }
+    else if (criteria == ("page-count-low-high" || "page-count-high-low")){ //if the criteria is sorting by author's last name
+        sortIndex = 4; //that correlates to index 6 in books[]
     }
 
 
@@ -244,12 +250,23 @@ function tableSort(sortType){
             books.reverse(); //reverse books[]
         }
     }
+
     else if (sortType == "a-z-authFirst" || sortType == "z-a-authFirst"){ //if requested sort is by author's first name
         books = bookSortBy(books, "a-z-authFirst"); //sort books[] by ascending alphabetical author's first name
         document.getElementById("sortText").innerHTML = "Chosen Sort > A-Z: Author's First Name"; //change display text to reflect the chosen sort
 
         if (sortType[0] == "z"){ //if the sort request is z-a (if the first letter is z and not a)
             document.getElementById("sortText").innerHTML = "Chosen Sort > Z-A: Author's First Name"; //reverse the display text
+            books.reverse(); //reverse books[]
+        }
+    }
+
+    else if (sortType == "page-count-low-high" || sortType == "page-count-high-low"){ //if requested sort is by author's first name
+        books = bookSortBy(books, "page-count-low-high"); //sort books[] by ascending alphabetical author's first name
+        document.getElementById("sortText").innerHTML = "Chosen Sort > Page Count: Low to High"; //change display text to reflect the chosen sort
+
+        if (sortType[11] == "h"){ //if the sort request is high to low
+            document.getElementById("sortText").innerHTML = "Chosen Sort > Page Count: High to Low"; //reverse the display text
             books.reverse(); //reverse books[]
         }
     }
