@@ -138,10 +138,10 @@ function dateDisplay(){
                 break;
         }
 
-        newFormat += " " + day + ", " + year + " at " + time;
+        newFormat += " " + day + ", " + year + " at " + time; //adding the captured date elements to a string formatting the text-based date format
     }
     else{ //if the first character is a character
-        newFormat = pageLastModified(); //call the function that sets the original format instead of rewriting it
+        newFormat = pageLastModified(); //call the function that sets the original numerical format instead of rewriting it
     }
 
     document.getElementById("modified").value = newFormat;
@@ -167,20 +167,44 @@ function lightDarkMode(){
     document.getElementById("footer").classList.toggle("pageFooter-light-mode"); //change the footer background color
 }
 
+//holds the array of books; returns the entire thing on call. seperated for use between tableSort and setTable
+function fetchBooks(){
+    books = [ //array holding all books to be displayed
+        ["B1 Title", "A A", "G1", "S1", "pagecount", "A", "A"],
+        ["B2 Title", "A A", "G2", "S1", "pagecount", "A", "A"],
+        ["A1 Title", "A A", "G3", "S4", "pagecount", "A", "A"],
+        ["B3 Title", "A B", "G1", "-", "pagecount", "A", "B"]
+    ];
+
+    return books;
+}
+
 //adds different versions of sorting for the butttons on look-books.html
 function tableSort(sortType){
-    if (sortType == "a-z-authLast"){
-        // sort it accordingly
+    books = fetchBooks(); //fetching the default-sorted array of books
+
+    if (sortType == "a-z-title"){
+        books = books.sort();
+        
     }
     //put in the rest of the sorting categories here
+
+    document.getElementById("tableSpace").innerHTML = ""; //blank out the display div to prepare it for the new table 
+    setTable("tableSpace", books); //call setTable with the newly sorted array
 }
 
 //creates a table and populates it
-function setTable(id){
-    books = [
-        ["title", "author", "genre", "series", "pagecount", "authfirst", "authlast"],
-        ["title2", "author2", "genre2", "series2", "pagecount2", "authfirst2", "authlast2"]
-    ];
+function setTable(id, sortedBooks = ""){
+
+    if (sortedBooks == ""){ //if sortedBooks is empty, meaning tableSort hasn't been called to re-sort the array
+        books = fetchBooks(); //the fetch the books array as-is with no sorting
+    } 
+    else{ //in any other scenario, a sorting button on look-books.html has been pressed and tableSort() was called
+        books = sortedBooks;  //tableSort() calls setTable() again after it has sorted books[] to display the proper sorting
+    } //set the sorted array from tableSort() as the array to be displayed
+
+    // document.getElementById("testing").innerHTML += books; //testing
+
 
     content = `<table> <tr> <th colspan = "5">BOOKS </th> </tr>`; //adding a row to the table for the title
     content += `<tr> <th>Title</th> 
@@ -205,10 +229,10 @@ function setTable(id){
             // content += "<td> hey </td>"; //testing
         }
         
-        content += "</tr>"; //ending the row for this table entry
+        content += "</tr>"; //closing the row for this table entry
     }
 
-    content += `</table>`;
+    content += `</table>`; //closing and completing the table
     document.getElementById(id).innerHTML += content;
 }
 
