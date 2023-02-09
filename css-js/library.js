@@ -170,23 +170,90 @@ function lightDarkMode(){
 //holds the array of books; returns the entire thing on call. seperated for use between tableSort and setTable
 function fetchBooks(){
     books = [ //array holding all books to be displayed
-        ["B1 Title", "A A", "G1", "S1", "pagecount", "A", "A"],
-        ["B2 Title", "A A", "G2", "S1", "pagecount", "A", "A"],
-        ["A1 Title", "A A", "G3", "S4", "pagecount", "A", "A"],
-        ["B3 Title", "A B", "G1", "-", "pagecount", "A", "B"]
+        ["E1 Title", "Emmaline DeMerritt", "G1", "-", "10", "Emmaline", "DeMerritt"],
+        ["B1 Title", "Allison Tan", "G1", "S1", "20", "Allison", "Tan"],
+        ["B2 Title", "Allison Tan", "G2", "S1", "30", "Allison", "Tan"],
+        ["C1 Title", "Rosewood Dawkins", "G3", "S4", "40", "Rosewood", "Dawkins"],
+        ["A1 Title", "Rosaline Lucius", "G3", "S4", "50", "Rosaline", "A"],
+        ["B3 Title", "Phaedra Dee", "G1", "-", "60", "Phaedra", "Dee"]
     ];
 
     return books;
+}
+
+//duplicates the index of the sorting crieteria to the front of books[] and sorts by that, then removes the duplicate. for use with tableSort()
+function bookSortBy(books, criteria){
+    duplicateBooks = [] //array to hold the duplicates
+    sortIndex = -1; //variable to hold index of the sorting criteria to sort by
+
+    if (criteria == ("a-z-authFirst" || "z-a-authFirst")){ //if the criteria is sorting by author's first name (a-z/z-a is handled by tableSort())
+        sortIndex = 5; //that correlates to index 5 in the array
+    }
+
+
+    // document.getElementById("testing").innerHTML += "books before anything has been done to it: " + books + "<br><br>"; //TESTING
+
+    //create an array that will be sorted by the criteria variable
+    for (book = 0; book < books.length; book++){ //iterate through books[]
+        newBook = []; //clearing a new array to be populated and placed as a subarray in duplicateBooks[]
+        newBook.push(books[book][sortIndex]); //pushing the sorting criteria into newBook[] as the first index
+        // document.getElementById("testing").innerHTML += "Brand new newBook before populating: " + newBook + "<br>"; //TESTING
+
+        for (info = 0; info < books[book].length; info++){ //iterate through the chosen book
+            newBook.push(books[book][info]); //pushing the rest of the information into newBook[] as normal
+        }
+
+        // document.getElementById("testing").innerHTML += "<br>Completed newBook[]: "; //TESTING
+        // for (a = 0; a < newBook.length; a++){
+        //     document.getElementById("testing").innerHTML += "---" + newBook[a] + "<br>";
+        // }//TESTING
+
+        duplicateBooks.push(newBook); //pushing newBook[] to the end of duplicateBooks[]
+    }
+
+    // // document.getElementById("testing").innerHTML += "<br>Completed duplicateBooks[]:<br>"; //TESTING
+    // for (a = 0; a < duplicateBooks.length; a++){
+    //     document.getElementById("testing").innerHTML += "&nbsp;&nbsp;&nbsp;" + duplicateBooks[a] + "<br>";
+    // }//TESTING
+
+    // duplicateBooks = duplicateBooks.sort(); //sort the array alphabetically via the sorting criteria index in front
+    duplicateBooks.sort(); //sort the array alphabetically via the sorting criteria index in front
+
+    //can now remove the duplicate sorting index in front
+    for (dupeBook = 0; dupeBook < duplicateBooks.length; dupeBook++){ //iterate through duplicateBooks[]
+        // for (dupeInfo = 0; dupeInfo < dupeBook.length; dupeInfo++){ //iterate through the chosen book in duplicateBooks[]
+            // duplicateBooks[dupeBook] = duplicateBooks[dupeBook].shift(); //removing the first element in each sub array
+            duplicateBooks[dupeBook].shift(); //removing the first element in each sub array
+        // }
+    }
+
+    // document.getElementById("testing").innerHTML += "<br>duplicateBooks[] after 1st index removal: " + duplicateBooks; //TESTING
+    return duplicateBooks;
 }
 
 //adds different versions of sorting for the butttons on look-books.html
 function tableSort(sortType){
     books = fetchBooks(); //fetching the default-sorted array of books
 
-    if (sortType == "a-z-title"){
-        books = books.sort();
-        
+    if (sortType == "a-z-title" || sortType == "z-a-title"){ //if requested sort is by title
+        books = books.sort(); //sort books[] by alphabetical title order
+        document.getElementById("sortText").innerHTML = "Chosen Sort > A-Z: Book Title"; //change display text to reflect the chosen sort
+
+        if (sortType[0] == "z"){ //if the sort request is z-a (if the first letter is z and not a)
+            document.getElementById("sortText").innerHTML = "Chosen Sort > Z-A: Book Title"; //reverse the display text
+            books.reverse(); //reverse books[]
+        }
     }
+    else if (sortType == "a-z-authFirst" || sortType == "z-a-authFirst"){ //if requested sort is by author's first name
+        books = bookSortBy(books, "a-z-authFirst"); //sort books[] by ascending alphabetical author's first name
+        document.getElementById("sortText").innerHTML = "Chosen Sort > A-Z: Author's First Name"; //change display text to reflect the chosen sort
+
+        if (sortType[0] == "z"){ //if the sort request is z-a (if the first letter is z and not a)
+            document.getElementById("sortText").innerHTML = "Chosen Sort > Z-A: Author's First Name"; //reverse the display text
+            books.reverse(); //reverse books[]
+        }
+    }
+    
     //put in the rest of the sorting categories here
 
     document.getElementById("tableSpace").innerHTML = ""; //blank out the display div to prepare it for the new table 
