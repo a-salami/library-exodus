@@ -261,8 +261,8 @@ function tableSort(sortType){
         }
     }
 
-    else if (sortType == "page-count-low-high" || sortType == "page-count-high-low"){ //if requested sort is by author's first name
-        books = bookSortBy(books, "page-count-low-high"); //sort books[] by ascending alphabetical author's first name
+    else if (sortType == "page-count-low-high" || sortType == "page-count-high-low"){ //if requested sort is by page count
+        books = bookSortBy(books, "page-count-low-high"); //sort books[] by ascending page count
         document.getElementById("sortText").innerHTML = "Chosen Sort > Page Count: Low to High"; //change display text to reflect the chosen sort
 
         if (sortType[11] == "h"){ //if the sort request is high to low
