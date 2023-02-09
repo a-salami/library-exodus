@@ -23,13 +23,15 @@
             <div class = "row">
               <div class = "col-sm-6">
                 <h3>-LOOK FOR BOOKS-</h3>
-                <p>Here, you can sort for books by the categories present in the button set to the right.</p>
-                <p>You can also search for certain books, authors, or genres, if you know what you're looking for. Search away!</p>
+                <p>Here, you can sort how the books are displayed using the button-set to the right.</p>
+                <p>You can also use the search box below find certain books, authors, or genres, if you know what you're looking for. Search away!</p>
                 <p><i>add a search box here</i></p>
               </div>
 
               <div class = "col-sm-6">
                 <h3>-SORTING CATEGORIES-</h3>
+                <p id = "sortText">Chosen Sort > Default</p>
+                
                 <input type = "submit" id = "a-z-title" value = "A-Z: Book Title" onclick = "tableSort('a-z-title');">
                 <input type = "submit" id = "z-a-title" value = "Z-A: Book Title" onclick = "tableSort('z-a-title');">
                 <br>
@@ -39,12 +41,13 @@
                 <input type = "submit" id = "a-z-authLast" value = "A-Z: Author's Last Name" onclick = "tableSort('a-z-authLast');">
                 <input type = "submit" id = "z-a-authLast" value = "Z-A: Author's Last Name" onclick = "tableSort('z-a-authLast');">
                 <br>
+                <input type = "submit" id = "page-count-low-high" value = "Page Count: Low -> High" onclick = "tableSort('page-count-low-high');">
+                <input type = "submit" id = "page-count-high-low" value = "Page Count: High -> Low" onclick = "tableSort('page-count-high-low');">
+                <br><br>
                 <input type = "submit" id = "favorite-books" value = "All-Time Favorite Books" onclick = "tableSort('favorite-books');">
                 <input type = "submit" id = "favorites-authors" value = "All-Time Favorite Authors" onclick = "tableSort('favorites-authors');">
                 <br>
                 <input type = "submit" id = "default" value = "Default" onclick = "tableSort('default');">
-                <br><br>
-                <p id = "sortText">Chosen Sort > Default</p>
               </div>
             </div>
 
