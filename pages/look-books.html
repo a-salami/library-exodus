@@ -25,7 +25,9 @@
                 <h3>-LOOK FOR BOOKS-</h3>
                 <p>Here, you can sort how the books are displayed using the button-set to the right.</p>
                 <p>You can also use the search box below find certain books, authors, or genres, if you know what you're looking for. Search away!</p>
-                <p><i>add a search box here</i></p>
+                <input class = "inputText" type = "text" id = "search" placeholder = "Search here..."><br>
+                <input type = "submit" value = "Search" onclick = "fetchSearch();">
+                <div id = "testing"></div>
               </div>
 
               <div class = "col-sm-6">
@@ -52,9 +54,6 @@
             </div>
 
             <div class = "row row-two">
-
-              <div id = "testing"></div>
-
               <div><p>&nbsp;</p></div> <!-- this is here because padding isn't working -->
               
               <div id = "tableSpace"></div> <!-- table holder -->
