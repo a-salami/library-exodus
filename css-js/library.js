@@ -197,44 +197,23 @@ function bookSortBy(books, criteria){
         sortIndex = 4; //that correlates to index 6 in books[]
     }
 
-
-    // document.getElementById("testing").innerHTML += "books before anything has been done to it: " + books + "<br><br>"; //TESTING
-
     //create an array that will be sorted by the criteria variable
     for (book = 0; book < books.length; book++){ //iterate through books[]
         newBook = []; //clearing a new array to be populated and placed as a subarray in duplicateBooks[]
         newBook.push(books[book][sortIndex]); //pushing the sorting criteria into newBook[] as the first index
-        // document.getElementById("testing").innerHTML += "Brand new newBook before populating: " + newBook + "<br>"; //TESTING
 
         for (info = 0; info < books[book].length; info++){ //iterate through the chosen book
             newBook.push(books[book][info]); //pushing the rest of the information into newBook[] as normal
         }
-
-        // document.getElementById("testing").innerHTML += "<br>Completed newBook[]: "; //TESTING
-        // for (a = 0; a < newBook.length; a++){
-        //     document.getElementById("testing").innerHTML += "---" + newBook[a] + "<br>";
-        // }//TESTING
-
         duplicateBooks.push(newBook); //pushing newBook[] to the end of duplicateBooks[]
     }
-
-    // // document.getElementById("testing").innerHTML += "<br>Completed duplicateBooks[]:<br>"; //TESTING
-    // for (a = 0; a < duplicateBooks.length; a++){
-    //     document.getElementById("testing").innerHTML += "&nbsp;&nbsp;&nbsp;" + duplicateBooks[a] + "<br>";
-    // }//TESTING
-
-    // duplicateBooks = duplicateBooks.sort(); //sort the array alphabetically via the sorting criteria index in front
     duplicateBooks.sort(); //sort the array alphabetically via the sorting criteria index in front
 
     //can now remove the duplicate sorting index in front
     for (dupeBook = 0; dupeBook < duplicateBooks.length; dupeBook++){ //iterate through duplicateBooks[]
-        // for (dupeInfo = 0; dupeInfo < dupeBook.length; dupeInfo++){ //iterate through the chosen book in duplicateBooks[]
-            // duplicateBooks[dupeBook] = duplicateBooks[dupeBook].shift(); //removing the first element in each sub array
-            duplicateBooks[dupeBook].shift(); //removing the first element in each sub array
-        // }
+        duplicateBooks[dupeBook].shift(); //removing the first element in each sub array
     }
 
-    // document.getElementById("testing").innerHTML += "<br>duplicateBooks[] after 1st index removal: " + duplicateBooks; //TESTING
     return duplicateBooks;
 }
 
@@ -262,6 +241,16 @@ function tableSort(sortType){
         }
     }
 
+    else if (sortType == "a-z-authLast" || sortType == "z-a-authLast"){ //if requested sort is by author's last name
+        books = bookSortBy(books, "a-z-authLast"); //sort books[] by ascending alphabetical author's last name
+        document.getElementById("sortText").innerHTML = "Chosen Sort > A-Z: Author's Last Name"; //change display text to reflect the chosen sort
+
+        if (sortType[0] == "z"){ //if the sort request is z-a (if the first letter is z and not a)
+            document.getElementById("sortText").innerHTML = "Chosen Sort > Z-A: Author's Last Name"; //reverse the display text
+            books.reverse(); //reverse books[]
+        }
+    }
+
     else if (sortType == "page-count-low-high" || sortType == "page-count-high-low"){ //if requested sort is by page count
         books = bookSortBy(books, "page-count-low-high"); //sort books[] by ascending page count
         document.getElementById("sortText").innerHTML = "Chosen Sort > Page Count: Low to High"; //change display text to reflect the chosen sort
@@ -276,7 +265,7 @@ function tableSort(sortType){
         document.getElementById("sortText").innerHTML = "Chosen Sort > Default"; //don't sort books[], change display text
     }
     
-    //put in the rest of the sorting categories here
+    //add categories favorite books and favorite authors
 
     document.getElementById("tableSpace").innerHTML = ""; //blank out the display div to prepare it for the new table 
     setTable("tableSpace", books); //call setTable with the newly sorted array
@@ -284,16 +273,12 @@ function tableSort(sortType){
 
 //creates a table and populates it
 function setTable(id, sortedBooks = ""){
-
     if (sortedBooks == ""){ //if sortedBooks is empty, meaning tableSort hasn't been called to re-sort the array
         books = fetchBooks(); //the fetch the books array as-is with no sorting
     } 
     else{ //in any other scenario, a sorting button on look-books.html has been pressed and tableSort() was called
         books = sortedBooks;  //tableSort() calls setTable() again after it has sorted books[] to display the proper sorting
     } //set the sorted array from tableSort() as the array to be displayed
-
-    // document.getElementById("testing").innerHTML += books; //testing
-
 
     content = `<table> <tr> <th colspan = "6">BOOKS </th> </tr>`; //adding a row to the table for the title
     content += `<tr> <th>Title</th> 
@@ -307,18 +292,10 @@ function setTable(id, sortedBooks = ""){
     for (book = 0; book < books.length; book++){ //iterate through the array of books
         content += "<tr>"; //creating a new row for this book entry
 
-        // document.getElementById("testing").innerHTML += "Current Book: " + books[book][0] + "<br>"; //testing
-
-
         //iterate through the info on one book held in a subarray. 
         for (info = 0; info < books[book].length - 2; info++){ //-2 to exclude authFirst and authLast; only used for sorting
             content += "<td>" + books[book][info] + "</td>";
-
-            // document.getElementById("testing").innerHTML += "-----Current Contents: " + books[book][info] + "<br><br>"; //testing
-
-            // content += "<td> hey </td>"; //testing
         }
-        
         content += "</tr>"; //closing the row for this table entry
     }
 
