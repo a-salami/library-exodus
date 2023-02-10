@@ -169,13 +169,14 @@ function lightDarkMode(){
 
 //holds the array of books; returns the entire thing on call. seperated for use between tableSort and setTable
 function fetchBooks(){
-    books = [ //array holding all books to be displayed
-        ["E1 Title", "Emmaline DeMerritt", "G1", "-", "10", "Emmaline", "DeMerritt"],
-        ["B1 Title", "Allison Tan", "G1", "S1", "20", "Allison", "Tan"],
-        ["B2 Title", "Allison Tan", "G2", "S1", "30", "Allison", "Tan"],
-        ["C1 Title", "Rosewood Dawkins", "G3", "S4", "40", "Rosewood", "Dawkins"],
-        ["A1 Title", "Rosaline Lucius", "G3", "S4", "50", "Rosaline", "Lucius"],
-        ["B3 Title", "Phaedra Dee", "G1", "-", "60", "Phaedra", "Dee"]
+    //array holding all books to be displayed
+    books = [ //title, author's full name, genre, series, page count, number of copies, author's first name, author's last name
+        ["E1 Title", "Emmaline DeMerritt", "G1", "-", "10", "1", "Emmaline", "DeMerritt"],
+        ["B1 Title", "Allison Tan", "G1", "S1", "20", "1", "Allison", "Tan"],
+        ["B2 Title", "Allison Tan", "G2", "S1", "30", "1", "Allison", "Tan"],
+        ["C1 Title", "Rosewood Dawkins", "G3", "S4", "40", "1", "Rosewood", "Dawkins"],
+        ["A1 Title", "Rosaline Lucius", "G3", "S4", "50", "1", "Rosaline", "Lucius"],
+        ["B3 Title", "Phaedra Dee", "G1", "-", "60", "1", "Phaedra", "Dee"]
     ];
 
     return books;
@@ -187,10 +188,10 @@ function bookSortBy(books, criteria){
     sortIndex = -1; //variable to hold index of the sorting criteria to sort by
 
     if (criteria == ("a-z-authFirst" || "z-a-authFirst")){ //if the criteria is sorting by author's first name (a-z/z-a is handled by tableSort())
-        sortIndex = 5; //that correlates to index 5 in books[]
+        sortIndex = 6; //that correlates to index 5 in books[]
     }
     else if (criteria == ("a-z-authLast" || "z-a-authLast")){ //if the criteria is sorting by author's last name
-        sortIndex = 6; //that correlates to index 6 in books[]
+        sortIndex = 7; //that correlates to index 6 in books[]
     }
     else if (criteria == ("page-count-low-high" || "page-count-high-low")){ //if the criteria is sorting by author's last name
         sortIndex = 4; //that correlates to index 6 in books[]
@@ -270,6 +271,10 @@ function tableSort(sortType){
             books.reverse(); //reverse books[]
         }
     }
+
+    else if (sortType == "default"){ //if requested sort is the default / page load version
+        document.getElementById("sortText").innerHTML = "Chosen Sort > Default"; //don't sort books[], change display text
+    }
     
     //put in the rest of the sorting categories here
 
@@ -290,12 +295,13 @@ function setTable(id, sortedBooks = ""){
     // document.getElementById("testing").innerHTML += books; //testing
 
 
-    content = `<table> <tr> <th colspan = "5">BOOKS </th> </tr>`; //adding a row to the table for the title
+    content = `<table> <tr> <th colspan = "6">BOOKS </th> </tr>`; //adding a row to the table for the title
     content += `<tr> <th>Title</th> 
     <th>Author</th> 
     <th>Genre</th> 
     <th>Series</th> 
     <th>Page Count</th> 
+    <th>Number of Copies</th>
     </tr>`; //adding rows to the table for headings
 
     for (book = 0; book < books.length; book++){ //iterate through the array of books
