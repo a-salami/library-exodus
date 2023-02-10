@@ -182,6 +182,40 @@ function fetchBooks(){
     return books;
 }
 
+//searches for specific books and returns them if found
+function fetchSearch(){
+    searchFound = []; //array of books found from the search
+    search = document.getElementById("search").value; //taking the value of the user search
+    
+    document.getElementById("search").value = "";//clearing the search bar without reloading the page
+
+    for (book = 0; book < books.length; book++){ //iterate through books[]
+        for (info = 0; info < books[book].length; info++){ //iterate through the chosen book
+            if (books[book][info].search(search) != -1){ //if the searched string appears anywhere in this book
+                searchFound.push(books[book]); //push the entire book entry into searchFound[]
+                break; //break and search the next book entry
+            }
+        }
+    }
+
+    if (searchFound.length > 0){ //if at least one book was found
+        if (searchFound.length == 1){
+            //display the search return string with "result" instead of "results"
+            document.getElementById("testing").innerHTML = 'Your search "' + search + '" yielded ' + searchFound.length + " result, displayed in the table below.";
+        }
+        else{
+            //display the search return string with "results"
+            document.getElementById("testing").innerHTML = 'Your search "' + search + '" yielded ' + searchFound.length + " results, displayed in the table below."; 
+        }
+    }
+    else{
+        document.getElementById("testing").innerHTML = 'Your search "' + search + '" yielded no results.';
+    }
+
+    document.getElementById("testing").innerHTML += '<br>Delete when complete: you have to add the table displaying part.';
+
+}
+
 //duplicates the index of the sorting crieteria to the front of books[] and sorts by that, then removes the duplicate. for use with tableSort()
 function bookSortBy(books, criteria){
     duplicateBooks = [] //array to hold the duplicates
