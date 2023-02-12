@@ -24,10 +24,12 @@
               <div class = "col-sm-6">
                 <h3>-LOOK FOR BOOKS-</h3>
                 <p>Here, you can sort how the books are displayed using the button-set to the right.</p>
-                <p>You can also use the search box below find certain books, authors, or genres, if you know what you're looking for. Search away!</p>
+                <p>You can also use the search box below find certain books, authors, or genres, if you know what you're looking for.</p>
+                <p>The search bar isn't case sensitive, either, so search away!</p>
                 <input class = "inputText" type = "text" id = "search" placeholder = "Search here..."><br>
-                <input type = "submit" value = "Search" onclick = "fetchSearch();">
-                <div id = "testing"></div>
+                <!-- make this textbox respond to the enter key as pushing the submit button -->
+                <input type = "submit" value = "Search" onclick = "tableSort('search');">
+                <div id = "searchDisplay"></div>
               </div>
 
               <div class = "col-sm-6">

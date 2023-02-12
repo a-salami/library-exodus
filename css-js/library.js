@@ -182,16 +182,13 @@ function fetchBooks(){
     return books;
 }
 
-//searches for specific books and returns them if found
-function fetchSearch(){
-    searchFound = []; //array of books found from the search
-    search = document.getElementById("search").value; //taking the value of the user search
-    
-    document.getElementById("search").value = "";//clearing the search bar without reloading the page
+//searches for specific books and returns them if found. for use with tableSort()
+function fetchSearch(search){
+    searchFound = []; //array that will hold books found from the search criteria
 
     for (book = 0; book < books.length; book++){ //iterate through books[]
         for (info = 0; info < books[book].length; info++){ //iterate through the chosen book
-            if (books[book][info].search(search) != -1){ //if the searched string appears anywhere in this book
+            if (books[book][info].toUpperCase().search(search.toUpperCase()) != -1){ //if 'search' appears anywhere in this book (toUpperCase()-es used to mitigate case sentitivity)
                 searchFound.push(books[book]); //push the entire book entry into searchFound[]
                 break; //break and search the next book entry
             }
@@ -199,21 +196,19 @@ function fetchSearch(){
     }
 
     if (searchFound.length > 0){ //if at least one book was found
-        if (searchFound.length == 1){
+        if (searchFound.length == 1){ //if only one book was found
             //display the search return string with "result" instead of "results"
-            document.getElementById("testing").innerHTML = 'Your search "' + search + '" yielded ' + searchFound.length + " result, displayed in the table below.";
+            document.getElementById("searchDisplay").innerHTML = 'Your search "' + search + '" yielded ' + searchFound.length + " result, displayed in the table below.";
         }
-        else{
+        else{ //if more than one book was found
             //display the search return string with "results"
-            document.getElementById("testing").innerHTML = 'Your search "' + search + '" yielded ' + searchFound.length + " results, displayed in the table below."; 
+            document.getElementById("searchDisplay").innerHTML = 'Your search "' + search + '" yielded ' + searchFound.length + " results, displayed in the table below."; 
         }
+        return searchFound; //only returns if something was found
     }
-    else{
-        document.getElementById("testing").innerHTML = 'Your search "' + search + '" yielded no results.';
+    else{ //otherwise, no return. this will not replace the current contents of books[] and will display every book in 'default' sort order
+        document.getElementById("searchDisplay").innerHTML = 'Your search "' + search + '" yielded no results.';
     }
-
-    document.getElementById("testing").innerHTML += '<br>Delete when complete: you have to add the table displaying part.';
-
 }
 
 //duplicates the index of the sorting crieteria to the front of books[] and sorts by that, then removes the duplicate. for use with tableSort()
@@ -255,51 +250,65 @@ function bookSortBy(books, criteria){
 function tableSort(sortType){
     books = fetchBooks(); //fetching the default-sorted array of books
 
-    if (sortType == "a-z-title" || sortType == "z-a-title"){ //if requested sort is by title
-        books = books.sort(); //sort books[] by alphabetical title order
-        document.getElementById("sortText").innerHTML = "Chosen Sort > A-Z: Book Title"; //change display text to reflect the chosen sort
+    if (sortType == "search"){ //if requested sort is via a user search from the search bar
+        document.getElementById("sortText").innerHTML = "Chosen Sort > -"; //blank out the sort display text
 
-        if (sortType[0] == "z"){ //if the sort request is z-a (if the first letter is z and not a)
-            document.getElementById("sortText").innerHTML = "Chosen Sort > Z-A: Book Title"; //reverse the display text
-            books.reverse(); //reverse books[]
+        search = document.getElementById("search").value; //save the text in the search bar
+        document.getElementById("search").value = "";//clear the search bar without reloading the page
+        books = fetchSearch(search); //call fetchSearch() to fetch all books with the search string present in any data category. returned array replaced books[]
+    } //the search bar is attached to tableSort() to make displaying search results more intuitive; it's already handled by this function
+
+    else{ //if sorttype is any other request, it's a sort request and not a search request
+        document.getElementById("searchDisplay").innerHTML = ""; //so clear the search bar display <p> without reloading the page
+
+        if (sortType == "a-z-title" || sortType == "z-a-title"){ //if requested sort is by title
+            books = books.sort(); //sort books[] by alphabetical title order
+            document.getElementById("sortText").innerHTML = "Chosen Sort > A-Z: Book Title"; //change display text to reflect the chosen sort
+    
+            if (sortType[0] == "z"){ //if the sort request is z-a (if the first letter is z and not a)
+                document.getElementById("sortText").innerHTML = "Chosen Sort > Z-A: Book Title"; //reverse the display text
+                books.reverse(); //reverse books[]
+            }
         }
-    }
-
-    else if (sortType == "a-z-authFirst" || sortType == "z-a-authFirst"){ //if requested sort is by author's first name
-        books = bookSortBy(books, "a-z-authFirst"); //sort books[] by ascending alphabetical author's first name
-        document.getElementById("sortText").innerHTML = "Chosen Sort > A-Z: Author's First Name"; //change display text to reflect the chosen sort
-
-        if (sortType[0] == "z"){ //if the sort request is z-a (if the first letter is z and not a)
-            document.getElementById("sortText").innerHTML = "Chosen Sort > Z-A: Author's First Name"; //reverse the display text
-            books.reverse(); //reverse books[]
+    
+        else if (sortType == "a-z-authFirst" || sortType == "z-a-authFirst"){ //if requested sort is by author's first name
+            books = bookSortBy(books, "a-z-authFirst"); //sort books[] by ascending alphabetical author's first name
+            document.getElementById("sortText").innerHTML = "Chosen Sort > A-Z: Author's First Name"; //change display text to reflect the chosen sort
+    
+            if (sortType[0] == "z"){ //if the sort request is z-a (if the first letter is z and not a)
+                document.getElementById("sortText").innerHTML = "Chosen Sort > Z-A: Author's First Name"; //reverse the display text
+                books.reverse(); //reverse books[]
+            }
         }
-    }
-
-    else if (sortType == "a-z-authLast" || sortType == "z-a-authLast"){ //if requested sort is by author's last name
-        books = bookSortBy(books, "a-z-authLast"); //sort books[] by ascending alphabetical author's last name
-        document.getElementById("sortText").innerHTML = "Chosen Sort > A-Z: Author's Last Name"; //change display text to reflect the chosen sort
-
-        if (sortType[0] == "z"){ //if the sort request is z-a (if the first letter is z and not a)
-            document.getElementById("sortText").innerHTML = "Chosen Sort > Z-A: Author's Last Name"; //reverse the display text
-            books.reverse(); //reverse books[]
+    
+        else if (sortType == "a-z-authLast" || sortType == "z-a-authLast"){ //if requested sort is by author's last name
+            books = bookSortBy(books, "a-z-authLast"); //sort books[] by ascending alphabetical author's last name
+            document.getElementById("sortText").innerHTML = "Chosen Sort > A-Z: Author's Last Name"; //change display text to reflect the chosen sort
+    
+            if (sortType[0] == "z"){ //if the sort request is z-a (if the first letter is z and not a)
+                document.getElementById("sortText").innerHTML = "Chosen Sort > Z-A: Author's Last Name"; //reverse the display text
+                books.reverse(); //reverse books[]
+            }
         }
-    }
-
-    else if (sortType == "page-count-low-high" || sortType == "page-count-high-low"){ //if requested sort is by page count
-        books = bookSortBy(books, "page-count-low-high"); //sort books[] by ascending page count
-        document.getElementById("sortText").innerHTML = "Chosen Sort > Page Count: Low to High"; //change display text to reflect the chosen sort
-
-        if (sortType[11] == "h"){ //if the sort request is high to low
-            document.getElementById("sortText").innerHTML = "Chosen Sort > Page Count: High to Low"; //reverse the display text
-            books.reverse(); //reverse books[]
+    
+        else if (sortType == "page-count-low-high" || sortType == "page-count-high-low"){ //if requested sort is by page count
+            books = bookSortBy(books, "page-count-low-high"); //sort books[] by ascending page count
+            document.getElementById("sortText").innerHTML = "Chosen Sort > Page Count: Low to High"; //change display text to reflect the chosen sort
+    
+            if (sortType[11] == "h"){ //if the sort request is high to low
+                document.getElementById("sortText").innerHTML = "Chosen Sort > Page Count: High to Low"; //reverse the display text
+                books.reverse(); //reverse books[]
+            }
         }
-    }
+    
+        else if (sortType == "default"){ //if requested sort is the default / page load version
+            document.getElementById("sortText").innerHTML = "Chosen Sort > Default"; //don't sort books[], change display text
+        }
 
-    else if (sortType == "default"){ //if requested sort is the default / page load version
-        document.getElementById("sortText").innerHTML = "Chosen Sort > Default"; //don't sort books[], change display text
+        //add categories favorite books and favorite authors
     }
     
-    //add categories favorite books and favorite authors
+
 
     document.getElementById("tableSpace").innerHTML = ""; //blank out the display div to prepare it for the new table 
     setTable("tableSpace", books); //call setTable with the newly sorted array
