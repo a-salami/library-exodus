@@ -230,6 +230,9 @@ input[class="inputText"]{
 }
 
 /* styling tables */
+table{
+    width: 100%;
+}
 tr, th, td{
     border: 1.5px solid #95b8d1;
     padding: 2px;
@@ -248,7 +251,7 @@ tr:hover{
 
 td{
     font-size: 16px;
-    width: 350px;
+    width: fit-content;
 }
 /* uncomment this if you can figure out how to make this respond to light mode
 tr:nth-child(odd) {
