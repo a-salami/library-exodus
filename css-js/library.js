@@ -39,6 +39,7 @@ function setNavbar(id){
     content = `<ul>
         <li><a href = "` + dynamicRelativeReference() + `index.html">Home</a></li>
         <li><a href = "` + dynamicRelativeReference() + `pages/look-books.html">Look at Books</a></li>
+        <li><a href = "` + dynamicRelativeReference() + `pages/want-books.html">Books Wishlist</a></li>
     </ul>`;
 
     document.getElementById(id).innerHTML += content;
@@ -171,14 +172,12 @@ function lightDarkMode(){
 function fetchBooks(){
     //array holding all books to be displayed
     books = [ //title, author's full name, genre, series, page count, number of copies, author's first name, author's last name
-        ["E1 Title", "Emmaline DeMerritt", "G1", "-", "10", "1", "Emmaline", "DeMerritt"],
-        ["B1 Title", "Allison Tan", "G1", "S1", "20", "1", "Allison", "Tan"],
-        ["B2 Title", "Allison Tan", "G2", "S1", "30", "1", "Allison", "Tan"],
-        ["C1 Title", "Rosewood Dawkins", "G3", "S4", "40", "1", "Rosewood", "Dawkins"],
-        ["A1 Title", "Rosaline Lucius", "G3", "S4", "50", "1", "Rosaline", "Lucius"],
-        ["B3 Title", "Phaedra Dee", "G1", "-", "60", "1", "Phaedra", "Dee"]
+        ["The Legend of Zelda: Ocarina of Time", "Akira Himekawa", "Manga/Comic", "The Legend of Zelda", "?", "1", "Akira", "Himekawa"],
+        ["The Legend of Zelda: Oracle of Seasons / Oracle of Ages", "Akira Himekawa", "Manga/Comic", "The Legend of Zelda", "?", "1", "Akira", "Himekawa"],
+        ["Where the Mountain Meeets the Moon", "Grace Lin", "Fantasy", "-", "279", "1", "Grace", "Lin"],
+        ["The Hobbit", "J. R. R. Tolkien", "Fantasy", "-", "300", "1", "J. R. R.", "Tolkien"]
     ];
-
+    //["", "", "", "", "", "", "", "",] //template
     return books;
 }
 
