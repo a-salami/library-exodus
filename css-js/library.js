@@ -345,6 +345,65 @@ function setTable(id, sortedBooks = ""){
     document.getElementById(id).innerHTML += content;
 }
 
+//creates and populates a static table for books I want and don't have. used on want-books.html
+function setWantedBooks(id, age = "adult"){
+    if (age == "kids"){
+        wantedBooks = [
+            ["Ruby's Wish", "Shirin Yim Bridges"],
+            ["Extra Yarn", "Mac Barnett"]
+        ];
+    }
+    else {
+        wantedBooks = [
+            ["The Survival Kit", "Donna Freitas"],
+            ["Double Digit", "Anabel Monaghan"],
+            ["Harbor Me", "Jaqueline Woodson"],
+            ["Chains", "Laurie Halse Anderson"],
+            ["Love that Dog", "Sharon Creese"],
+            ["The Iron Ring", "Lloyd Alexander"],
+            ["Shadow and Bone", "Leigh Bardugo"],
+            ["The Other Half of my Heart", "Sundee T. Frazier"],
+            ["The Complete Persepolis", "Marjane Satrapi"],
+            ["The Dragonnette Prophecy", "Tui T. Sutherland"],
+            ["They Both Die at the End", "Adam Silvera"],
+            ["Educated", "Terra Westover"],
+            ["Fearless Series", "Francine Pascal"],
+            ["Books 2, 3, and 4 of  the Ember Series", "Jeanne DuPrau"],
+            ["Aru Shah Series", "Riordan?"],
+            ["Ender's Game", "Orson Scott Card"],
+            ["A Lady's Guide to Mischief and Mayhem", "Manda Col"],
+            ["The Memo", "Minda Hart"],
+            ["The Haters", "Jesse Andrews"],
+            ["Promise of Blood", "Powder Mage Series"],
+            ["The Invisible Life of Addie La Rue", "-"],
+            ["One For All", "Lillie Lainoff"],
+            ["Moon and the Mars", "Kia Corthron"],
+            ["Opposite of Always", "Justin A. Reynolds"],
+            ["Song of Achilles", "-"],
+            ["The Elephant Vanishes", "-"],
+            ["Out of My Heart", "Sharon M. Draper"],
+            ["A Bloodsmoor", "-"],
+            ["Brown Girl Dreaming", "Jaqueline Woodson"]
+        ];
+    }
+
+    wantedBooks = wantedBooks.sort();
+    content = `<table> <tr> <th>Title</th> <th>Author</th> </tr>`; //adding rows to the table for headings
+
+    for (book = 0; book < wantedBooks.length; book++){ //iterate through the array of books
+        content += "<tr>"; //creating a new row for this book entry
+
+        //iterate through the info on one book held in a subarray. 
+        for (info = 0; info < wantedBooks[book].length; info++){
+            content += "<td>" + wantedBooks[book][info] + "</td>";
+        }
+        content += "</tr>"; //closing the row for this table entry
+    }
+
+    content += `</table>`; //closing and completing the table
+    document.getElementById(id).innerHTML += content;
+}
+
 //creates the footer for all pages
 function setFooter(id){
     content = `
