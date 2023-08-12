@@ -171,7 +171,7 @@ function lightDarkMode(){
 //holds the array of books; returns the entire thing on call. seperated for use between tableSort and setTable
 function fetchBooks(){
     //array holding all books to be displayed
-    books = [ //title, author's full name, genre, series, page count, number of copies, author's first name, author's last name
+    books = [ //title, author's full name, genre, series, page count, author's first name, author's last name
         ["The Legend of Zelda: Ocarina of Time", "Akira Himekawa", "Manga/Comic", "The Legend of Zelda", "?", "Akira", "Himekawa"],
         ["The Legend of Zelda: Oracle of Seasons / Oracle of Ages", "Akira Himekawa", "Manga/Comic", "The Legend of Zelda", "?", "Akira", "Himekawa"],
         ["Where the Mountain Meeets the Moon", "Grace Lin", "Fantasy", "-", "279", "Grace", "Lin"],
@@ -223,13 +223,13 @@ function bookSortBy(books, criteria){
     sortIndex = -1; //variable to hold index of the sorting criteria to sort by
 
     if (criteria == ("a-z-authFirst" || "z-a-authFirst")){ //if the criteria is sorting by author's first name (a-z/z-a is handled by tableSort())
-        sortIndex = 6; //that correlates to index 5 in books[]
+        sortIndex = 5; //that correlates to index 5 in books[]
     }
     else if (criteria == ("a-z-authLast" || "z-a-authLast")){ //if the criteria is sorting by author's last name
-        sortIndex = 7; //that correlates to index 6 in books[]
+        sortIndex = 6; //that correlates to index 6 in books[]
     }
     else if (criteria == ("page-count-low-high" || "page-count-high-low")){ //if the criteria is sorting by author's last name
-        sortIndex = 4; //that correlates to index 6 in books[]
+        sortIndex = 4; //that correlates to index 4 in books[]
     }
 
     //create an array that will be sorted by the criteria variable
