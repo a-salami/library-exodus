@@ -172,10 +172,17 @@ function lightDarkMode(){
 function fetchBooks(){
     //array holding all books to be displayed
     books = [ //title, author's full name, genre, series, page count, number of copies, author's first name, author's last name
-        ["The Legend of Zelda: Ocarina of Time", "Akira Himekawa", "Manga/Comic", "The Legend of Zelda", "?", "1", "Akira", "Himekawa"],
-        ["The Legend of Zelda: Oracle of Seasons / Oracle of Ages", "Akira Himekawa", "Manga/Comic", "The Legend of Zelda", "?", "1", "Akira", "Himekawa"],
-        ["Where the Mountain Meeets the Moon", "Grace Lin", "Fantasy", "-", "279", "1", "Grace", "Lin"],
-        ["The Hobbit", "J. R. R. Tolkien", "Fantasy", "-", "300", "1", "J. R. R.", "Tolkien"]
+        ["The Legend of Zelda: Ocarina of Time", "Akira Himekawa", "Manga/Comic", "The Legend of Zelda", "?", "Akira", "Himekawa"],
+        ["The Legend of Zelda: Oracle of Seasons / Oracle of Ages", "Akira Himekawa", "Manga/Comic", "The Legend of Zelda", "?", "Akira", "Himekawa"],
+        ["Where the Mountain Meeets the Moon", "Grace Lin", "Fantasy", "-", "279", "Grace", "Lin"],
+        ["The Hobbit", "J. R. R. Tolkien", "Fantasy", "-", "300", "J. R. R.", "Tolkien"],
+        ["This is What Happy Looks Like", "Jennifer E. Smith", "YA Romance", "-", "404", "Jennifer", "Smith"],
+        ["Wildwood", "Colin Meloy", "Fantasy", "The Wildwood Chronicles", "541", "Colin", "Meloy"],
+        ["Under Wildwood", "Colin Meloy", "Fantasy", "The Wildwood Chronicles", "559", "Colin", "Meloy"],
+        ["Wildwood Imperium", "Colin Meloy", "Fantasy", "The Wildwood Chronicles", "580", "Colin", "Meloy"],
+        ["A Darker Shade of Magic", "V. E. Schwab", "Fantasy", "Shades of Magic", "398", "V. E.", "Schwab"],
+        ["The Star Thief", "Lindsey Becker", "Fantasy", "-", "402", "Lindsey", "Becker"],
+        ["It's Kind of a Funny Story", "Ned Vizzini", "Realistic Fiction", "-", "444", "Ned", "Vizzini"]
     ];
     //["", "", "", "", "", "", "", "",] //template
     return books;
@@ -327,8 +334,7 @@ function setTable(id, sortedBooks = ""){
     <th>Author</th> 
     <th>Genre</th> 
     <th>Series</th> 
-    <th>Page Count</th> 
-    <th>Number of Copies</th>
+    <th>Page Count</th>
     </tr>`; //adding rows to the table for headings
 
     for (book = 0; book < books.length; book++){ //iterate through the array of books
