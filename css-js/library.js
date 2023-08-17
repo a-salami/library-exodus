@@ -182,9 +182,20 @@ function fetchBooks(){
         ["Wildwood Imperium", "Colin Meloy", "Fantasy", "The Wildwood Chronicles", "580", "Colin", "Meloy"],
         ["A Darker Shade of Magic", "V. E. Schwab", "Fantasy", "Shades of Magic", "398", "V. E.", "Schwab"],
         ["The Star Thief", "Lindsey Becker", "Fantasy", "-", "402", "Lindsey", "Becker"],
-        ["It's Kind of a Funny Story", "Ned Vizzini", "Realistic Fiction", "-", "444", "Ned", "Vizzini"]
+        ["It's Kind of a Funny Story", "Ned Vizzini", "Realistic Fiction", "-", "444", "Ned", "Vizzini"],
+        ["The Magician's Nephew", "C. S. Lewis", "Fantasy", "The Chronicles of Narnia", "202", "C. S.", "Lewis"],
+        ["The Neverending Story", "Michael Ende", "Fantasy", "-", "511", "Michael", "Ende"],
+        ["The Last Battle", "C. S. Lewis", "Fantasy", "The Chronicles of Narnia", "211", "C. S.", "Lewis"],
+        ["Prince Caspian", "C. S. Lewis", "Fantasy", "The Chronicles of Narnia", "223", "C. S.", "Lewis"],
+        ["The Voyage of the Dawn Treader", "C. S. Lewis", "Fantasy", "The Chronicles of Narnia", "248", "C. S.", "Lewis"],
+        ["The Silver Chair", "C. S. Lewis", "Fantasy", "The Chronicles of Narnia", "243", "C. S.", "Lewis"],
+        ["The Outcasts of 19 Schuyler Place", "E. L. Konigsburg", "Realistic Fiction", "-", "296", "E. L.", "Konigsburg"],
+        ["Dinner for Two", "Mike Gayle", "Realistic Fiction", "-", "338", "Mike", "Gayle"],
+        ["Miss Invisible", "Laura Jensen Walker", "Realistic Fiction", "-", "306", "Laura Jensen", "Walker"],
+        ["Loveboat, Taipei", "Abigail Hing Wen", "Realistic Fiction", "-", "414", "Abigail Hing", "Wen"],
+        ["The Extraordinary Secrets of April, May, and June", "Robin Benway", "Realistic Fiction", "-", "281", "Robin", "Benway"]
     ];
-    //["", "", "", "", "", "", "", "",] //template
+    //["", "", "", "", "", "", ""] //template
     return books;
 }
 
