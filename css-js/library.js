@@ -170,33 +170,49 @@ function lightDarkMode(){
 
 //holds the array of books; returns the entire thing on call. seperated for use between tableSort and setTable
 function fetchBooks(){
-    //array holding all books to be displayed
-    books = [ //title, author first name, author last name, genre, page count, series
+    //holds repeat authors
+    authors = [
+        ["C. S.", "Lewis"],
+        ["Rick", "Riordan"]
+    ];
+
+    genres = [ //holds all genres
+        "Fantasy", "Realistic Fiction", "YA", "Romance"
+    ]
+
+    series = [ //holds all series
+        "The Wildwood Chronicles",
+        "The Chronicles of Narnia",
+        "Percy Jackson & the Olympians"
+    ];
+
+    books = [ //holds all books. title, author first name, author last name, genre, page count, series
         ["The Legend of Zelda: Ocarina of Time", "Akira", "Himekawa", "Manga/Comic", "?", "The Legend of Zelda"],
         ["The Legend of Zelda: Oracle of Seasons / Oracle of Ages", "Akira", "Himekawa", "Manga/Comic", "?", "The Legend of Zelda"],
         ["Where the Mountain Meeets the Moon", "Grace", "Lin", "Fantasy", 279],
         ["The Hobbit", "J. R. R.", "Tolkien", "Fantasy", 300],
         ["This is What Happy Looks Like", "Jennifer E.", "Smith", "YA Romance", 404],
-        ["Wildwood", "Colin", "Meloy", "Fantasy", 541, "The Wildwood Chronicles"],
-        ["Under Wildwood", "Colin", "Meloy", "Fantasy", 559, "The Wildwood Chronicles"],
-        ["Wildwood Imperium", "Colin", "Meloy", "Fantasy", 580, "The Wildwood Chronicles"],
+        ["Wildwood", "Colin", "Meloy", "Fantasy", 541, series[0]],
+        ["Under Wildwood", "Colin", "Meloy", "Fantasy", 559, series[0]],
+        ["Wildwood Imperium", "Colin", "Meloy", "Fantasy", 580, series[0]],
         ["A Darker Shade of Magic", "V. E.", "Schwab", "Fantasy", 398, "Shades of Magic"],
         ["The Star Thief", "Lindsey", "Becker", "Fantasy", 402],
         ["It's Kind of a Funny Story", "Ned", "Vizzini", "Realistic Fiction", 444],
-        ["The Magician's Nephew", "C. S.", "Lewis", "Fantasy", 202, "The Chronicles of Narnia"],
+        ["The Magician's Nephew", authors[0][0], authors[0][1], "Fantasy", 202, series[1]],
         ["The Neverending Story", "Michael", "Ende", "Fantasy", 511],
-        ["The Last Battle", "C. S.", "Lewis", "Fantasy", 211, "The Chronicles of Narnia"],
-        ["Prince Caspian", "C. S.", "Lewis", "Fantasy", 223, "The Chronicles of Narnia"],
-        ["The Voyage of the Dawn Treader", "C. S.", "Lewis", "Fantasy", 248, "The Chronicles of Narnia"],
-        ["The Silver Chair", "C. S.", "Lewis", "Fantasy", 243, "The Chronicles of Narnia"],
+        ["The Last Battle", authors[0][0], authors[0][1], "Fantasy", 211, series[1]],
+        ["Prince Caspian", authors[0][0], authors[0][1], "Fantasy", 223, series[1]],
+        ["The Voyage of the Dawn Treader", authors[0][0], authors[0][1], "Fantasy", 248, series[1]],
+        ["The Silver Chair", authors[0][0], authors[0][1], "Fantasy", 243, series[1]],
         ["The Outcasts of 19 Schuyler Place", "E. L.", "Konigsburg", "Realistic Fiction", 296],
         ["Dinner for Two", "Mike", "Gayle", "Realistic Fiction", 338],
         ["Miss Invisible", "Laura Jensen", "Walker", "Realistic Fiction", 306],
         ["Loveboat, Taipei", "Abigail Hing", "Wen", "Realistic Fiction", 414],
         ["The Extraordinary Secrets of April, May, and June", "Robin", "Benway", "Realistic Fiction", 281],
-        ["The Horse and His Boy", "C. S.", "Lewis", "Fantasy", 224, "The Chronicles of Narnia"],
-        ["The Lion, the Witch, and the Wardrobe", "C. S.", "Lewis", "Fantasy", 189, "The Chronicles of Narnia"],
-        ["Where She Went", "Gayle", "Forman", "Realistic Fiction", 260]
+        ["The Horse and His Boy", authors[0][0], authors[0][1], "Fantasy", 224, series[1]],
+        ["The Lion, the Witch, and the Wardrobe", authors[0][0], authors[0][1], "Fantasy", 189, series[1]],
+        ["Where She Went", "Gayle", "Forman", "Realistic Fiction", 260],
+        ["The Lightning Thief", authors[1][0], authors[1][1], genres[0], 375, series[2]]
         ];
     //["", "", "", "", ] //template
     return books;
