@@ -173,46 +173,53 @@ function fetchBooks(){
     //holds repeat authors
     authors = [
         ["C. S.", "Lewis"],
-        ["Rick", "Riordan"]
+        ["Rick", "Riordan"],
+        ["Gail Carson", "Levine"],
+        ["Susane", "Colasanti"]
     ];
 
     genres = [ //holds all genres
-        "Fantasy", "Realistic Fiction", "YA", "Romance"
+        "Fantasy", "Realistic Fiction", "YA", "Romance", "Manga/Comic"
     ]
 
     series = [ //holds all series
-        "The Wildwood Chronicles",
-        "The Chronicles of Narnia",
-        "Percy Jackson & the Olympians"
+        "The Wildwood Chronicles", "The Chronicles of Narnia", "Percy Jackson & the Olympians", "The Legend of Zelda"
     ];
 
     books = [ //holds all books. title, author first name, author last name, genre, page count, series
-        ["The Legend of Zelda: Ocarina of Time", "Akira", "Himekawa", "Manga/Comic", "?", "The Legend of Zelda"],
-        ["The Legend of Zelda: Oracle of Seasons / Oracle of Ages", "Akira", "Himekawa", "Manga/Comic", "?", "The Legend of Zelda"],
-        ["Where the Mountain Meeets the Moon", "Grace", "Lin", "Fantasy", 279],
-        ["The Hobbit", "J. R. R.", "Tolkien", "Fantasy", 300],
-        ["This is What Happy Looks Like", "Jennifer E.", "Smith", "YA Romance", 404],
-        ["Wildwood", "Colin", "Meloy", "Fantasy", 541, series[0]],
-        ["Under Wildwood", "Colin", "Meloy", "Fantasy", 559, series[0]],
-        ["Wildwood Imperium", "Colin", "Meloy", "Fantasy", 580, series[0]],
-        ["A Darker Shade of Magic", "V. E.", "Schwab", "Fantasy", 398, "Shades of Magic"],
-        ["The Star Thief", "Lindsey", "Becker", "Fantasy", 402],
-        ["It's Kind of a Funny Story", "Ned", "Vizzini", "Realistic Fiction", 444],
-        ["The Magician's Nephew", authors[0][0], authors[0][1], "Fantasy", 202, series[1]],
-        ["The Neverending Story", "Michael", "Ende", "Fantasy", 511],
-        ["The Last Battle", authors[0][0], authors[0][1], "Fantasy", 211, series[1]],
-        ["Prince Caspian", authors[0][0], authors[0][1], "Fantasy", 223, series[1]],
-        ["The Voyage of the Dawn Treader", authors[0][0], authors[0][1], "Fantasy", 248, series[1]],
-        ["The Silver Chair", authors[0][0], authors[0][1], "Fantasy", 243, series[1]],
-        ["The Outcasts of 19 Schuyler Place", "E. L.", "Konigsburg", "Realistic Fiction", 296],
-        ["Dinner for Two", "Mike", "Gayle", "Realistic Fiction", 338],
-        ["Miss Invisible", "Laura Jensen", "Walker", "Realistic Fiction", 306],
-        ["Loveboat, Taipei", "Abigail Hing", "Wen", "Realistic Fiction", 414],
-        ["The Extraordinary Secrets of April, May, and June", "Robin", "Benway", "Realistic Fiction", 281],
-        ["The Horse and His Boy", authors[0][0], authors[0][1], "Fantasy", 224, series[1]],
-        ["The Lion, the Witch, and the Wardrobe", authors[0][0], authors[0][1], "Fantasy", 189, series[1]],
-        ["Where She Went", "Gayle", "Forman", "Realistic Fiction", 260],
-        ["The Lightning Thief", authors[1][0], authors[1][1], genres[0], 375, series[2]]
+        ["The Legend of Zelda: Ocarina of Time", "Akira", "Himekawa", genres[4], "?", series[3]],
+        ["The Legend of Zelda: Oracle of Seasons / Oracle of Ages", "Akira", "Himekawa", genres[4], "?", series[3]],
+        ["Where the Mountain Meeets the Moon", "Grace", "Lin", genres[0], 279],
+        ["The Hobbit", "J. R. R.", "Tolkien", genres[0], 300],
+        ["This is What Happy Looks Like", "Jennifer E.", "Smith", `${genres[2]}, ${genres[3]}`, 404],
+        ["Wildwood", "Colin", "Meloy", genres[0], 541, series[0]],
+        ["Under Wildwood", "Colin", "Meloy", genres[0], 559, series[0]],
+        ["Wildwood Imperium", "Colin", "Meloy", genres[0], 580, series[0]],
+        ["A Darker Shade of Magic", "V. E.", "Schwab", genres[0], 398, "Shades of Magic"],
+        ["The Star Thief", "Lindsey", "Becker", genres[0], 402],
+        ["It's Kind of a Funny Story", "Ned", "Vizzini", genres[1], 444],
+        ["The Magician's Nephew", authors[0][0], authors[0][1], genres[0], 202, series[1]],
+        ["The Neverending Story", "Michael", "Ende", genres[0], 511],
+        ["The Last Battle", authors[0][0], authors[0][1], genres[0], 211, series[1]],
+        ["Prince Caspian", authors[0][0], authors[0][1], genres[0], 223, series[1]],
+        ["The Voyage of the Dawn Treader", authors[0][0], authors[0][1], genres[0], 248, series[1]],
+        ["The Silver Chair", authors[0][0], authors[0][1], genres[0], 243, series[1]],
+        ["The Outcasts of 19 Schuyler Place", "E. L.", "Konigsburg", genres[1], 296],
+        ["Dinner for Two", "Mike", "Gayle", genres[1], 338],
+        ["Miss Invisible", "Laura Jensen", "Walker", genres[1], 306],
+        ["Loveboat, Taipei", "Abigail Hing", "Wen", genres[1], 414],
+        ["The Extraordinary Secrets of April, May, and June", "Robin", "Benway", genres[1], 281],
+        ["The Horse and His Boy", authors[0][0], authors[0][1], genres[0], 224, series[1]],
+        ["The Lion, the Witch, and the Wardrobe", authors[0][0], authors[0][1], genres[0], 189, series[1]],
+        ["Where She Went", "Gayle", "Forman", genres[1], 260],
+        ["The Lightning Thief", authors[1][0], authors[1][1], genres[0], 375, series[2]],
+        ["The Sea of Monsters", authors[1][0], authors[1][1], genres[0], 279, series[2]],
+        ["The Titan's Curse", authors[1][0], authors[1][1], genres[0], 312, series[2]],
+        ["The Battle of the Labyrinth", authors[1][0], authors[1][1], genres[0], 361, series[2]],
+        ["The Last Olympian", authors[1][0], authors[1][1], genres[0], 381, series[2]],
+        ["Aru Shah and the End of Time", "Roshani", "Chokshi", genres[0], 343],
+        ["The Two Princesses of Bamarre", authors[2][0], authors[2][1], genres[0], 239],
+        ["Take Me There", authors[3][0], authors[3][1], genres[3], 290]
         ];
     //["", "", "", "", ] //template
     return books;
