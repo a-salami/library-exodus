@@ -208,7 +208,7 @@ function fetchSearch(search){
 
     for (book = 0; book < books.length; book++){ //iterate through books[]
         for (info = 0; info < books[book].length; info++){ //iterate through the chosen book
-            if (books[book][info].toUpperCase().search(search.toUpperCase()) != -1){ //if 'search' appears anywhere in this book (toUpperCase()-es used to mitigate case sentitivity)
+            if (String(books[book][info]).toUpperCase().search(search.toUpperCase()) != -1){ //if 'search' appears anywhere in this book (toUpperCase()-es used to mitigate case sentitivity, String() used so pagecount can be searched on)
                 searchFound.push(books[book]); //push the entire book entry into searchFound[]
                 break; //break and search the next book entry
             }
