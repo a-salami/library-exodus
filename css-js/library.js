@@ -171,31 +171,34 @@ function lightDarkMode(){
 //holds the array of books; returns the entire thing on call. seperated for use between tableSort and setTable
 function fetchBooks(){
     //array holding all books to be displayed
-    books = [ //title, author's full name, genre, series, page count, author's first name, author's last name
-        ["The Legend of Zelda: Ocarina of Time", "Akira Himekawa", "Manga/Comic", "The Legend of Zelda", "?", "Akira", "Himekawa"],
-        ["The Legend of Zelda: Oracle of Seasons / Oracle of Ages", "Akira Himekawa", "Manga/Comic", "The Legend of Zelda", "?", "Akira", "Himekawa"],
-        ["Where the Mountain Meeets the Moon", "Grace Lin", "Fantasy", "-", "279", "Grace", "Lin"],
-        ["The Hobbit", "J. R. R. Tolkien", "Fantasy", "-", "300", "J. R. R.", "Tolkien"],
-        ["This is What Happy Looks Like", "Jennifer E. Smith", "YA Romance", "-", "404", "Jennifer", "Smith"],
-        ["Wildwood", "Colin Meloy", "Fantasy", "The Wildwood Chronicles", "541", "Colin", "Meloy"],
-        ["Under Wildwood", "Colin Meloy", "Fantasy", "The Wildwood Chronicles", "559", "Colin", "Meloy"],
-        ["Wildwood Imperium", "Colin Meloy", "Fantasy", "The Wildwood Chronicles", "580", "Colin", "Meloy"],
-        ["A Darker Shade of Magic", "V. E. Schwab", "Fantasy", "Shades of Magic", "398", "V. E.", "Schwab"],
-        ["The Star Thief", "Lindsey Becker", "Fantasy", "-", "402", "Lindsey", "Becker"],
-        ["It's Kind of a Funny Story", "Ned Vizzini", "Realistic Fiction", "-", "444", "Ned", "Vizzini"],
-        ["The Magician's Nephew", "C. S. Lewis", "Fantasy", "The Chronicles of Narnia", "202", "C. S.", "Lewis"],
-        ["The Neverending Story", "Michael Ende", "Fantasy", "-", "511", "Michael", "Ende"],
-        ["The Last Battle", "C. S. Lewis", "Fantasy", "The Chronicles of Narnia", "211", "C. S.", "Lewis"],
-        ["Prince Caspian", "C. S. Lewis", "Fantasy", "The Chronicles of Narnia", "223", "C. S.", "Lewis"],
-        ["The Voyage of the Dawn Treader", "C. S. Lewis", "Fantasy", "The Chronicles of Narnia", "248", "C. S.", "Lewis"],
-        ["The Silver Chair", "C. S. Lewis", "Fantasy", "The Chronicles of Narnia", "243", "C. S.", "Lewis"],
-        ["The Outcasts of 19 Schuyler Place", "E. L. Konigsburg", "Realistic Fiction", "-", "296", "E. L.", "Konigsburg"],
-        ["Dinner for Two", "Mike Gayle", "Realistic Fiction", "-", "338", "Mike", "Gayle"],
-        ["Miss Invisible", "Laura Jensen Walker", "Realistic Fiction", "-", "306", "Laura Jensen", "Walker"],
-        ["Loveboat, Taipei", "Abigail Hing Wen", "Realistic Fiction", "-", "414", "Abigail Hing", "Wen"],
-        ["The Extraordinary Secrets of April, May, and June", "Robin Benway", "Realistic Fiction", "-", "281", "Robin", "Benway"]
-    ];
-    //["", "", "", "", "", "", ""] //template
+    books = [ //title, author first name, author last name, genre, page count, series
+        ["The Legend of Zelda: Ocarina of Time", "Akira", "Himekawa", "Manga/Comic", "?", "The Legend of Zelda"],
+        ["The Legend of Zelda: Oracle of Seasons / Oracle of Ages", "Akira", "Himekawa", "Manga/Comic", "?", "The Legend of Zelda"],
+        ["Where the Mountain Meeets the Moon", "Grace", "Lin", "Fantasy", 279],
+        ["The Hobbit", "J. R. R.", "Tolkien", "Fantasy", 300],
+        ["This is What Happy Looks Like", "Jennifer E.", "Smith", "YA Romance", 404],
+        ["Wildwood", "Colin", "Meloy", "Fantasy", 541, "The Wildwood Chronicles"],
+        ["Under Wildwood", "Colin", "Meloy", "Fantasy", 559, "The Wildwood Chronicles"],
+        ["Wildwood Imperium", "Colin", "Meloy", "Fantasy", 580, "The Wildwood Chronicles"],
+        ["A Darker Shade of Magic", "V. E.", "Schwab", "Fantasy", 398, "Shades of Magic"],
+        ["The Star Thief", "Lindsey", "Becker", "Fantasy", 402],
+        ["It's Kind of a Funny Story", "Ned", "Vizzini", "Realistic Fiction", 444],
+        ["The Magician's Nephew", "C. S.", "Lewis", "Fantasy", 202, "The Chronicles of Narnia"],
+        ["The Neverending Story", "Michael", "Ende", "Fantasy", 511],
+        ["The Last Battle", "C. S.", "Lewis", "Fantasy", 211, "The Chronicles of Narnia"],
+        ["Prince Caspian", "C. S.", "Lewis", "Fantasy", 223, "The Chronicles of Narnia"],
+        ["The Voyage of the Dawn Treader", "C. S.", "Lewis", "Fantasy", 248, "The Chronicles of Narnia"],
+        ["The Silver Chair", "C. S.", "Lewis", "Fantasy", 243, "The Chronicles of Narnia"],
+        ["The Outcasts of 19 Schuyler Place", "E. L.", "Konigsburg", "Realistic Fiction", 296],
+        ["Dinner for Two", "Mike", "Gayle", "Realistic Fiction", 338],
+        ["Miss Invisible", "Laura Jensen", "Walker", "Realistic Fiction", 306],
+        ["Loveboat, Taipei", "Abigail Hing", "Wen", "Realistic Fiction", 414],
+        ["The Extraordinary Secrets of April, May, and June", "Robin", "Benway", "Realistic Fiction", 281],
+        ["The Horse and His Boy", "C. S.", "Lewis", "Fantasy", 224, "The Chronicles of Narnia"],
+        ["The Lion, the Witch, and the Wardrobe", "C. S.", "Lewis", "Fantasy", 189, "The Chronicles of Narnia"],
+        ["Where She Went", "Gayle", "Forman", "Realistic Fiction", 260]
+        ];
+    //["", "", "", "", ] //template
     return books;
 }
 
@@ -234,10 +237,10 @@ function bookSortBy(books, criteria){
     sortIndex = -1; //variable to hold index of the sorting criteria to sort by
 
     if (criteria == ("a-z-authFirst" || "z-a-authFirst")){ //if the criteria is sorting by author's first name (a-z/z-a is handled by tableSort())
-        sortIndex = 5; //that correlates to index 5 in books[]
+        sortIndex = 1; //that correlates to index 5 in books[]
     }
     else if (criteria == ("a-z-authLast" || "z-a-authLast")){ //if the criteria is sorting by author's last name
-        sortIndex = 6; //that correlates to index 6 in books[]
+        sortIndex = 2; //that correlates to index 6 in books[]
     }
     else if (criteria == ("page-count-low-high" || "page-count-high-low")){ //if the criteria is sorting by author's last name
         sortIndex = 4; //that correlates to index 4 in books[]
@@ -325,8 +328,6 @@ function tableSort(sortType){
         //add categories favorite books and favorite authors
     }
     
-
-
     document.getElementById("tableSpace").innerHTML = ""; //blank out the display div to prepare it for the new table 
     setTable("tableSpace", books); //call setTable with the newly sorted array
 }
@@ -344,16 +345,24 @@ function setTable(id, sortedBooks = ""){
     content += `<tr> <th>Title</th> 
     <th>Author</th> 
     <th>Genre</th> 
-    <th>Series</th> 
     <th>Page Count</th>
+    <th>Series</th> 
     </tr>`; //adding rows to the table for headings
 
     for (book = 0; book < books.length; book++){ //iterate through the array of books
         content += "<tr>"; //creating a new row for this book entry
 
-        //iterate through the info on one book held in a subarray. 
-        for (info = 0; info < books[book].length - 2; info++){ //-2 to exclude authFirst and authLast; only used for sorting
-            content += "<td>" + books[book][info] + "</td>";
+        //iterate through the info on one book held in a subarray
+        for (info = 0; info < books[book].length; info++){
+            if (info == 1){ //if the current info is author's first name
+                content += "<td>" + books[book][info] + " "; //start the table data html section; add a space for the last name
+            }
+            else if (info == 2){ //if the current info is author's last name
+                content += books[book][info] + "</td>"; //include the last name and close the table data html section
+            }
+            else{ //otherwise it has nothing to do with the author; start the table data html section, add the data, and end the section all at once
+                content += "<td>" + books[book][info] + "</td>";
+            }
         }
         content += "</tr>"; //closing the row for this table entry
     }
@@ -392,14 +401,14 @@ function setWantedBooks(id, age = "adult"){
             ["The Memo", "Minda Hart"],
             ["The Haters", "Jesse Andrews"],
             ["Promise of Blood", "Powder Mage Series"],
-            ["The Invisible Life of Addie La Rue", "-"],
+            ["The Invisible Life of Addie La Rue"],
             ["One For All", "Lillie Lainoff"],
             ["Moon and the Mars", "Kia Corthron"],
             ["Opposite of Always", "Justin A. Reynolds"],
-            ["Song of Achilles", "-"],
-            ["The Elephant Vanishes", "-"],
+            ["Song of Achilles"],
+            ["The Elephant Vanishes"],
             ["Out of My Heart", "Sharon M. Draper"],
-            ["A Bloodsmoor", "-"],
+            ["A Bloodsmoor"],
             ["Brown Girl Dreaming", "Jaqueline Woodson"]
         ];
     }
