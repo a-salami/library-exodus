@@ -170,21 +170,25 @@ function lightDarkMode(){
 
 //holds the array of books; returns the entire thing on call. seperated for use between tableSort and setTable
 function fetchBooks(){
+    series = [ //holds all series
+    "The Wildwood Chronicles", "The Chronicles of Narnia", "Percy Jackson & The Olympians", "The Legend of Zelda", "A Tale of the Wide Awake Princess",
+    "The Heroes of Olympus"
+    ];
+
     //holds repeat authors
     authors = [
         ["C. S.", "Lewis"],
         ["Rick", "Riordan"],
         ["Gail Carson", "Levine"],
-        ["Susane", "Colasanti"]
+        ["Susane", "Colasanti"],
+        ["John", "Green"],
+        ["E. D.", "Baker"] //5
     ];
 
     genres = [ //holds all genres
-        "Fantasy", "Realistic Fiction", "YA", "Romance", "Manga/Comic"
+        "Fantasy", "Realistic Fiction", "YA", "Romance", "Manga/Comic", "Historical Fiction", 
+        "Children's"
     ]
-
-    series = [ //holds all series
-        "The Wildwood Chronicles", "The Chronicles of Narnia", "Percy Jackson & the Olympians", "The Legend of Zelda"
-    ];
 
     books = [ //holds all books. title, author first name, author last name, genre, page count, series
         ["The Legend of Zelda: Ocarina of Time", "Akira", "Himekawa", genres[4], "?", series[3]],
@@ -219,7 +223,19 @@ function fetchBooks(){
         ["The Last Olympian", authors[1][0], authors[1][1], genres[0], 381, series[2]],
         ["Aru Shah and the End of Time", "Roshani", "Chokshi", genres[0], 343],
         ["The Two Princesses of Bamarre", authors[2][0], authors[2][1], genres[0], 239],
-        ["Take Me There", authors[3][0], authors[3][1], genres[3], 290]
+        ["Take Me There", authors[3][0], authors[3][1], genres[3], 290],
+        ["Paper Towns", authors[4][0], authors[4][1], `${genres[2]}, ${genres[1]}`, 305],
+        ["Mandy", "Julie", "Edwards", genres[5], 279],
+        ["That Part Was True", "Deborah", "McKinlay", genres[1], 225],
+        ["Johnny Kellock Died Today", "Hadley", "Dyer", genres[5], 152],
+        ["The Absolutely True Diary of a Part-Time Indian", "Sherman", "Alexie", `${genres[2]}, ${genres[1]}`, 230],
+        ["Princess in Disguise", authors[5][0], authors[5][1], `${genres[6]}, ${genres[0]}`, 215, series[4]],
+        ["Third Wish Vol.1", "Robert", "Fulghum", genres[0], 501],
+        ["Third Wish Vol.2", "Robert", "Fulghum", genres[0], 415],
+        ["The House of Hades", authors[1][0], authors[1][1], genres[0], 583, series[5]],
+        ["The Invention of Hugo Cabret", "Brian", "Selznick", `${genres[0]}, ${genres[5]}`, 523],
+        ["The Marvels", "Brian", "Selznick", `${genres[0]}, ${genres[5]}`, 647],
+        ["Wonder Struck", "Brian", "Selznick", `${genres[0]}, ${genres[5]}`, 627]
         ];
     //["", "", "", "", ] //template
     return books;
