@@ -424,6 +424,8 @@ function setTable(id, sortedBooks = ""){
                 content += "<td>" + books[book][info] + "</td>";
             }
         }
+
+       if (books[book].length < 6) { content += "<td></td>"; } //adds an empty td section for books missing a series; helps CSS' td:hover
         content += "</tr>"; //closing the row for this table entry
     }
 
