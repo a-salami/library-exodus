@@ -171,23 +171,19 @@ function lightDarkMode(){
 //holds the array of books; returns the entire thing on call. seperated for use between tableSort and setTable
 function fetchBooks(){
     series = [ //holds all series
-    "The Wildwood Chronicles", "The Chronicles of Narnia", "Percy Jackson & The Olympians", "The Legend of Zelda", "A Tale of the Wide Awake Princess",
-    "The Heroes of Olympus"
+    "The Wildwood Chronicles", "The Chronicles of Narnia", "Percy Jackson & The Olympians", "The Legend of Zelda", "A Tale of the Wide Awake Princess", //4
+    "The Heroes of Olympus", "Emily Windsnap", "Anne of Green Gables", "UGLIES", "His Dark Materials"
     ];
 
     //holds repeat authors
     authors = [
-        ["C. S.", "Lewis"],
-        ["Rick", "Riordan"],
-        ["Gail Carson", "Levine"],
-        ["Susane", "Colasanti"],
-        ["John", "Green"],
-        ["E. D.", "Baker"] //5
+        ["C. S.", "Lewis"], ["Rick", "Riordan"], ["Gail Carson", "Levine"], ["Susane", "Colasanti"], ["John", "Green"], ["E. D.", "Baker"], //5
+        ["Scott", "Westerfeld"], ["Phillip", "Pullman"]
     ];
 
     genres = [ //holds all genres
-        "Fantasy", "Realistic Fiction", "YA", "Romance", "Manga/Comic", "Historical Fiction", 
-        "Children's"
+        "Fantasy", "Realistic Fiction", "YA", "Romance", "Manga/Comic", "Historical Fiction", //5
+        "Children's", "Science Fiction", "Fiction", "Dystopian", "Memoir" //10
     ]
 
     books = [ //holds all books. title, author first name, author last name, genre, page count, series
@@ -235,7 +231,32 @@ function fetchBooks(){
         ["The House of Hades", authors[1][0], authors[1][1], genres[0], 583, series[5]],
         ["The Invention of Hugo Cabret", "Brian", "Selznick", `${genres[0]}, ${genres[5]}`, 523],
         ["The Marvels", "Brian", "Selznick", `${genres[0]}, ${genres[5]}`, 647],
-        ["Wonder Struck", "Brian", "Selznick", `${genres[0]}, ${genres[5]}`, 627]
+        ["Wonder Struck", "Brian", "Selznick", `${genres[0]}, ${genres[5]}`, 627],
+        ["Emily Windsnap and the Monster from the Deep", "Liz", "Kessler", `${genres[6]}, ${genres[0]}`, 218, series[6]],
+        ["Emily Windsnap and the Land of the Mindnight Sun", "Liz", "Kessler", `${genres[6]}, ${genres[0]}`, 272, series[6]],
+        ["Anne of Avonlea", "L. M.", "Montgomery", genres[5], 276, series[7]],
+        ["Anne of Greem Gables", "L. M.", "Montgomery", genres[5], 371, series[7]],
+        ["The Mysterious Benedict Society", "Trenton Lee", "Stewart", genres[7], 485],
+        ["For One More Day", "Mitch", "Albom", genres[8], 197],
+        ["Museum of Thives", "Lian", "Tanner", genres[9], 312],
+        ["Pretties", authors[6][0], authors[6][1], `${genres[2]}, ${genres[9]}`, 370, series[8]],
+        ["Uglies", authors[6][0], authors[6][1], `${genres[2]}, ${genres[9]}`, 425, series[8]],
+        ["Specials", authors[6][0], authors[6][1], `${genres[2]}, ${genres[9]}`, 372, series[8]],
+        ["Extras", authors[6][0], authors[6][1], `${genres[2]}, ${genres[9]}`, 417, series[8]],
+        ["The Life of Pi", "Yann", "Martel", genres[8], 401],
+        ["The Amber Spyglass", authors[7][0], authors[7][1], genres[0], 518, series[9]],
+        ["The Golden Compass", authors[7][0], authors[7][1], genres[0], 399, series[9]],
+        ["Grandma's Magical Storybook", "", "", `${genres[6]}, ${genres[0]}`,189],
+        ["The Subtle Knife", authors[7][0], authors[7][1], genres[0], 326, series[9]],
+        ["DUNE", "Frank", "Herbert", genres[7], 794],
+        ["A Garden in Lucca", "Paul", "Gervais", genres[10], 309],
+        ["The Star Wars Trilogy", "George", "Lucas", genres[7], 705],
+        ["The Help", "Kathryn", "Stockett", genres[5], 522],
+        ["The Colussus Rises", "Peter", "Lerangis", genres[0], 348, "Seven Wonders"],
+        ["Inkheart", "Cornelia", "Funke", genres[0], 534],
+        ["Between the Bridge and the River", "Craig", "Ferguson", genres[8], 329],
+        ["Between, Georgia", "Joshilyn", "Jackson", genres[8], 294],
+        ["A Thread of Sky", "Deanna", "Fei", genres[8], 351]
         ];
     //["", "", "", "", ] //template
     return books;
@@ -380,7 +401,7 @@ function setTable(id, sortedBooks = ""){
         books = sortedBooks;  //tableSort() calls setTable() again after it has sorted books[] to display the proper sorting
     } //set the sorted array from tableSort() as the array to be displayed
 
-    content = `<table> <tr> <th colspan = "6">BOOKS </th> </tr>`; //adding a row to the table for the title
+    content = `<table> <tr> <th colspan = "6">BOOKS (` + books.length + `)</th> </tr>`; //adding a row to the table for the title
     content += `<tr> <th>Title</th> 
     <th>Author</th> 
     <th>Genre</th> 
