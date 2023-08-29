@@ -171,19 +171,21 @@ function lightDarkMode(){
 //holds the array of books; returns the entire thing on call. seperated for use between tableSort and setTable
 function fetchBooks(){
     series = [ //holds all series
-    "The Wildwood Chronicles", "The Chronicles of Narnia", "Percy Jackson & The Olympians", "The Legend of Zelda", "A Tale of the Wide Awake Princess", //4
-    "The Heroes of Olympus", "Emily Windsnap", "Anne of Green Gables", "UGLIES", "His Dark Materials"
+    "The Wildwood Chronicles", "The Chronicles of Narnia", "Percy Jackson & The Olympians", "The Legend of Zelda", "Tales of the Wide Awake Princess", //4
+    "The Heroes of Olympus", "Emily Windsnap", "Anne of Green Gables", "UGLIES", "His Dark Materials", "Perfected", //10
+    "The Hunger Games", "Archie Comics"
     ];
 
     //holds repeat authors
     authors = [
         ["C. S.", "Lewis"], ["Rick", "Riordan"], ["Gail Carson", "Levine"], ["Susane", "Colasanti"], ["John", "Green"], ["E. D.", "Baker"], //5
-        ["Scott", "Westerfeld"], ["Phillip", "Pullman"]
+        ["Scott", "Westerfeld"], ["Phillip", "Pullman"], ["Kate Jarvic", "Birch"], ["Suzanne", "Collins"]
     ];
 
     genres = [ //holds all genres
         "Fantasy", "Realistic Fiction", "YA", "Romance", "Manga/Comic", "Historical Fiction", //5
-        "Children's", "Science Fiction", "Fiction", "Dystopian", "Memoir" //10
+        "Children's", "Science Fiction", "Fiction", "Dystopian", "Memoir", //10
+        "Animal Fiction", "Health and Wellness"
     ]
 
     books = [ //holds all books. title, author first name, author last name, genre, page count, series
@@ -234,8 +236,8 @@ function fetchBooks(){
         ["Wonder Struck", "Brian", "Selznick", `${genres[0]}, ${genres[5]}`, 627],
         ["Emily Windsnap and the Monster from the Deep", "Liz", "Kessler", `${genres[6]}, ${genres[0]}`, 218, series[6]],
         ["Emily Windsnap and the Land of the Mindnight Sun", "Liz", "Kessler", `${genres[6]}, ${genres[0]}`, 272, series[6]],
-        ["Anne of Avonlea", "L. M.", "Montgomery", genres[5], 276, series[7]],
-        ["Anne of Greem Gables", "L. M.", "Montgomery", genres[5], 371, series[7]],
+        ["Anne of Green Gables (Books 1-3)", "L. M.", "Montgomery", genres[5], 634, series[7]],
+        ["Anne of Green Gables (Collector's)", "L. M.", "Montgomery", genres[5], 371, series[7]],
         ["The Mysterious Benedict Society", "Trenton Lee", "Stewart", genres[7], 485],
         ["For One More Day", "Mitch", "Albom", genres[8], 197],
         ["Museum of Thives", "Lian", "Tanner", genres[9], 312],
@@ -256,9 +258,49 @@ function fetchBooks(){
         ["Inkheart", "Cornelia", "Funke", genres[0], 534],
         ["Between the Bridge and the River", "Craig", "Ferguson", genres[8], 329],
         ["Between, Georgia", "Joshilyn", "Jackson", genres[8], 294],
-        ["A Thread of Sky", "Deanna", "Fei", genres[8], 351]
+        ["A Thread of Sky", "Deanna", "Fei", genres[8], 351],
+        ["Everything, Everything", "Nicola", "Yoon", `${genres[2]}, ${genres[3]}`, 305],
+        ["An Abundance of Katherines", authors[4][0], authors[4][1], `${genres[2]}, ${genres[3]}`, 215],
+        ["The Girl Who Could Fly", "Victoria", "Forester", genres[0], 328],
+        ["Gamer Girl", "Mari", "Mancusi", `${genres[2]}, ${genres[3]}`, 248],
+        ["Tuesdays with Morrie", "Mitch", "Albom", genres[10], 199],
+        ["The Silver Star", "Jeannette", "Walls", genres[8], 267],
+        ["The Lost Hero", authors[1][0], authors[1][1], genres[0], 553, series[5]],
+        ["Stargirl", "Jerry", "Spinelli", `${genres[2]}, ${genres[3]}`, 186],
+        ["Out of My Mind", "Sharon M.", "Draper", genres[8], 295],
+        ["The Wide-Awake Princess", authors[5][0], authors[5][1], genres[0], 261, series[4]],
+        ["A Question of Magic", authors[5][0], authors[5][1], genres[0], 262],
+        ["Counting by 7s", "Holly Goldberg", "Sloan", genres[8], 378],
+        ["The Glass Castle", "Jeannette", "Walls", genres[10], 288],
+        ["Fin & Lady", "Cathleen", "Schine", genres[8], 273],
+        ["Not if I See You First", "Eric", "Lindstrom", `${genres[2]}, ${genres[3]}`, 310],
+        ["The Underneath", "Kathi", "Appelt", genres[11], 311],
+        ["Perfected", authors[8][0], authors[8][1], `${genres[2]}, ${genres[9]}`, 281, series[10]],
+        ["Tarnished", authors[8][0], authors[8][1], `${genres[2]}, ${genres[9]}`, 299, series[10]],
+        ["All I Need", authors[3][0], authors[3][1], `${genres[2]}, ${genres[3]}`, 212],
+        ["Eleanor & Park", "Rainbow", "Rowell", `${genres[2]}, ${genres[3]}`, 328],
+        ["The Hunger Games", authors[9][0], authors[9][1], `${genres[2]}, ${genres[9]}`, 374, series[11]],
+        ["The Signature of All Things", "Elizabeth", "Gilbert", genres[5], 499],
+        ["Cavedweller", "Dorothy", "Allison", genres[8], 434],
+        ["Complete Well-Being", "", "", genres[12], 249],
+        ["Hope was Here", "Joan", "Bauer", genres[8], 186],
+        ["Fantastic 4: The Photo Novel", "", "", genres[4], 92],
+        ["Archie: Super 3 Pack [314]", "", "", genres[4], "?", series[12]],
+        ["Archie: Jumbo Comics [103]", "", "", genres[4], "?", series[12]],
+        ["Betty and Veronica: Jumbo Comics [287]", "", "", genres[4], "?", series[12]],
+        ["Archie: Jumbo Comics [314]", "", "", genres[4], "?", series[12]],
+        ["Laugh Digest Magazine [150]", "", "", genres[4], "?", series[12]],
+        ["Archie's Pals 'n' Ga's Double Digest [58]", "", "", genres[4], "?", series[12]],
+        ["Betty and Veronica Digest [120]", "", "", genres[4], "?", series[12]],
+        ["Archie's Double Digest [152]", "", "", genres[4], "?", series[12]],
+        ["Jughead's Double Digest [60]", "", "", genres[4], "?", series[12]],
+        ["Archie Digest [166]", "", "", genres[4], "?", series[12]],
+        ["Archie Digest [162]", "", "", genres[4], "?", series[12]],
+        ["Betty and Verionica Double Digest [91]", "", "", genres[4], "?", series[12]],
+        ["Jughead's Double Digest [139]", "", "", genres[4], "?", series[12]],
+        ["Archie Digest [223]", "", "", genres[4], "?", series[12]],
+        ["Jughead's Double Digest [67]", "", "", genres[4], "?", series[12]]
         ];
-    //["", "", "", "", ] //template
     return books;
 }
 
@@ -296,7 +338,11 @@ function bookSortBy(books, criteria){
     duplicateBooks = [] //array to hold the duplicates
     sortIndex = -1; //variable to hold index of the sorting criteria to sort by
 
-    if (criteria == ("a-z-authFirst" || "z-a-authFirst")){ //if the criteria is sorting by author's first name (a-z/z-a is handled by tableSort())
+    if (criteria == "favorite-books"){
+        favBooks = value => ["The Underneath", "The Voyage of the Dawn Treader", "Fangirl"].some(element => value[0].includes(element)); //filter full book information from books[] into favBooks[] if the title of value[0] contains value
+        return books.filter(favBooks); //returned filtered array
+    }
+    else if (criteria == ("a-z-authFirst" || "z-a-authFirst")){ //if the criteria is sorting by author's first name (a-z/z-a is handled by tableSort())
         sortIndex = 1; //that correlates to index 5 in books[]
     }
     else if (criteria == ("a-z-authLast" || "z-a-authLast")){ //if the criteria is sorting by author's last name
@@ -379,6 +425,11 @@ function tableSort(sortType){
                 document.getElementById("sortText").innerHTML = "Chosen Sort > Page Count: High to Low"; //reverse the display text
                 books.reverse(); //reverse books[]
             }
+        }
+
+        else if (sortType == "favorite-books"){ //if requested sort is by page count
+            books = bookSortBy(books, "favorite-books"); //sort books[] by ascending page count
+            document.getElementById("sortText").innerHTML = "Chosen Sort > Favorite Books"; //change display text to reflect the chosen sort
         }
     
         else if (sortType == "default"){ //if requested sort is the default / page load version
