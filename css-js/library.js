@@ -285,10 +285,10 @@ function fetchBooks(){
         ["Complete Well-Being", "", "", genres[12], 249],
         ["Hope was Here", "Joan", "Bauer", genres[8], 186],
         ["Fantastic 4: The Photo Novel", "", "", genres[4], 92],
-        ["Archie: Super 3 Pack [314]", "", "", genres[4], "?", series[12]],
-        ["Archie: Jumbo Comics [103]", "", "", genres[4], "?", series[12]],
+        ["Archie Super 3 Pack [314]", "", "", genres[4], "?", series[12]],
+        ["Archie Jumbo Comics [103]", "", "", genres[4], "?", series[12]],
         ["Betty and Veronica: Jumbo Comics [287]", "", "", genres[4], "?", series[12]],
-        ["Archie: Jumbo Comics [314]", "", "", genres[4], "?", series[12]],
+        ["Archie Jumbo Comics [314]", "", "", genres[4], "?", series[12]],
         ["Laugh Digest Magazine [150]", "", "", genres[4], "?", series[12]],
         ["Archie's Pals 'n' Ga's Double Digest [58]", "", "", genres[4], "?", series[12]],
         ["Betty and Veronica Digest [120]", "", "", genres[4], "?", series[12]],
@@ -299,7 +299,8 @@ function fetchBooks(){
         ["Betty and Verionica Double Digest [91]", "", "", genres[4], "?", series[12]],
         ["Jughead's Double Digest [139]", "", "", genres[4], "?", series[12]],
         ["Archie Digest [223]", "", "", genres[4], "?", series[12]],
-        ["Jughead's Double Digest [67]", "", "", genres[4], "?", series[12]]
+        ["Jughead's Double Digest [67]", "", "", genres[4], "?", series[12]],
+        ["Archie Jumbo Comics [333]", "", "", genres[4], "?", series[12]]
         ];
     return books;
 }
@@ -340,7 +341,7 @@ function bookSortBy(books, criteria){
 
     if (criteria == "favorite-books"){
         favBooks = value => ["The Underneath", "The Voyage of the Dawn Treader", "Fangirl"].some(element => value[0].includes(element)); //filter full book information from books[] into favBooks[] if the title of value[0] contains value
-        return books.filter(favBooks); //returned filtered array
+        return books.filter(favBooks).sort(); //returned filtered array
     }
     else if (criteria == ("a-z-authFirst" || "z-a-authFirst")){ //if the criteria is sorting by author's first name (a-z/z-a is handled by tableSort())
         sortIndex = 1; //that correlates to index 5 in books[]
