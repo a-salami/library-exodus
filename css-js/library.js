@@ -349,6 +349,9 @@ function bookSortBy(books, criteria){
     else if (criteria == ("a-z-authLast" || "z-a-authLast")){ //if the criteria is sorting by author's last name
         sortIndex = 2; //that correlates to index 6 in books[]
     }
+    else if (criteria == "genre"){ //if the criteria is sorting by author's last name
+        sortIndex = 3; //that correlates to index 6 in books[]
+    }
     else if (criteria == ("page-count-low-high" || "page-count-high-low")){ //if the criteria is sorting by author's last name
         sortIndex = 4; //that correlates to index 4 in books[]
     }
@@ -427,12 +430,14 @@ function tableSort(sortType){
                 books.reverse(); //reverse books[]
             }
         }
-
         else if (sortType == "favorite-books"){ //if requested sort is by page count
             books = bookSortBy(books, "favorite-books"); //sort books[] by ascending page count
             document.getElementById("sortText").innerHTML = "Chosen Sort > Favorite Books"; //change display text to reflect the chosen sort
         }
-    
+        else if (sortType == "genre"){ //if requested sort is by page count
+            books = bookSortBy(books, "genre"); //sort books[] by ascending page count
+            document.getElementById("sortText").innerHTML = "Chosen Sort > Genre"; //change display text to reflect the chosen sort
+        }
         else if (sortType == "default"){ //if requested sort is the default / page load version
             document.getElementById("sortText").innerHTML = "Chosen Sort > Default"; //don't sort books[], change display text
         }
