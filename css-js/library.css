@@ -233,14 +233,17 @@ input[class="inputText"]{
 table{
     width: 100%;
 }
+th{
+    text-align: center;
+    font-size: 18px;
+}
 tr, th, td{
     border: 1.5px solid #95b8d1;
     padding: 2px;
-    text-align: center;
 }
 
-th{
-    font-size: 18px;
+tr, td{
+    padding-left: .5%;
 }
 
 tr:hover{
