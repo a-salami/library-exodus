@@ -171,24 +171,28 @@ function lightDarkMode(){
 //holds the array of books; returns the entire thing on call. seperated for use between tableSort and setTable
 function fetchBooks(){
     series = [ //holds all series
-    "The Wildwood Chronicles", "The Chronicles of Narnia", "Percy Jackson & The Olympians", "The Legend of Zelda", "Tales of the Wide Awake Princess", //4
+    "The Wildwood Chronicles", "The Chronicles of Narnia", "Percy Jackson & The Olympians", "The Legend of Zelda", "Tales of the Wide-Awake Princess", //4
     "The Heroes of Olympus", "Emily Windsnap", "Anne of Green Gables", "UGLIES", "His Dark Materials", "Perfected", //10
-    "The Hunger Games", "Archie Comics", "Books of Ember", "The Giver Quartet", "Harry Potter" //15
+    "The Hunger Games", "Archie Comics", "Books of Ember", "The Giver Quartet", "Harry Potter", //15
+    "The Mother-Daughter Book Club", "Divergent", "The Daughters", "Shopaholic"
     ];
 
     //holds repeat authors
     authors = [
         ["C. S.", "Lewis"], ["Rick", "Riordan"], ["Gail Carson", "Levine"], ["Susane", "Colasanti"], ["John", "Green"], ["E. D.", "Baker"], //5
         ["Scott", "Westerfeld"], ["Phillip", "Pullman"], ["Kate Jarvic", "Birch"], ["Suzanne", "Collins"], ["Wendy", "Mass"], //10
-        ["J. K.", "Rowling"]
+        ["J. K.", "Rowling"], ["Sarah", "Dessen"], ["Sophie", "Kinsella"]
     ];
 
     genres = [ //holds all genres
         "Fantasy", "Realistic Fiction", "YA", "Romance", "Manga/Comic", "Historical Fiction", //5
         "Children's", "Science Fiction", "Fiction", "Dystopian", "Memoir", //10
         "Animal Fiction", "Health and Wellness", "Cooking", "Mystery", "Christianity", //15
-        "War Fiction"
+        "War Fiction", "Self-Help+"
     ]
+
+    //add an alphasort method to alphabetize the genre output on each line
+    //put the method in the html string so it bulk-applies to each data row if possible
 
     books = [ //holds all books. title, author first name, author last name, genre, page count, series
         ["The Legend of Zelda: Ocarina of Time", "Akira", "Himekawa", genres[4], "?", series[3]],
@@ -268,7 +272,7 @@ function fetchBooks(){
         ["Tuesdays with Morrie", "Mitch", "Albom", genres[10], 199],
         ["The Silver Star", "Jeannette", "Walls", genres[8], 267],
         ["The Lost Hero", authors[1][0], authors[1][1], genres[0], 553, series[5]],
-        ["Stargirl", "Jerry", "Spinelli", `${genres[2]}, ${genres[3]}`, 186],
+        ["Stargirl", "Jerry", "Spinelli", `${genres[2]}, ${genres[3]}`, 186, "Stargirl"],
         ["Out of My Mind", "Sharon M.", "Draper", genres[8], 295],
         ["The Wide-Awake Princess", authors[5][0], authors[5][1], genres[0], 261, series[4]],
         ["A Question of Magic", authors[5][0], authors[5][1], genres[0], 262],
@@ -308,7 +312,7 @@ function fetchBooks(){
         ["Amorelle", "Grace Livingston", "Hill", `${genres[5]}, ${genres[3]}`, 265],
         ["Project Mulberry", "Linda Sue", "Park", `${genres[6]}, ${genres[1]}`, 225],
         ["Muffins", "Elizabeth", "Alston", genres[13], 88],
-        ["Ella Enchanted", authors[3][0], authors[3][1], genres[0], 232],
+        ["Ella Enchanted", authors[2][0], authors[2][1], genres[0], 232],
         ["Kira-Kira", "Cynthia", "Kadohata", genres[1], 244],
         ["Wild Wings", "Gill", "Lewis", `${genres[5]}, ${genres[1]}`, 283],
         ["The City of Ember", "Jeanne", "DuPrau", genres[9], 270, series[13]],
@@ -358,9 +362,80 @@ function fetchBooks(){
         ["John Carter of Mars: The First Five Novels", "Edgar Rice", "Burroughs", genres[0], 929],
         ["The Samantha American Girl Series", "", "", `${genres[6]}, ${genres[5]}`, "?"],
         ["Coral Island", "R. M.", "Ballantyne", `${genres[6]}, ${genres[5]}`, 184],
-        ["So Much Closer", authors[4][0], authors[4][1], `${genres[3]}, ${genres[4]}`, 241],
-        ["Just Listen", "Sarah", "Dessen", `${genres[1]}, ${genres[2]}`, 371],
-        ["That Summer", "Sarah", "Dessen", `${genres[1]}, ${genres[2]}`, 198]
+        ["So Much Closer", authors[3][0], authors[3][1], genres[3], 241],
+        ["Just Listen", authors[12][0], authors[12][1], `${genres[1]}, ${genres[2]}`, 371],
+        ["That Summer", authors[12][0], authors[12][1], `${genres[1]}, ${genres[2]}`, 198],
+        ["So B. It", "Sarah", "Weeks", genres[1], 243],
+        ["A Girl Named Digit", "Annabel", "Monaghan", genres[14], 187],
+        ["The Girl Who Drank the Moon", "Kelly", "Barnhill", `${genres[6]}, ${genres[0]}`, 386],
+        ["Harry Potter and the Prisoner of Azkaban", authors[11][0], authors[11][1], genres[0], 435, series[15]],
+        ["The Hate U Give", "Angie", "Thomas", genres[1], 444],
+        ["The Son of Neptune", authors[1][0], authors[1][1], genres[0], 513, series[5]],
+        ["Halo", "Alexandra", "Adornetto", `${genres[3]}, ${genres[0]}`, 484],
+        ["Harry Potter and the Order of the Phoenix", authors[11][0], authors[11][1], genres[0], 870],
+        ["The Frog Princess", authors[5][0], authors[5][1], `${genres[6]}, ${genres[0]}`, 214, "Tales of the Frog Princess"],
+        ["Love, Stargirl", "Jerry", "Spinelli", `${genres[2]}, ${genres[3]}`, 274, "Stargirl"],
+        ["The Fault in Our Stars", authors[4][0], authors[4][1], `${genres[1]}, ${genres[2]}`, 313],
+        ["Althea & Oliver", "Cristina", "Moracho", `${genres[2]}, ${genres[3]}`, 364],
+        ["If I Stay", "Gayle", "Forman", `${genres[2]}, ${genres[3]}`, 234],
+        ["Harry Potter and the Sorcerer's Stone", authors[11][0], authors[11][1], genres[0], 309, series[15]],
+        ["The Probability of Miracles", "Wendy", "Wunder", `${genres[2]}, ${genres[3]}`, 357],
+        ["City of Bones", "Cassandra", "Clare", genres[0], 485],
+        ["The Daughters", "Joanna", "Philbin", genres[1], 297, series[18]],
+        ["Close to Famous", "Joan", "Bauer", genres[1], 250],
+        ["Learning to Swear in America", "Katie", "Kennedy", genres[1], 340],
+        ["Once Upon a Curse", authors[5][0], authors[5][1], `${genres[6]}, ${genres[0]}`, 244, "Tales of the Frog Princess"],
+        ["The Pricess Tales Vol.2", authors[2][0], authors[2][1], genres[0], 248],
+        ["The Great Gilly Hopkins", "Katherine", "Paterson", genres[1], 148],
+        ["The BFG", "Roald", "Dahl", genres[0], 208],
+        ["From the Mixed-Up Files of Mrs. Basil E. Frankweiler", "E. L.", "Konigsburg", genres[8], 162],
+        ["James and the Giant Peach", "Roald", "Dahl", genres[0], 126],
+        ["Harry Potter and the Chamber of Secrets", authors[11][0], authors[11][1], genres[0], 341, series[15]],
+        ["Much Ado About Anne", "Heather Vogel", "Frederick", genres[1], 315, series[16]],
+        ["The Mother-Daughter Book Club", "Heather Vogel", "Frederick", genres[1], 236, series[16]],
+        ["Ostrich", "Matt", "Greene", genres[1], 322],
+        ["Insurgent", "Veronica", "Roth", genres[9], 525, series[17]],
+        ["Divergent", "Veronica", "Roth", genres[9], 487, series[17]],
+        ["Let it Snow", "John Green, Maureen Johnson,", "Lauren Myracle", `${genres[2]}, ${genres[3]}`, 352],
+        ["Mosquitoland", "David", "Arnold", genres[1], 342],
+        ["All the Bright Places", "Jennifer", "Niven", `${genres[1]}, ${genres[2]}`, 376],
+        ["The Mark of Athena", authors[1][0], authors[1][1], genres[0], 574, series[5]],
+        ["Eleanor", "Jason", "Gurley", genres[7], 370],
+        ["Bad Unicorn", "Platte F.", "Clark", genres[0], 423],
+        ["Zip", "Ellie", "Rollins", genres[1], 323],
+        ["Harry Potter and the Half-Blood Prince", authors[11][0], authors[11][1], genres[0], 652, series[15]],
+        ["Reboot", "Amy", "Tinera", genres[9], 365],
+        ["Super Sad True Love Story", "Gary", "Shteyngart", `"${genres[9]}"`, 331],
+        ["Pay It Forward", "Catherine Ryan", "Hyde", `${genres[6]}, ${genres[8]}`,261],
+        ["What My Mother Doesn't Know", "Sonya", "Sones", `${genres[2]}, ${genres[3]}`, 259],
+        ["Get Noticed!", "Brenda Joyce", "Johnson", genres[17], 238],
+        ["The Daughters Join the Party", "Joanna", "Philbin", genres[1], 269, series[18]],
+        ["Love Wins", "Rob", "Bell", genres[15], 139],
+        ["Fateful", "Claudia", "Gray", genres[5], 325],
+        ["Something, Maybe", "Elizabeth", "Scott", `${genres[2]}, ${genres[3]}`, 217],
+        ["Precious", "Sapphire", "", genres[8], "?"],
+        ["Someone Like You", authors[12][0], authors[12][1], `${genres[2]}, ${genres[3]}`, 281],
+        ["The Night Tourist", "Katherine", "Marsh", genres[0], 232],
+        ["Can You Keep a Secret?", authors[13][0], authors[13][1], `${genres[1]}, ${genres[3]}`, 357],
+        ["Momo", "Michael", "Ende", genres[0], 225],
+        ["The Inner Self", "Raqurra", "Ishmar", genres[0], 275],
+        ["Emancipated", "M. G.", "Reyes", genres[8], 384],
+        ["This Lullaby", authors[12][0], authors[12][1], `${genres[2]}, ${genres[3]}`, 345],
+        ["Shopaholic Takes Manhattan", authors[13][0], authors[13][1], genres[1], 323, series[19]],
+        ["Confessions of a Shopaholic", authors[13][0], authors[13][1], genres[1], 310, series[19]],
+        ["Shopaholic Ties the Knot", authors[13][0], authors[13][1], genres[1], 327, series[19]],
+        ["The Bravest Princess", authors[5][0], authors[5][1], genres[0], 263, series[4]],
+        ["A Desirable Residence", "Madeleine", "Wickham", genres[1], 296],
+        ["A Ring of Endless Light", "Madeleine", "L'Engle", genres[1], 324],
+        ["Captive", "Brighton", "Walsh", genres[3], 274],
+        ["Two Way Street", "Lauren", "Barnholdt", genres[3], 288],
+        ["Savages", "Don", "Winslow", genres[1], 290],
+        ["Clout", "Jenni", "Catron", genres[15], 186],
+        ["Before I Go To Sleep", "S. J.", "Watson", genres[9]],
+        ["Instructions for a Broken Heart", "Kim", "Culbertson", genres[3], 291],
+        ["The False Prince", "Jennifer A.", "Nielsen", genres[0], 342],
+        ["Something Like Fate", authors[3][0], authors[3][1], `${genres[2]}, ${genres[3]}`, 268],
+        []
         ];
     return books;
 }
@@ -400,7 +475,7 @@ function bookSortBy(books, criteria){
     sortIndex = -1; //variable to hold index of the sorting criteria to sort by
 
     if (criteria == "favorite-books"){
-        favBooks = value => ["Fangirl", "The Phantom Tollbooth", "Pish Posh", "The Underneath", "The Voyage of the Dawn Treader", "Fangirl"].some(element => value[0].includes(element)); //filter full book information from books[] into favBooks[] if the title of value[0] contains value
+        favBooks = value => ["A Girl Named Digit", "So B. It", "Fangirl", "The Phantom Tollbooth", "Pish Posh", "The Underneath", "The Voyage of the Dawn Treader", "Fangirl"].some(element => value[0].includes(element)); //filter full book information from books[] into favBooks[] if the title of value[0] contains value
         return books.filter(favBooks).sort(); //returned filtered array
     }
     else if (criteria == ("a-z-authFirst" || "z-a-authFirst")){ //if the criteria is sorting by author's first name (a-z/z-a is handled by tableSort())
