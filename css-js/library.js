@@ -435,8 +435,8 @@ function fetchBooks(){
         ["Instructions for a Broken Heart", "Kim", "Culbertson", genres[3], 291],
         ["The False Prince", "Jennifer A.", "Nielsen", genres[0], 342],
         ["Something Like Fate", authors[3][0], authors[3][1], `${genres[2]}, ${genres[3]}`, 268],
-        []
-        ];
+        ["The Boy Who Knew Everything", "Victoria", "Forester", genres[0], 404]
+];
     return books;
 }
 
