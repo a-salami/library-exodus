@@ -1,2191 +1,2182 @@
-{
-    "books": [
-        {
-            "index": 1,
-            "title": "The Legend of Zelda: Ocarina of Time",
-            "series": "The Legend of Zelda",
-            "authorsFirst": ["Akira"],
-            "authorsLast": ["Himekawa"],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 2,
-            "title": "The Legend of Zelda: Oracle of Seasons / Oracle of Ages",
-            "series": "The Legend of Zelda",
-            "authorsFirst": ["Akira"],
-            "authorsLast": ["Himekawa"],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 3,
-            "title": "Where the Mountain Meeets the Moon",
-            "series": "",
-            "authorsFirst": ["Grace"],
-            "authorsLast": ["Lin"],
-            "genres": ["Fantasy"],
-            "pagecount": 279
-            },
-        {
-            "index": 4,
-            "title": "The Hobbit",
-            "series": "",
-            "authorsFirst": ["J. R. R."],
-            "authorsLast": ["Tolkien"],
-            "genres": ["Fantasy"],
-            "pagecount": 300
-            },
-        {
-            "index": 5,
-            "title": "This is What Happy Looks Like",
-            "series": "",
-            "authorsFirst": ["Jennifer E."],
-            "authorsLast": ["Smith"],
-            "genres": ["YA, Romance"],
-            "pagecount": 404
-            },
-        {
-            "index": 6,
-            "title": "Wildwood",
-            "series": "The Wildwood Chronicles",
-            "authorsFirst": ["Colin"],
-            "authorsLast": ["Meloy"],
-            "genres": ["Fantasy"],
-            "pagecount": 541
-            },
-        {
-            "index": 7,
-            "title": "Under Wildwood",
-            "series": "The Wildwood Chronicles",
-            "authorsFirst": ["Colin"],
-            "authorsLast": ["Meloy"],
-            "genres": ["Fantasy"],
-            "pagecount": 559
-            },
-        {
-            "index": 8,
-            "title": "Wildwood Imperium",
-            "series": "The Wildwood Chronicles",
-            "authorsFirst": ["Colin"],
-            "authorsLast": ["Meloy"],
-            "genres": ["Fantasy"],
-            "pagecount": 580
-            },
-        {
-            "index": 9,
-            "title": "A Darker Shade of Magic",
-            "series": "Shades of Magic",
-            "authorsFirst": ["V. E."],
-            "authorsLast": ["Schwab"],
-            "genres": ["Fantasy"],
-            "pagecount": 398
-            },
-        {
-            "index": 10,
-            "title": "The Star Thief",
-            "series": "",
-            "authorsFirst": ["Lindsey"],
-            "authorsLast": ["Becker"],
-            "genres": ["Fantasy"],
-            "pagecount": 402
-            },
-        {
-            "index": 11,
-            "title": "It's Kind of a Funny Story",
-            "series": "",
-            "authorsFirst": ["Ned"],
-            "authorsLast": ["Vizzini"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 444
-            },
-        {
-            "index": 12,
-            "title": "The Magician's Nephew",
-            "series": "The Chronicles of Narnia",
-            "authorsFirst": ["C. S."],
-            "authorsLast": ["Lewis"],
-            "genres": ["Fantasy"],
-            "pagecount": 202
-            },
-        {
-            "index": 13,
-            "title": "The Neverending Story",
-            "series": "",
-            "authorsFirst": ["Michael"],
-            "authorsLast": ["Ende"],
-            "genres": ["Fantasy"],
-            "pagecount": 511
-            },
-        {
-            "index": 14,
-            "title": "The Last Battle",
-            "series": "The Chronicles of Narnia",
-            "authorsFirst": ["C. S."],
-            "authorsLast": ["Lewis"],
-            "genres": ["Fantasy"],
-            "pagecount": 211
-            },
-        {
-            "index": 15,
-            "title": "Prince Caspian",
-            "series": "The Chronicles of Narnia",
-            "authorsFirst": ["C. S."],
-            "authorsLast": ["Lewis"],
-            "genres": ["Fantasy"],
-            "pagecount": 223
-            },
-        {
-            "index": 16,
-            "title": "The Voyage of the Dawn Treader",
-            "series": "The Chronicles of Narnia",
-            "authorsFirst": ["C. S."],
-            "authorsLast": ["Lewis"],
-            "genres": ["Fantasy"],
-            "pagecount": 248
-            },
-        {
-            "index": 17,
-            "title": "The Silver Chair",
-            "series": "The Chronicles of Narnia",
-            "authorsFirst": ["C. S."],
-            "authorsLast": ["Lewis"],
-            "genres": ["Fantasy"],
-            "pagecount": 243
-            },
-        {
-            "index": 18,
-            "title": "The Outcasts of 19 Schuyler Place",
-            "series": "",
-            "authorsFirst": ["E. L."],
-            "authorsLast": ["Konigsburg"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 296
-            },
-        {
-            "index": 19,
-            "title": "Dinner for Two",
-            "series": "",
-            "authorsFirst": ["Mike"],
-            "authorsLast": ["Gayle"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 338
-            },
-        {
-            "index": 20,
-            "title": "Miss Invisible",
-            "series": "",
-            "authorsFirst": ["Laura Jensen"],
-            "authorsLast": ["Walker"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 306
-            },
-        {
-            "index": 21,
-            "title": "Loveboat, Taipei",
-            "series": "",
-            "authorsFirst": ["Abigail Hing"],
-            "authorsLast": ["Wen"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 414
-            },
-        {
-            "index": 22,
-            "title": "The Extraordinary Secrets of April, May, and June",
-            "series": "",
-            "authorsFirst": ["Robin"],
-            "authorsLast": ["Benway"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 281
-            },
-        {
-            "index": 23,
-            "title": "The Horse and His Boy",
-            "series": "The Chronicles of Narnia",
-            "authorsFirst": ["C. S."],
-            "authorsLast": ["Lewis"],
-            "genres": ["Fantasy"],
-            "pagecount": 224
-            },
-        {
-            "index": 24,
-            "title": "The Lion, the Witch, and the Wardrobe",
-            "series": "The Chronicles of Narnia",
-            "authorsFirst": ["C. S."],
-            "authorsLast": ["Lewis"],
-            "genres": ["Fantasy"],
-            "pagecount": 189
-            },
-        {
-            "index": 25,
-            "title": "Where She Went",
-            "series": "",
-            "authorsFirst": ["Gayle"],
-            "authorsLast": ["Forman"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 260
-            },
-        {
-            "index": 26,
-            "title": "The Lightning Thief",
-            "series": "Percy Jackson & The Olympians",
-            "authorsFirst": ["Rick"],
-            "authorsLast": ["Riordan"],
-            "genres": ["Fantasy"],
-            "pagecount": 375
-            },
-        {
-            "index": 27,
-            "title": "The Sea of Monsters",
-            "series": "Percy Jackson & The Olympians",
-            "authorsFirst": ["Rick"],
-            "authorsLast": ["Riordan"],
-            "genres": ["Fantasy"],
-            "pagecount": 279
-            },
-        {
-            "index": 28,
-            "title": "The Titan's Curse",
-            "series": "Percy Jackson & The Olympians",
-            "authorsFirst": ["Rick"],
-            "authorsLast": ["Riordan"],
-            "genres": ["Fantasy"],
-            "pagecount": 312
-            },
-        {
-            "index": 29,
-            "title": "The Battle of the Labyrinth",
-            "series": "Percy Jackson & The Olympians",
-            "authorsFirst": ["Rick"],
-            "authorsLast": ["Riordan"],
-            "genres": ["Fantasy"],
-            "pagecount": 361
-            },
-        {
-            "index": 30,
-            "title": "The Last Olympian",
-            "series": "Percy Jackson & The Olympians",
-            "authorsFirst": ["Rick"],
-            "authorsLast": ["Riordan"],
-            "genres": ["Fantasy"],
-            "pagecount": 381
-            },
-        {
-            "index": 31,
-            "title": "Aru Shah and the End of Time",
-            "series": "",
-            "authorsFirst": ["Roshani"],
-            "authorsLast": ["Chokshi"],
-            "genres": ["Fantasy"],
-            "pagecount": 343
-            },
-        {
-            "index": 32,
-            "title": "The Two Princesses of Bamarre",
-            "series": "",
-            "authorsFirst": ["Gail Carson"],
-            "authorsLast": ["Levine"],
-            "genres": ["Fantasy"],
-            "pagecount": 239
-            },
-        {
-            "index": 33,
-            "title": "Take Me There",
-            "series": "",
-            "authorsFirst": ["Susane"],
-            "authorsLast": ["Colasanti"],
-            "genres": ["Romance"],
-            "pagecount": 290
-            },
-        {
-            "index": 34,
-            "title": "Paper Towns",
-            "series": "",
-            "authorsFirst": ["John"],
-            "authorsLast": ["Green"],
-            "genres": ["YA, Realistic Fiction"],
-            "pagecount": 305
-            },
-        {
-            "index": 35,
-            "title": "Mandy",
-            "series": "",
-            "authorsFirst": ["Julie"],
-            "authorsLast": ["Edwards"],
-            "genres": ["Historical Fiction"],
-            "pagecount": 279
-            },
-        {
-            "index": 36,
-            "title": "That Part Was True",
-            "series": "",
-            "authorsFirst": ["Deborah"],
-            "authorsLast": ["McKinlay"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 225
-            },
-        {
-            "index": 37,
-            "title": "Johnny Kellock Died Today",
-            "series": "",
-            "authorsFirst": ["Hadley"],
-            "authorsLast": ["Dyer"],
-            "genres": ["Historical Fiction"],
-            "pagecount": 152
-            },
-        {
-            "index": 38,
-            "title": "The Absolutely True Diary of a Part-Time Indian",
-            "series": "",
-            "authorsFirst": ["Sherman"],
-            "authorsLast": ["Alexie"],
-            "genres": ["YA, Realistic Fiction"],
-            "pagecount": 230
-            },
-        {
-            "index": 39,
-            "title": "Princess in Disguise",
-            "series": "Tales of the Wide-Awake Princess",
-            "authorsFirst": ["E. D."],
-            "authorsLast": ["Baker"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 215
-            },
-        {
-            "index": 40,
-            "title": "Third Wish Vol.1",
-            "series": "",
-            "authorsFirst": ["Robert"],
-            "authorsLast": ["Fulghum"],
-            "genres": ["Fantasy"],
-            "pagecount": 501
-            },
-        {
-            "index": 41,
-            "title": "Third Wish Vol.2",
-            "series": "",
-            "authorsFirst": ["Robert"],
-            "authorsLast": ["Fulghum"],
-            "genres": ["Fantasy"],
-            "pagecount": 415
-            },
-        {
-            "index": 42,
-            "title": "The House of Hades",
-            "series": "The Heroes of Olympus",
-            "authorsFirst": ["Rick"],
-            "authorsLast": ["Riordan"],
-            "genres": ["Fantasy"],
-            "pagecount": 583
-            },
-        {
-            "index": 43,
-            "title": "The Invention of Hugo Cabret",
-            "series": "",
-            "authorsFirst": ["Brian"],
-            "authorsLast": ["Selznick"],
-            "genres": ["Fantasy, Historical Fiction"],
-            "pagecount": 523
-            },
-        {
-            "index": 44,
-            "title": "The Marvels",
-            "series": "",
-            "authorsFirst": ["Brian"],
-            "authorsLast": ["Selznick"],
-            "genres": ["Fantasy, Historical Fiction"],
-            "pagecount": 647
-            },
-        {
-            "index": 45,
-            "title": "Wonder Struck",
-            "series": "",
-            "authorsFirst": ["Brian"],
-            "authorsLast": ["Selznick"],
-            "genres": ["Fantasy, Historical Fiction"],
-            "pagecount": 627
-            },
-        {
-            "index": 46,
-            "title": "Emily Windsnap and the Monster from the Deep",
-            "series": "Emily Windsnap",
-            "authorsFirst": ["Liz"],
-            "authorsLast": ["Kessler"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 218
-            },
-        {
-            "index": 47,
-            "title": "Emily Windsnap and the Land of the Mindnight Sun",
-            "series": "Emily Windsnap",
-            "authorsFirst": ["Liz"],
-            "authorsLast": ["Kessler"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 272
-            },
-        {
-            "index": 48,
-            "title": "Anne of Green Gables (Books 1-3)",
-            "series": "Anne of Green Gables",
-            "authorsFirst": ["L. M."],
-            "authorsLast": ["Montgomery"],
-            "genres": ["Historical Fiction"],
-            "pagecount": 634
-            },
-        {
-            "index": 49,
-            "title": "Anne of Green Gables (Collector's)",
-            "series": "Anne of Green Gables",
-            "authorsFirst": ["L. M."],
-            "authorsLast": ["Montgomery"],
-            "genres": ["Historical Fiction"],
-            "pagecount": 371
-            },
-        {
-            "index": 50,
-            "title": "The Mysterious Benedict Society",
-            "series": "",
-            "authorsFirst": ["Trenton Lee"],
-            "authorsLast": ["Stewart"],
-            "genres": ["Science Fiction"],
-            "pagecount": 485
-            },
-        {
-            "index": 51,
-            "title": "For One More Day",
-            "series": "",
-            "authorsFirst": ["Mitch"],
-            "authorsLast": ["Albom"],
-            "genres": ["Fiction"],
-            "pagecount": 197
-            },
-        {
-            "index": 52,
-            "title": "Museum of Thives",
-            "series": "",
-            "authorsFirst": ["Lian"],
-            "authorsLast": ["Tanner"],
-            "genres": ["Dystopian"],
-            "pagecount": 312
-            },
-        {
-            "index": 53,
-            "title": "Pretties",
-            "series": "UGLIES",
-            "authorsFirst": ["Scott"],
-            "authorsLast": ["Westerfeld"],
-            "genres": ["YA, Dystopian"],
-            "pagecount": 370
-            },
-        {
-            "index": 54,
-            "title": "Uglies",
-            "series": "UGLIES",
-            "authorsFirst": ["Scott"],
-            "authorsLast": ["Westerfeld"],
-            "genres": ["YA, Dystopian"],
-            "pagecount": 425
-            },
-        {
-            "index": 55,
-            "title": "Specials",
-            "series": "UGLIES",
-            "authorsFirst": ["Scott"],
-            "authorsLast": ["Westerfeld"],
-            "genres": ["YA, Dystopian"],
-            "pagecount": 372
-            },
-        {
-            "index": 56,
-            "title": "Extras",
-            "series": "UGLIES",
-            "authorsFirst": ["Scott"],
-            "authorsLast": ["Westerfeld"],
-            "genres": ["YA, Dystopian"],
-            "pagecount": 417
-            },
-        {
-            "index": 57,
-            "title": "The Life of Pi",
-            "series": "",
-            "authorsFirst": ["Yann"],
-            "authorsLast": ["Martel"],
-            "genres": ["Fiction"],
-            "pagecount": 401
-            },
-        {
-            "index": 58,
-            "title": "The Amber Spyglass",
-            "series": "His Dark Materials",
-            "authorsFirst": ["Phillip"],
-            "authorsLast": ["Pullman"],
-            "genres": ["Fantasy"],
-            "pagecount": 518
-            },
-        {
-            "index": 59,
-            "title": "The Golden Compass",
-            "series": "His Dark Materials",
-            "authorsFirst": ["Phillip"],
-            "authorsLast": ["Pullman"],
-            "genres": ["Fantasy"],
-            "pagecount": 399
-            },
-        {
-            "index": 60,
-            "title": "Grandma's Magical Storybook",
-            "series": "",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 189
-            },
-        {
-            "index": 61,
-            "title": "The Subtle Knife",
-            "series": "His Dark Materials",
-            "authorsFirst": ["Phillip"],
-            "authorsLast": ["Pullman"],
-            "genres": ["Fantasy"],
-            "pagecount": 326
-            },
-        {
-            "index": 62,
-            "title": "DUNE",
-            "series": "",
-            "authorsFirst": ["Frank"],
-            "authorsLast": ["Herbert"],
-            "genres": ["Science Fiction"],
-            "pagecount": 794
-            },
-        {
-            "index": 63,
-            "title": "A Garden in Lucca",
-            "series": "",
-            "authorsFirst": ["Paul"],
-            "authorsLast": ["Gervais"],
-            "genres": ["Memoir"],
-            "pagecount": 309
-            },
-        {
-            "index": 64,
-            "title": "The Star Wars Trilogy",
-            "series": "",
-            "authorsFirst": ["George"],
-            "authorsLast": ["Lucas"],
-            "genres": ["Science Fiction"],
-            "pagecount": 705
-            },
-        {
-            "index": 65,
-            "title": "The Help",
-            "series": "",
-            "authorsFirst": ["Kathryn"],
-            "authorsLast": ["Stockett"],
-            "genres": ["Historical Fiction"],
-            "pagecount": 522
-            },
-        {
-            "index": 66,
-            "title": "The Colussus Rises",
-            "series": "Seven Wonders",
-            "authorsFirst": ["Peter"],
-            "authorsLast": ["Lerangis"],
-            "genres": ["Fantasy"],
-            "pagecount": 348
-            },
-        {
-            "index": 67,
-            "title": "Inkheart",
-            "series": "",
-            "authorsFirst": ["Cornelia"],
-            "authorsLast": ["Funke"],
-            "genres": ["Fantasy"],
-            "pagecount": 534
-            },
-        {
-            "index": 68,
-            "title": "Between the Bridge and the River",
-            "series": "",
-            "authorsFirst": ["Craig"],
-            "authorsLast": ["Ferguson"],
-            "genres": ["Fiction"],
-            "pagecount": 329
-            },
-        {
-            "index": 69,
-            "title": "Between, Georgia",
-            "series": "",
-            "authorsFirst": ["Joshilyn"],
-            "authorsLast": ["Jackson"],
-            "genres": ["Fiction"],
-            "pagecount": 294
-            },
-        {
-            "index": 70,
-            "title": "A Thread of Sky",
-            "series": "",
-            "authorsFirst": ["Deanna"],
-            "authorsLast": ["Fei"],
-            "genres": ["Fiction"],
-            "pagecount": 351
-            },
-        {
-            "index": 71,
-            "title": "Everything, Everything",
-            "series": "",
-            "authorsFirst": ["Nicola"],
-            "authorsLast": ["Yoon"],
-            "genres": ["YA, Romance"],
-            "pagecount": 305
-            },
-        {
-            "index": 72,
-            "title": "An Abundance of Katherines",
-            "series": "",
-            "authorsFirst": ["John"],
-            "authorsLast": ["Green"],
-            "genres": ["YA, Romance"],
-            "pagecount": 215
-            },
-        {
-            "index": 73,
-            "title": "The Girl Who Could Fly",
-            "series": "",
-            "authorsFirst": ["Victoria"],
-            "authorsLast": ["Forester"],
-            "genres": ["Fantasy"],
-            "pagecount": 328
-            },
-        {
-            "index": 74,
-            "title": "Gamer Girl",
-            "series": "",
-            "authorsFirst": ["Mari"],
-            "authorsLast": ["Mancusi"],
-            "genres": ["YA, Romance"],
-            "pagecount": 248
-            },
-        {
-            "index": 75,
-            "title": "Tuesdays with Morrie",
-            "series": "",
-            "authorsFirst": ["Mitch"],
-            "authorsLast": ["Albom"],
-            "genres": ["Memoir"],
-            "pagecount": 199
-            },
-        {
-            "index": 76,
-            "title": "The Silver Star",
-            "series": "",
-            "authorsFirst": ["Jeannette"],
-            "authorsLast": ["Walls"],
-            "genres": ["Fiction"],
-            "pagecount": 267
-            },
-        {
-            "index": 77,
-            "title": "The Lost Hero",
-            "series": "The Heroes of Olympus",
-            "authorsFirst": ["Rick"],
-            "authorsLast": ["Riordan"],
-            "genres": ["Fantasy"],
-            "pagecount": 553
-            },
-        {
-            "index": 78,
-            "title": "Stargirl",
-            "series": "Stargirl",
-            "authorsFirst": ["Jerry"],
-            "authorsLast": ["Spinelli"],
-            "genres": ["YA, Romance"],
-            "pagecount": 186
-            },
-        {
-            "index": 79,
-            "title": "Out of My Mind",
-            "series": "",
-            "authorsFirst": ["Sharon M."],
-            "authorsLast": ["Draper"],
-            "genres": ["Fiction"],
-            "pagecount": 295
-            },
-        {
-            "index": 80,
-            "title": "The Wide-Awake Princess",
-            "series": "Tales of the Wide-Awake Princess",
-            "authorsFirst": ["E. D."],
-            "authorsLast": ["Baker"],
-            "genres": ["Fantasy"],
-            "pagecount": 261
-            },
-        {
-            "index": 81,
-            "title": "A Question of Magic",
-            "series": "",
-            "authorsFirst": ["E. D."],
-            "authorsLast": ["Baker"],
-            "genres": ["Fantasy"],
-            "pagecount": 262
-            },
-        {
-            "index": 82,
-            "title": "Counting by 7s",
-            "series": "",
-            "authorsFirst": ["Holly Goldberg"],
-            "authorsLast": ["Sloan"],
-            "genres": ["Fiction"],
-            "pagecount": 378
-            },
-        {
-            "index": 83,
-            "title": "The Glass Castle",
-            "series": "",
-            "authorsFirst": ["Jeannette"],
-            "authorsLast": ["Walls"],
-            "genres": ["Memoir"],
-            "pagecount": 288
-            },
-        {
-            "index": 84,
-            "title": "Fin & Lady",
-            "series": "",
-            "authorsFirst": ["Cathleen"],
-            "authorsLast": ["Schine"],
-            "genres": ["Fiction"],
-            "pagecount": 273
-            },
-        {
-            "index": 85,
-            "title": "Not if I See You First",
-            "series": "",
-            "authorsFirst": ["Eric"],
-            "authorsLast": ["Lindstrom"],
-            "genres": ["YA, Romance"],
-            "pagecount": 310
-            },
-        {
-            "index": 86,
-            "title": "The Underneath",
-            "series": "",
-            "authorsFirst": ["Kathi"],
-            "authorsLast": ["Appelt"],
-            "genres": ["Animal Fiction"],
-            "pagecount": 311
-            },
-        {
-            "index": 87,
-            "title": "Perfected",
-            "series": "Perfected",
-            "authorsFirst": ["Kate Jarvic"],
-            "authorsLast": ["Birch"],
-            "genres": ["YA, Dystopian"],
-            "pagecount": 281
-            },
-        {
-            "index": 88,
-            "title": "Tarnished",
-            "series": "Perfected",
-            "authorsFirst": ["Kate Jarvic"],
-            "authorsLast": ["Birch"],
-            "genres": ["YA, Dystopian"],
-            "pagecount": 299
-            },
-        {
-            "index": 89,
-            "title": "All I Need",
-            "series": "",
-            "authorsFirst": ["Susane"],
-            "authorsLast": ["Colasanti"],
-            "genres": ["YA, Romance"],
-            "pagecount": 212
-            },
-        {
-            "index": 90,
-            "title": "Eleanor & Park",
-            "series": "",
-            "authorsFirst": ["Rainbow"],
-            "authorsLast": ["Rowell"],
-            "genres": ["YA, Romance"],
-            "pagecount": 328
-            },
-        {
-            "index": 91,
-            "title": "The Hunger Games",
-            "series": "The Hunger Games",
-            "authorsFirst": ["Suzanne"],
-            "authorsLast": ["Collins"],
-            "genres": ["YA, Dystopian"],
-            "pagecount": 374
-            },
-        {
-            "index": 92,
-            "title": "The Signature of All Things",
-            "series": "",
-            "authorsFirst": ["Elizabeth"],
-            "authorsLast": ["Gilbert"],
-            "genres": ["Historical Fiction"],
-            "pagecount": 499
-            },
-        {
-            "index": 93,
-            "title": "Cavedweller",
-            "series": "",
-            "authorsFirst": ["Dorothy"],
-            "authorsLast": ["Allison"],
-            "genres": ["Fiction"],
-            "pagecount": 434
-            },
-        {
-            "index": 94,
-            "title": "Complete Well-Being",
-            "series": "",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Health and Wellness"],
-            "pagecount": 249
-            },
-        {
-            "index": 95,
-            "title": "Hope was Here",
-            "series": "",
-            "authorsFirst": ["Joan"],
-            "authorsLast": ["Bauer"],
-            "genres": ["Fiction"],
-            "pagecount": 186
-            },
-        {
-            "index": 96,
-            "title": "Fantastic 4: The Photo Novel",
-            "series": "",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": 92
-            },
-        {
-            "index": 97,
-            "title": "Archie Super 3 Pack [314]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 98,
-            "title": "Archie Jumbo Comics [103]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 99,
-            "title": "Betty and Veronica: Jumbo Comics [287]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 100,
-            "title": "Archie Jumbo Comics [314]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 101,
-            "title": "Laugh Digest Magazine [150]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 102,
-            "title": "Archie's Pals 'n' Ga's Double Digest [58]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 103,
-            "title": "Betty and Veronica Digest [120]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 104,
-            "title": "Archie's Double Digest [152]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 105,
-            "title": "Jughead's Double Digest [60]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 106,
-            "title": "Archie Digest [166]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 107,
-            "title": "Archie Digest [162]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 108,
-            "title": "Betty and Verionica Double Digest [91]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 109,
-            "title": "Jughead's Double Digest [139]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 110,
-            "title": "Archie Digest [223]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 111,
-            "title": "Jughead's Double Digest [67]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 112,
-            "title": "Archie Jumbo Comics [333]",
-            "series": "Archie Comics",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Manga/Comic"],
-            "pagecount": "?"
-            },
-        {
-            "index": 113,
-            "title": "Emily Windsnap and the Castle in the Midst",
-            "series": "Emily Windsnap",
-            "authorsFirst": ["Liz"],
-            "authorsLast": ["Kessler"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 204
-            },
-        {
-            "index": 114,
-            "title": "The Tail of Emily Windsnap",
-            "series": "Emily Windsnap",
-            "authorsFirst": ["Liz"],
-            "authorsLast": ["Kessler"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 209
-            },
-        {
-            "index": 115,
-            "title": "Amorelle",
-            "series": "",
-            "authorsFirst": ["Grace Livingston"],
-            "authorsLast": ["Hill"],
-            "genres": ["Historical Fiction, Romance"],
-            "pagecount": 265
-            },
-        {
-            "index": 116,
-            "title": "Project Mulberry",
-            "series": "",
-            "authorsFirst": ["Linda Sue"],
-            "authorsLast": ["Park"],
-            "genres": ["Children's, Realistic Fiction"],
-            "pagecount": 225
-            },
-        {
-            "index": 117,
-            "title": "Muffins",
-            "series": "",
-            "authorsFirst": ["Elizabeth"],
-            "authorsLast": ["Alston"],
-            "genres": ["Cooking"],
-            "pagecount": 88
-            },
-        {
-            "index": 118,
-            "title": "Ella Enchanted",
-            "series": "",
-            "authorsFirst": ["Gail Carson"],
-            "authorsLast": ["Levine"],
-            "genres": ["Fantasy"],
-            "pagecount": 232
-            },
-        {
-            "index": 119,
-            "title": "Kira-Kira",
-            "series": "",
-            "authorsFirst": ["Cynthia"],
-            "authorsLast": ["Kadohata"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 244
-            },
-        {
-            "index": 120,
-            "title": "Wild Wings",
-            "series": "",
-            "authorsFirst": ["Gill"],
-            "authorsLast": ["Lewis"],
-            "genres": ["Historical Fiction, Realistic Fiction"],
-            "pagecount": 283
-            },
-        {
-            "index": 121,
-            "title": "The City of Ember",
-            "series": "Books of Ember",
-            "authorsFirst": ["Jeanne"],
-            "authorsLast": ["DuPrau"],
-            "genres": ["Dystopian"],
-            "pagecount": 270
-            },
-        {
-            "index": 122,
-            "title": "Tuesday Mooney Talks to Ghosts",
-            "series": "",
-            "authorsFirst": ["Kate"],
-            "authorsLast": ["Racculia"],
-            "genres": ["Fiction"],
-            "pagecount": 357
-            },
-        {
-            "index": 123,
-            "title": "Son",
-            "series": "The Giver Quartet",
-            "authorsFirst": ["Lois"],
-            "authorsLast": ["Lowry"],
-            "genres": ["Dystopian"],
-            "pagecount": 393
-            },
-        {
-            "index": 124,
-            "title": "Gathering Blue",
-            "series": "The Giver Quartet",
-            "authorsFirst": ["Lois"],
-            "authorsLast": ["Lowry"],
-            "genres": ["Dystopian"],
-            "pagecount": 241
-            },
-        {
-            "index": 125,
-            "title": "The Giver",
-            "series": "The Giver Quartet",
-            "authorsFirst": ["Lois"],
-            "authorsLast": ["Lowry"],
-            "genres": ["Dystopian"],
-            "pagecount": 225
-            },
-        {
-            "index": 126,
-            "title": "Nobody's Prize",
-            "series": "",
-            "authorsFirst": ["Esther"],
-            "authorsLast": ["Friesner"],
-            "genres": ["Historical Fiction"],
-            "pagecount": 306
-            },
-        {
-            "index": 127,
-            "title": "Nobody's Princess",
-            "series": "",
-            "authorsFirst": ["Esther"],
-            "authorsLast": ["Friesner"],
-            "genres": ["Historical Fiction"],
-            "pagecount": 305
-            },
-        {
-            "index": 128,
-            "title": "The Secret Garden",
-            "series": "",
-            "authorsFirst": ["Frances Hodgson"],
-            "authorsLast": ["Burnett"],
-            "genres": ["Historical Fiction"],
-            "pagecount": 276
-            },
-        {
-            "index": 129,
-            "title": "Jane Eyre",
-            "series": "",
-            "authorsFirst": ["Charlotte"],
-            "authorsLast": ["Brontë"],
-            "genres": ["Historical Fiction"],
-            "pagecount": 527
-            },
-        {
-            "index": 130,
-            "title": "To Kill a Mockingbird",
-            "series": "",
-            "authorsFirst": ["Harper"],
-            "authorsLast": ["Lee"],
-            "genres": ["Historical Fiction"],
-            "pagecount": 376
-            },
-        {
-            "index": 131,
-            "title": "Every Soul a Star",
-            "series": "",
-            "authorsFirst": ["Wendy"],
-            "authorsLast": ["Mass"],
-            "genres": ["Fiction"],
-            "pagecount": 322
-            },
-        {
-            "index": 132,
-            "title": "Sleeping Beauty",
-            "series": "",
-            "authorsFirst": ["Wendy"],
-            "authorsLast": ["Mass"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 172
-            },
-        {
-            "index": 133,
-            "title": "Rapunzel",
-            "series": "",
-            "authorsFirst": ["Wendy"],
-            "authorsLast": ["Mass"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 205
-            },
-        {
-            "index": 134,
-            "title": "The Last Present",
-            "series": "",
-            "authorsFirst": ["Wendy"],
-            "authorsLast": ["Mass"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 246
-            },
-        {
-            "index": 135,
-            "title": "13 Gifts",
-            "series": "",
-            "authorsFirst": ["Wendy"],
-            "authorsLast": ["Mass"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 339
-            },
-        {
-            "index": 136,
-            "title": "12 Finally",
-            "series": "",
-            "authorsFirst": ["Wendy"],
-            "authorsLast": ["Mass"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 296
-            },
-        {
-            "index": 137,
-            "title": "11 Birthdays",
-            "series": "",
-            "authorsFirst": ["Wendy"],
-            "authorsLast": ["Mass"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 267
-            },
-        {
-            "index": 138,
-            "title": "Pish Posh",
-            "series": "",
-            "authorsFirst": ["Ellen"],
-            "authorsLast": ["Potter"],
-            "genres": ["Mystery, Fiction"],
-            "pagecount": 166
-            },
-        {
-            "index": 139,
-            "title": "It's a Mall World After All",
-            "series": "",
-            "authorsFirst": ["Janette"],
-            "authorsLast": ["Rallison"],
-            "genres": ["Fiction"],
-            "pagecount": 230
-            },
-        {
-            "index": 140,
-            "title": "The Sky is Everywhere",
-            "series": "",
-            "authorsFirst": ["Jandy"],
-            "authorsLast": ["Nelson"],
-            "genres": ["Children's, Realistic Fiction"],
-            "pagecount": 311
-            },
-        {
-            "index": 141,
-            "title": "Miss Spitfire",
-            "series": "",
-            "authorsFirst": ["Sarah"],
-            "authorsLast": ["Miller"],
-            "genres": ["Historical Fiction"],
-            "pagecount": 208
-            },
-        {
-            "index": 142,
-            "title": "Unlocking the Spell",
-            "series": "Tales of the Wide-Awake Princess",
-            "authorsFirst": ["E. D."],
-            "authorsLast": ["Baker"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 261
-            },
-        {
-            "index": 143,
-            "title": "The Phantom Tollbooth",
-            "series": "",
-            "authorsFirst": ["Norton"],
-            "authorsLast": ["Juster"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 256
-            },
-        {
-            "index": 144,
-            "title": "The Tale of Desperaux",
-            "series": "",
-            "authorsFirst": ["Kate"],
-            "authorsLast": ["DiCamillo"],
-            "genres": ["Fantasy, Animal Fiction"],
-            "pagecount": 269
-            },
-        {
-            "index": 145,
-            "title": "Redwall",
-            "series": "",
-            "authorsFirst": ["Brian"],
-            "authorsLast": ["Jaques"],
-            "genres": ["Fantasy, Animal Fiction"],
-            "pagecount": 351
-            },
-        {
-            "index": 146,
-            "title": "A Mind Awake",
-            "series": "",
-            "authorsFirst": ["C. S."],
-            "authorsLast": ["Lewis"],
-            "genres": ["Christianity"],
-            "pagecount": 296
-            },
-        {
-            "index": 147,
-            "title": "Counter Culture",
-            "series": "",
-            "authorsFirst": ["David"],
-            "authorsLast": ["Platt"],
-            "genres": ["Christianity"],
-            "pagecount": 280
-            },
-        {
-            "index": 148,
-            "title": "Chasing Vermeer",
-            "series": "",
-            "authorsFirst": ["Blue"],
-            "authorsLast": ["Balliett"],
-            "genres": ["Mystery"],
-            "pagecount": 254
-            },
-        {
-            "index": 149,
-            "title": "The House on the Cerulean Sea",
-            "series": "",
-            "authorsFirst": ["TJ"],
-            "authorsLast": ["Klune"],
-            "genres": ["Fantasy"],
-            "pagecount": 396
-            },
-        {
-            "index": 150,
-            "title": "Ender's Shadow",
-            "series": "",
-            "authorsFirst": ["Orson Scott"],
-            "authorsLast": ["Card"],
-            "genres": ["Science Fiction"],
-            "pagecount": 467
-            },
-        {
-            "index": 151,
-            "title": "Harry Potter and the Goblet of Fire",
-            "series": "Harry Potter",
-            "authorsFirst": ["J. K."],
-            "authorsLast": ["Rowling"],
-            "genres": ["Fantasy"],
-            "pagecount": 734
-            },
-        {
-            "index": 152,
-            "title": "Tesla's Attic",
-            "series": "",
-            "authorsFirst": ["Neal Shusterman, "],
-            "authorsLast": ["Eric Elfman"],
-            "genres": ["Science Fiction"],
-            "pagecount": 246
-            },
-        {
-            "index": 153,
-            "title": "The Friday Night Knitting Club",
-            "series": "",
-            "authorsFirst": ["Kate"],
-            "authorsLast": ["Jacobs"],
-            "genres": ["Fiction"],
-            "pagecount": 356
-            },
-        {
-            "index": 154,
-            "title": "The Lies about Truth",
-            "series": "",
-            "authorsFirst": ["Courtney C."],
-            "authorsLast": ["Stevens"],
-            "genres": ["Fiction"],
-            "pagecount": 326
-            },
-        {
-            "index": 155,
-            "title": "Because of Mr. Terupt",
-            "series": "",
-            "authorsFirst": ["Rob"],
-            "authorsLast": ["Buyea"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 268
-            },
-        {
-            "index": 156,
-            "title": "My Grandmother Asked Me to Tell You She's Sorry",
-            "series": "",
-            "authorsFirst": ["Fredrik"],
-            "authorsLast": ["Backman"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 370
-            },
-        {
-            "index": 157,
-            "title": "Between Shades of Gray",
-            "series": "",
-            "authorsFirst": ["Ruta"],
-            "authorsLast": ["Sepetys"],
-            "genres": ["War Fiction"],
-            "pagecount": 338
-            },
-        {
-            "index": 158,
-            "title": "The Night Circus",
-            "series": "",
-            "authorsFirst": ["Erin"],
-            "authorsLast": ["Morgenstern"],
-            "genres": ["Fiction"],
-            "pagecount": 512
-            },
-        {
-            "index": 159,
-            "title": "My Sister's Keeper",
-            "series": "",
-            "authorsFirst": ["Jodi"],
-            "authorsLast": ["Picoult"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 423
-            },
-        {
-            "index": 160,
-            "title": "The Dangerous Days of Daniel X",
-            "series": "",
-            "authorsFirst": ["James"],
-            "authorsLast": ["Patterson"],
-            "genres": ["Science Fiction"],
-            "pagecount": 238
-            },
-        {
-            "index": 161,
-            "title": "Fangirl",
-            "series": "",
-            "authorsFirst": ["Rainbow"],
-            "authorsLast": ["Rowell"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 433
-            },
-        {
-            "index": 162,
-            "title": "Harry Potter and the Deathly Hallows",
-            "series": "",
-            "authorsFirst": ["J. K."],
-            "authorsLast": ["Rowling"],
-            "genres": ["Fantasy"],
-            "pagecount": 759
-            },
-        {
-            "index": 163,
-            "title": "Wilde Like Me",
-            "series": "",
-            "authorsFirst": ["Louise"],
-            "authorsLast": ["Pentland"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 385
-            },
-        {
-            "index": 164,
-            "title": "The Indigo King",
-            "series": "",
-            "authorsFirst": ["James A."],
-            "authorsLast": ["Owen"],
-            "genres": ["Fantasy"],
-            "pagecount": 372
-            },
-        {
-            "index": 165,
-            "title": "John Carter of Mars: The First Five Novels",
-            "series": "",
-            "authorsFirst": ["Edgar Rice"],
-            "authorsLast": ["Burroughs"],
-            "genres": ["Fantasy"],
-            "pagecount": 929
-            },
-        {
-            "index": 166,
-            "title": "The Samantha American Girl Series",
-            "series": "",
-            "authorsFirst": [""],
-            "authorsLast": [""],
-            "genres": ["Children's, Historical Fiction"],
-            "pagecount": "?"
-            },
-        {
-            "index": 167,
-            "title": "Coral Island",
-            "series": "",
-            "authorsFirst": ["R. M."],
-            "authorsLast": ["Ballantyne"],
-            "genres": ["Children's, Historical Fiction"],
-            "pagecount": 184
-            },
-        {
-            "index": 168,
-            "title": "So Much Closer",
-            "series": "",
-            "authorsFirst": ["Susane"],
-            "authorsLast": ["Colasanti"],
-            "genres": ["Romance"],
-            "pagecount": 241
-            },
-        {
-            "index": 169,
-            "title": "Just Listen",
-            "series": "",
-            "authorsFirst": ["Sarah"],
-            "authorsLast": ["Dessen"],
-            "genres": ["Realistic Fiction, YA"],
-            "pagecount": 371
-            },
-        {
-            "index": 170,
-            "title": "That Summer",
-            "series": "",
-            "authorsFirst": ["Sarah"],
-            "authorsLast": ["Dessen"],
-            "genres": ["Realistic Fiction, YA"],
-            "pagecount": 198
-            },
-        {
-            "index": 171,
-            "title": "So B. It",
-            "series": "",
-            "authorsFirst": ["Sarah"],
-            "authorsLast": ["Weeks"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 243
-            },
-        {
-            "index": 172,
-            "title": "A Girl Named Digit",
-            "series": "",
-            "authorsFirst": ["Annabel"],
-            "authorsLast": ["Monaghan"],
-            "genres": ["Mystery"],
-            "pagecount": 187
-            },
-        {
-            "index": 173,
-            "title": "The Girl Who Drank the Moon",
-            "series": "",
-            "authorsFirst": ["Kelly"],
-            "authorsLast": ["Barnhill"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 386
-            },
-        {
-            "index": 174,
-            "title": "Harry Potter and the Prisoner of Azkaban",
-            "series": "Harry Potter",
-            "authorsFirst": ["J. K."],
-            "authorsLast": ["Rowling"],
-            "genres": ["Fantasy"],
-            "pagecount": 435
-            },
-        {
-            "index": 175,
-            "title": "The Hate U Give",
-            "series": "",
-            "authorsFirst": ["Angie"],
-            "authorsLast": ["Thomas"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 444
-            },
-        {
-            "index": 176,
-            "title": "The Son of Neptune",
-            "series": "The Heroes of Olympus",
-            "authorsFirst": ["Rick"],
-            "authorsLast": ["Riordan"],
-            "genres": ["Fantasy"],
-            "pagecount": 513
-            },
-        {
-            "index": 177,
-            "title": "Halo",
-            "series": "",
-            "authorsFirst": ["Alexandra"],
-            "authorsLast": ["Adornetto"],
-            "genres": ["Romance, Fantasy"],
-            "pagecount": 484
-            },
-        {
-            "index": 178,
-            "title": "Harry Potter and the Order of the Phoenix",
-            "series": "",
-            "authorsFirst": ["J. K."],
-            "authorsLast": ["Rowling"],
-            "genres": ["Fantasy"],
-            "pagecount": 870
-            },
-        {
-            "index": 179,
-            "title": "The Frog Princess",
-            "series": "Tales of the Frog Princess",
-            "authorsFirst": ["E. D."],
-            "authorsLast": ["Baker"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 214
-            },
-        {
-            "index": 180,
-            "title": "Love, Stargirl",
-            "series": "Stargirl",
-            "authorsFirst": ["Jerry"],
-            "authorsLast": ["Spinelli"],
-            "genres": ["YA, Romance"],
-            "pagecount": 274
-            },
-        {
-            "index": 181,
-            "title": "The Fault in Our Stars",
-            "series": "",
-            "authorsFirst": ["John"],
-            "authorsLast": ["Green"],
-            "genres": ["Realistic Fiction, YA"],
-            "pagecount": 313
-            },
-        {
-            "index": 182,
-            "title": "Althea & Oliver",
-            "series": "",
-            "authorsFirst": ["Cristina"],
-            "authorsLast": ["Moracho"],
-            "genres": ["YA, Romance"],
-            "pagecount": 364
-            },
-        {
-            "index": 183,
-            "title": "If I Stay",
-            "series": "",
-            "authorsFirst": ["Gayle"],
-            "authorsLast": ["Forman"],
-            "genres": ["YA, Romance"],
-            "pagecount": 234
-            },
-        {
-            "index": 184,
-            "title": "Harry Potter and the Sorcerer's Stone",
-            "series": "Harry Potter",
-            "authorsFirst": ["J. K."],
-            "authorsLast": ["Rowling"],
-            "genres": ["Fantasy"],
-            "pagecount": 309
-            },
-        {
-            "index": 185,
-            "title": "The Probability of Miracles",
-            "series": "",
-            "authorsFirst": ["Wendy"],
-            "authorsLast": ["Wunder"],
-            "genres": ["YA, Romance"],
-            "pagecount": 357
-            },
-        {
-            "index": 186,
-            "title": "City of Bones",
-            "series": "",
-            "authorsFirst": ["Cassandra"],
-            "authorsLast": ["Clare"],
-            "genres": ["Fantasy"],
-            "pagecount": 485
-            },
-        {
-            "index": 187,
-            "title": "The Daughters",
-            "series": "The Daughters",
-            "authorsFirst": ["Joanna"],
-            "authorsLast": ["Philbin"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 297
-            },
-        {
-            "index": 188,
-            "title": "Close to Famous",
-            "series": "",
-            "authorsFirst": ["Joan"],
-            "authorsLast": ["Bauer"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 250
-            },
-        {
-            "index": 189,
-            "title": "Learning to Swear in America",
-            "series": "",
-            "authorsFirst": ["Katie"],
-            "authorsLast": ["Kennedy"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 340
-            },
-        {
-            "index": 190,
-            "title": "Once Upon a Curse",
-            "series": "Tales of the Frog Princess",
-            "authorsFirst": ["E. D."],
-            "authorsLast": ["Baker"],
-            "genres": ["Children's, Fantasy"],
-            "pagecount": 244
-            },
-        {
-            "index": 191,
-            "title": "The Pricess Tales Vol.2",
-            "series": "",
-            "authorsFirst": ["Gail Carson"],
-            "authorsLast": ["Levine"],
-            "genres": ["Fantasy"],
-            "pagecount": 248
-            },
-        {
-            "index": 192,
-            "title": "The Great Gilly Hopkins",
-            "series": "",
-            "authorsFirst": ["Katherine"],
-            "authorsLast": ["Paterson"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 148
-            },
-        {
-            "index": 193,
-            "title": "The BFG",
-            "series": "",
-            "authorsFirst": ["Roald"],
-            "authorsLast": ["Dahl"],
-            "genres": ["Fantasy"],
-            "pagecount": 208
-            },
-        {
-            "index": 194,
-            "title": "From the Mixed-Up Files of Mrs. Basil E. Frankweiler",
-            "series": "",
-            "authorsFirst": ["E. L."],
-            "authorsLast": ["Konigsburg"],
-            "genres": ["Fiction"],
-            "pagecount": 162
-            },
-        {
-            "index": 195,
-            "title": "James and the Giant Peach",
-            "series": "",
-            "authorsFirst": ["Roald"],
-            "authorsLast": ["Dahl"],
-            "genres": ["Fantasy"],
-            "pagecount": 126
-            },
-        {
-            "index": 196,
-            "title": "Harry Potter and the Chamber of Secrets",
-            "series": "Harry Potter",
-            "authorsFirst": ["J. K."],
-            "authorsLast": ["Rowling"],
-            "genres": ["Fantasy"],
-            "pagecount": 341
-            },
-        {
-            "index": 197,
-            "title": "Much Ado About Anne",
-            "series": "The Mother-Daughter Book Club",
-            "authorsFirst": ["Heather Vogel"],
-            "authorsLast": ["Frederick"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 315
-            },
-        {
-            "index": 198,
-            "title": "The Mother-Daughter Book Club",
-            "series": "The Mother-Daughter Book Club",
-            "authorsFirst": ["Heather Vogel"],
-            "authorsLast": ["Frederick"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 236
-            },
-        {
-            "index": 199,
-            "title": "Ostrich",
-            "series": "",
-            "authorsFirst": ["Matt"],
-            "authorsLast": ["Greene"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 322
-            },
-        {
-            "index": 200,
-            "title": "Insurgent",
-            "series": "Divergent",
-            "authorsFirst": ["Veronica"],
-            "authorsLast": ["Roth"],
-            "genres": ["Dystopian"],
-            "pagecount": 525
-            },
-        {
-            "index": 201,
-            "title": "Divergent",
-            "series": "Divergent",
-            "authorsFirst": ["Veronica"],
-            "authorsLast": ["Roth"],
-            "genres": ["Dystopian"],
-            "pagecount": 487
-            },
-        {
-            "index": 202,
-            "title": "Let it Snow",
-            "series": "",
-            "authorsFirst": ["John Green, Maureen Johnson,"],
-            "authorsLast": ["Lauren Myracle"],
-            "genres": ["YA, Romance"],
-            "pagecount": 352
-            },
-        {
-            "index": 203,
-            "title": "Mosquitoland",
-            "series": "",
-            "authorsFirst": ["David"],
-            "authorsLast": ["Arnold"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 342
-            },
-        {
-            "index": 204,
-            "title": "All the Bright Places",
-            "series": "",
-            "authorsFirst": ["Jennifer"],
-            "authorsLast": ["Niven"],
-            "genres": ["Realistic Fiction, YA"],
-            "pagecount": 376
-            },
-        {
-            "index": 205,
-            "title": "The Mark of Athena",
-            "series": "The Heroes of Olympus",
-            "authorsFirst": ["Rick"],
-            "authorsLast": ["Riordan"],
-            "genres": ["Fantasy"],
-            "pagecount": 574
-            },
-        {
-            "index": 206,
-            "title": "Eleanor",
-            "series": "",
-            "authorsFirst": ["Jason"],
-            "authorsLast": ["Gurley"],
-            "genres": ["Science Fiction"],
-            "pagecount": 370
-            },
-        {
-            "index": 207,
-            "title": "Bad Unicorn",
-            "series": "",
-            "authorsFirst": ["Platte F."],
-            "authorsLast": ["Clark"],
-            "genres": ["Fantasy"],
-            "pagecount": 423
-            },
-        {
-            "index": 208,
-            "title": "Zip",
-            "series": "",
-            "authorsFirst": ["Ellie"],
-            "authorsLast": ["Rollins"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 323
-            },
-        {
-            "index": 209,
-            "title": "Harry Potter and the Half-Blood Prince",
-            "series": "Harry Potter",
-            "authorsFirst": ["J. K."],
-            "authorsLast": ["Rowling"],
-            "genres": ["Fantasy"],
-            "pagecount": 652
-            },
-        {
-            "index": 210,
-            "title": "Reboot",
-            "series": "",
-            "authorsFirst": ["Amy"],
-            "authorsLast": ["Tinera"],
-            "genres": ["Dystopian"],
-            "pagecount": 365
-            },
-        {
-            "index": 211,
-            "title": "Super Sad True Love Story",
-            "series": "",
-            "authorsFirst": ["Gary"],
-            "authorsLast": ["Shteyngart"],
-            "genres": ["Dystopian"],
-            "pagecount": 331
-            },
-        {
-            "index": 212,
-            "title": "Pay It Forward",
-            "series": "",
-            "authorsFirst": ["Catherine Ryan"],
-            "authorsLast": ["Hyde"],
-            "genres": ["Children's, Fiction"],
-            "pagecount": 261
-            },
-        {
-            "index": 213,
-            "title": "What My Mother Doesn't Know",
-            "series": "",
-            "authorsFirst": ["Sonya"],
-            "authorsLast": ["Sones"],
-            "genres": ["YA, Romance"],
-            "pagecount": 259
-            },
-        {
-            "index": 214,
-            "title": "Get Noticed!",
-            "series": "",
-            "authorsFirst": ["Brenda Joyce"],
-            "authorsLast": ["Johnson"],
-            "genres": ["Self-Help+"],
-            "pagecount": 238
-            },
-        {
-            "index": 215,
-            "title": "The Daughters Join the Party",
-            "series": "The Daughters",
-            "authorsFirst": ["Joanna"],
-            "authorsLast": ["Philbin"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 269
-            },
-        {
-            "index": 216,
-            "title": "Love Wins",
-            "series": "",
-            "authorsFirst": ["Rob"],
-            "authorsLast": ["Bell"],
-            "genres": ["Christianity"],
-            "pagecount": 139
-            },
-        {
-            "index": 217,
-            "title": "Fateful",
-            "series": "",
-            "authorsFirst": ["Claudia"],
-            "authorsLast": ["Gray"],
-            "genres": ["Historical Fiction"],
-            "pagecount": 325
-            },
-        {
-            "index": 218,
-            "title": "Something, Maybe",
-            "series": "",
-            "authorsFirst": ["Elizabeth"],
-            "authorsLast": ["Scott"],
-            "genres": ["YA, Romance"],
-            "pagecount": 217
-            },
-        {
-            "index": 219,
-            "title": "Precious",
-            "series": "",
-            "authorsFirst": ["Sapphire"],
-            "authorsLast": [""],
-            "genres": ["Fiction"],
-            "pagecount": "?"
-            },
-        {
-            "index": 220,
-            "title": "Someone Like You",
-            "series": "",
-            "authorsFirst": ["Sarah"],
-            "authorsLast": ["Dessen"],
-            "genres": ["YA, Romance"],
-            "pagecount": 281
-            },
-        {
-            "index": 221,
-            "title": "The Night Tourist",
-            "series": "",
-            "authorsFirst": ["Katherine"],
-            "authorsLast": ["Marsh"],
-            "genres": ["Fantasy"],
-            "pagecount": 232
-            },
-        {
-            "index": 222,
-            "title": "Can You Keep a Secret?",
-            "series": "",
-            "authorsFirst": ["Sophie"],
-            "authorsLast": ["Kinsella"],
-            "genres": ["Realistic Fiction, Romance"],
-            "pagecount": 357
-            },
-        {
-            "index": 223,
-            "title": "Momo",
-            "series": "",
-            "authorsFirst": ["Michael"],
-            "authorsLast": ["Ende"],
-            "genres": ["Fantasy"],
-            "pagecount": 225
-            },
-        {
-            "index": 224,
-            "title": "The Inner Self",
-            "series": "",
-            "authorsFirst": ["Raqurra"],
-            "authorsLast": ["Ishmar"],
-            "genres": ["Fantasy"],
-            "pagecount": 275
-            },
-        {
-            "index": 225,
-            "title": "Emancipated",
-            "series": "",
-            "authorsFirst": ["M. G."],
-            "authorsLast": ["Reyes"],
-            "genres": ["Fiction"],
-            "pagecount": 384
-            },
-        {
-            "index": 226,
-            "title": "This Lullaby",
-            "series": "",
-            "authorsFirst": ["Sarah"],
-            "authorsLast": ["Dessen"],
-            "genres": ["YA, Romance"],
-            "pagecount": 345
-            },
-        {
-            "index": 227,
-            "title": "Shopaholic Takes Manhattan",
-            "series": "Shopaholic",
-            "authorsFirst": ["Sophie"],
-            "authorsLast": ["Kinsella"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 323
-            },
-        {
-            "index": 228,
-            "title": "Confessions of a Shopaholic",
-            "series": "Shopaholic",
-            "authorsFirst": ["Sophie"],
-            "authorsLast": ["Kinsella"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 310
-            },
-        {
-            "index": 229,
-            "title": "Shopaholic Ties the Knot",
-            "series": "Shopaholic",
-            "authorsFirst": ["Sophie"],
-            "authorsLast": ["Kinsella"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 327
-            },
-        {
-            "index": 230,
-            "title": "The Bravest Princess",
-            "series": "Tales of the Wide-Awake Princess",
-            "authorsFirst": ["E. D."],
-            "authorsLast": ["Baker"],
-            "genres": ["Fantasy"],
-            "pagecount": 263
-            },
-        {
-            "index": 231,
-            "title": "A Desirable Residence",
-            "series": "",
-            "authorsFirst": ["Madeleine"],
-            "authorsLast": ["Wickham"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 296
-            },
-        {
-            "index": 232,
-            "title": "A Ring of Endless Light",
-            "series": "",
-            "authorsFirst": ["Madeleine"],
-            "authorsLast": ["L'Engle"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 324
-            },
-        {
-            "index": 233,
-            "title": "Captive",
-            "series": "",
-            "authorsFirst": ["Brighton"],
-            "authorsLast": ["Walsh"],
-            "genres": ["Romance"],
-            "pagecount": 274
-            },
-        {
-            "index": 234,
-            "title": "Two Way Street",
-            "series": "",
-            "authorsFirst": ["Lauren"],
-            "authorsLast": ["Barnholdt"],
-            "genres": ["Romance"],
-            "pagecount": 288
-            },
-        {
-            "index": 235,
-            "title": "Savages",
-            "series": "",
-            "authorsFirst": ["Don"],
-            "authorsLast": ["Winslow"],
-            "genres": ["Realistic Fiction"],
-            "pagecount": 290
-            },
-        {
-            "index": 236,
-            "title": "Clout",
-            "series": "",
-            "authorsFirst": ["Jenni"],
-            "authorsLast": ["Catron"],
-            "genres": ["Christianity"],
-            "pagecount": 186
-            },
-        {
-            "index": 237,
-            "title": "Before I Go To Sleep",
-            "series": "",
-            "authorsFirst": ["S. J."],
-            "authorsLast": ["Watson"],
-            "genres": ["Dystopian"],
-            "pagecount": "?"
-            },
-        {
-            "index": 238,
-            "title": "Instructions for a Broken Heart",
-            "series": "",
-            "authorsFirst": ["Kim"],
-            "authorsLast": ["Culbertson"],
-            "genres": ["Romance"],
-            "pagecount": 291
-            },
-        {
-            "index": 239,
-            "title": "The False Prince",
-            "series": "",
-            "authorsFirst": ["Jennifer A."],
-            "authorsLast": ["Nielsen"],
-            "genres": ["Fantasy"],
-            "pagecount": 342
-            },
-        {
-            "index": 240,
-            "title": "Something Like Fate",
-            "series": "",
-            "authorsFirst": ["Susane"],
-            "authorsLast": ["Colasanti"],
-            "genres": ["YA, Romance"],
-            "pagecount": 268
-            },
-        {
-            "index": 241,
-            "title": "The Boy Who Knew Everything",
-            "series": "",
-            "authorsFirst": ["Victoria"],
-            "authorsLast": ["Forester"],
-            "genres": ["Fantasy"],
-            "pagecount": 404
-        },
-        {
-            "index": 242,
-            "title": "The Boy Who Knew Everything",
-            "series": "Piper McCloud",
-            "authorsFirst": ["Victoria"],
-            "authorsLast": ["Forester"],
-            "genres": ["Fantasy", "Children's Literature"],
-            "pagecount": 404
-        },
-        {
-            "index": 243,
-            "title": "The Golden Specific",
-            "series": "Mapmakers",
-            "authorsFirst": ["S.E."],
-            "authorsLast": ["Grove"],
-            "genres": ["Fantasy"],
-            "pagecount": 501
-        }
+{"books": 
+    [
+    {
+        "index": 1,
+        "title": "The Legend of Zelda: Ocarina of Time",
+        "series": "The Legend of Zelda",
+        "authorsFirst": ["Akira"],
+        "authorsLast": ["Himekawa"],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 2,
+        "title": "The Legend of Zelda: Oracle of Seasons / Oracle of Ages",
+        "series": "The Legend of Zelda",
+        "authorsFirst": ["Akira"],
+        "authorsLast": ["Himekawa"],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 3,
+        "title": "Where the Mountain Meeets the Moon",
+        "series": "",
+        "authorsFirst": ["Grace"],
+        "authorsLast": ["Lin"],
+        "genres": ["Fantasy"],
+        "pagecount": 279
+    },
+    {
+        "index": 4,
+        "title": "The Hobbit",
+        "series": "",
+        "authorsFirst": ["J. R. R."],
+        "authorsLast": ["Tolkien"],
+        "genres": ["Fantasy"],
+        "pagecount": 300
+    },
+    {
+        "index": 5,
+        "title": "This is What Happy Looks Like",
+        "series": "",
+        "authorsFirst": ["Jennifer E."],
+        "authorsLast": ["Smith"],
+        "genres": ["YA, Romance"],
+        "pagecount": 404
+    },
+    {
+        "index": 6,
+        "title": "Wildwood",
+        "series": "The Wildwood Chronicles",
+        "authorsFirst": ["Colin"],
+        "authorsLast": ["Meloy"],
+        "genres": ["Fantasy"],
+        "pagecount": 541
+    },
+    {
+        "index": 7,
+        "title": "Under Wildwood",
+        "series": "The Wildwood Chronicles",
+        "authorsFirst": ["Colin"],
+        "authorsLast": ["Meloy"],
+        "genres": ["Fantasy"],
+        "pagecount": 559
+    },
+    {
+        "index": 8,
+        "title": "Wildwood Imperium",
+        "series": "The Wildwood Chronicles",
+        "authorsFirst": ["Colin"],
+        "authorsLast": ["Meloy"],
+        "genres": ["Fantasy"],
+        "pagecount": 580
+    },
+    {
+        "index": 9,
+        "title": "A Darker Shade of Magic",
+        "series": "Shades of Magic",
+        "authorsFirst": ["V. E."],
+        "authorsLast": ["Schwab"],
+        "genres": ["Fantasy"],
+        "pagecount": 398
+    },
+    {
+        "index": 10,
+        "title": "The Star Thief",
+        "series": "",
+        "authorsFirst": ["Lindsey"],
+        "authorsLast": ["Becker"],
+        "genres": ["Fantasy"],
+        "pagecount": 402
+    },
+    {
+        "index": 11,
+        "title": "It's Kind of a Funny Story",
+        "series": "",
+        "authorsFirst": ["Ned"],
+        "authorsLast": ["Vizzini"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 444
+    },
+    {
+        "index": 12,
+        "title": "The Magician's Nephew",
+        "series": "The Chronicles of Narnia",
+        "authorsFirst": ["C. S."],
+        "authorsLast": ["Lewis"],
+        "genres": ["Fantasy"],
+        "pagecount": 202
+    },
+    {
+        "index": 13,
+        "title": "The Neverending Story",
+        "series": "",
+        "authorsFirst": ["Michael"],
+        "authorsLast": ["Ende"],
+        "genres": ["Fantasy"],
+        "pagecount": 511
+    },
+    {
+        "index": 14,
+        "title": "The Last Battle",
+        "series": "The Chronicles of Narnia",
+        "authorsFirst": ["C. S."],
+        "authorsLast": ["Lewis"],
+        "genres": ["Fantasy"],
+        "pagecount": 211
+    },
+    {
+        "index": 15,
+        "title": "Prince Caspian",
+        "series": "The Chronicles of Narnia",
+        "authorsFirst": ["C. S."],
+        "authorsLast": ["Lewis"],
+        "genres": ["Fantasy"],
+        "pagecount": 223
+    },
+    {
+        "index": 16,
+        "title": "The Voyage of the Dawn Treader",
+        "series": "The Chronicles of Narnia",
+        "authorsFirst": ["C. S."],
+        "authorsLast": ["Lewis"],
+        "genres": ["Fantasy"],
+        "pagecount": 248
+    },
+    {
+        "index": 17,
+        "title": "The Silver Chair",
+        "series": "The Chronicles of Narnia",
+        "authorsFirst": ["C. S."],
+        "authorsLast": ["Lewis"],
+        "genres": ["Fantasy"],
+        "pagecount": 243
+    },
+    {
+        "index": 18,
+        "title": "The Outcasts of 19 Schuyler Place",
+        "series": "",
+        "authorsFirst": ["E. L."],
+        "authorsLast": ["Konigsburg"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 296
+    },
+    {
+        "index": 19,
+        "title": "Dinner for Two",
+        "series": "",
+        "authorsFirst": ["Mike"],
+        "authorsLast": ["Gayle"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 338
+    },
+    {
+        "index": 20,
+        "title": "Miss Invisible",
+        "series": "",
+        "authorsFirst": ["Laura Jensen"],
+        "authorsLast": ["Walker"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 306
+    },
+    {
+        "index": 21,
+        "title": "Loveboat, Taipei",
+        "series": "",
+        "authorsFirst": ["Abigail Hing"],
+        "authorsLast": ["Wen"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 414
+    },
+    {
+        "index": 22,
+        "title": "The Extraordinary Secrets of April, May, and June",
+        "series": "",
+        "authorsFirst": ["Robin"],
+        "authorsLast": ["Benway"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 281
+    },
+    {
+        "index": 23,
+        "title": "The Horse and His Boy",
+        "series": "The Chronicles of Narnia",
+        "authorsFirst": ["C. S."],
+        "authorsLast": ["Lewis"],
+        "genres": ["Fantasy"],
+        "pagecount": 224
+    },
+    {
+        "index": 24,
+        "title": "The Lion, the Witch, and the Wardrobe",
+        "series": "The Chronicles of Narnia",
+        "authorsFirst": ["C. S."],
+        "authorsLast": ["Lewis"],
+        "genres": ["Fantasy"],
+        "pagecount": 189
+    },
+    {
+        "index": 25,
+        "title": "Where She Went",
+        "series": "",
+        "authorsFirst": ["Gayle"],
+        "authorsLast": ["Forman"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 260
+    },
+    {
+        "index": 26,
+        "title": "The Lightning Thief",
+        "series": "Percy Jackson & The Olympians",
+        "authorsFirst": ["Rick"],
+        "authorsLast": ["Riordan"],
+        "genres": ["Fantasy"],
+        "pagecount": 375
+    },
+    {
+        "index": 27,
+        "title": "The Sea of Monsters",
+        "series": "Percy Jackson & The Olympians",
+        "authorsFirst": ["Rick"],
+        "authorsLast": ["Riordan"],
+        "genres": ["Fantasy"],
+        "pagecount": 279
+    },
+    {
+        "index": 28,
+        "title": "The Titan's Curse",
+        "series": "Percy Jackson & The Olympians",
+        "authorsFirst": ["Rick"],
+        "authorsLast": ["Riordan"],
+        "genres": ["Fantasy"],
+        "pagecount": 312
+    },
+    {
+        "index": 29,
+        "title": "The Battle of the Labyrinth",
+        "series": "Percy Jackson & The Olympians",
+        "authorsFirst": ["Rick"],
+        "authorsLast": ["Riordan"],
+        "genres": ["Fantasy"],
+        "pagecount": 361
+    },
+    {
+        "index": 30,
+        "title": "The Last Olympian",
+        "series": "Percy Jackson & The Olympians",
+        "authorsFirst": ["Rick"],
+        "authorsLast": ["Riordan"],
+        "genres": ["Fantasy"],
+        "pagecount": 381
+    },
+    {
+        "index": 31,
+        "title": "Aru Shah and the End of Time",
+        "series": "",
+        "authorsFirst": ["Roshani"],
+        "authorsLast": ["Chokshi"],
+        "genres": ["Fantasy"],
+        "pagecount": 343
+    },
+    {
+        "index": 32,
+        "title": "The Two Princesses of Bamarre",
+        "series": "",
+        "authorsFirst": ["Gail Carson"],
+        "authorsLast": ["Levine"],
+        "genres": ["Fantasy"],
+        "pagecount": 239
+    },
+    {
+        "index": 33,
+        "title": "Take Me There",
+        "series": "",
+        "authorsFirst": ["Susane"],
+        "authorsLast": ["Colasanti"],
+        "genres": ["Romance"],
+        "pagecount": 290
+    },
+    {
+        "index": 34,
+        "title": "Paper Towns",
+        "series": "",
+        "authorsFirst": ["John"],
+        "authorsLast": ["Green"],
+        "genres": ["YA, Realistic Fiction"],
+        "pagecount": 305
+    },
+    {
+        "index": 35,
+        "title": "Mandy",
+        "series": "",
+        "authorsFirst": ["Julie"],
+        "authorsLast": ["Edwards"],
+        "genres": ["Historical Fiction"],
+        "pagecount": 279
+    },
+    {
+        "index": 36,
+        "title": "That Part Was True",
+        "series": "",
+        "authorsFirst": ["Deborah"],
+        "authorsLast": ["McKinlay"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 225
+    },
+    {
+        "index": 37,
+        "title": "Johnny Kellock Died Today",
+        "series": "",
+        "authorsFirst": ["Hadley"],
+        "authorsLast": ["Dyer"],
+        "genres": ["Historical Fiction"],
+        "pagecount": 152
+    },
+    {
+        "index": 38,
+        "title": "The Absolutely True Diary of a Part-Time Indian",
+        "series": "",
+        "authorsFirst": ["Sherman"],
+        "authorsLast": ["Alexie"],
+        "genres": ["YA, Realistic Fiction"],
+        "pagecount": 230
+    },
+    {
+        "index": 39,
+        "title": "Princess in Disguise",
+        "series": "Tales of the Wide-Awake Princess",
+        "authorsFirst": ["E. D."],
+        "authorsLast": ["Baker"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 215
+    },
+    {
+        "index": 40,
+        "title": "Third Wish Vol.1",
+        "series": "",
+        "authorsFirst": ["Robert"],
+        "authorsLast": ["Fulghum"],
+        "genres": ["Fantasy"],
+        "pagecount": 501
+    },
+    {
+        "index": 41,
+        "title": "Third Wish Vol.2",
+        "series": "",
+        "authorsFirst": ["Robert"],
+        "authorsLast": ["Fulghum"],
+        "genres": ["Fantasy"],
+        "pagecount": 415
+    },
+    {
+        "index": 42,
+        "title": "The House of Hades",
+        "series": "The Heroes of Olympus",
+        "authorsFirst": ["Rick"],
+        "authorsLast": ["Riordan"],
+        "genres": ["Fantasy"],
+        "pagecount": 583
+    },
+    {
+        "index": 43,
+        "title": "The Invention of Hugo Cabret",
+        "series": "",
+        "authorsFirst": ["Brian"],
+        "authorsLast": ["Selznick"],
+        "genres": ["Fantasy, Historical Fiction"],
+        "pagecount": 523
+    },
+    {
+        "index": 44,
+        "title": "The Marvels",
+        "series": "",
+        "authorsFirst": ["Brian"],
+        "authorsLast": ["Selznick"],
+        "genres": ["Fantasy, Historical Fiction"],
+        "pagecount": 647
+    },
+    {
+        "index": 45,
+        "title": "Wonder Struck",
+        "series": "",
+        "authorsFirst": ["Brian"],
+        "authorsLast": ["Selznick"],
+        "genres": ["Fantasy, Historical Fiction"],
+        "pagecount": 627
+    },
+    {
+        "index": 46,
+        "title": "Emily Windsnap and the Monster from the Deep",
+        "series": "Emily Windsnap",
+        "authorsFirst": ["Liz"],
+        "authorsLast": ["Kessler"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 218
+    },
+    {
+        "index": 47,
+        "title": "Emily Windsnap and the Land of the Mindnight Sun",
+        "series": "Emily Windsnap",
+        "authorsFirst": ["Liz"],
+        "authorsLast": ["Kessler"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 272
+    },
+    {
+        "index": 48,
+        "title": "Anne of Green Gables (Books 1-3)",
+        "series": "Anne of Green Gables",
+        "authorsFirst": ["L. M."],
+        "authorsLast": ["Montgomery"],
+        "genres": ["Historical Fiction"],
+        "pagecount": 634
+    },
+    {
+        "index": 49,
+        "title": "Anne of Green Gables (Collector's)",
+        "series": "Anne of Green Gables",
+        "authorsFirst": ["L. M."],
+        "authorsLast": ["Montgomery"],
+        "genres": ["Historical Fiction"],
+        "pagecount": 371
+    },
+    {
+        "index": 50,
+        "title": "The Mysterious Benedict Society",
+        "series": "",
+        "authorsFirst": ["Trenton Lee"],
+        "authorsLast": ["Stewart"],
+        "genres": ["Science Fiction"],
+        "pagecount": 485
+    },
+    {
+        "index": 51,
+        "title": "For One More Day",
+        "series": "",
+        "authorsFirst": ["Mitch"],
+        "authorsLast": ["Albom"],
+        "genres": ["Fiction"],
+        "pagecount": 197
+    },
+    {
+        "index": 52,
+        "title": "Museum of Thives",
+        "series": "",
+        "authorsFirst": ["Lian"],
+        "authorsLast": ["Tanner"],
+        "genres": ["Dystopian"],
+        "pagecount": 312
+    },
+    {
+        "index": 53,
+        "title": "Pretties",
+        "series": "UGLIES",
+        "authorsFirst": ["Scott"],
+        "authorsLast": ["Westerfeld"],
+        "genres": ["YA, Dystopian"],
+        "pagecount": 370
+    },
+    {
+        "index": 54,
+        "title": "Uglies",
+        "series": "UGLIES",
+        "authorsFirst": ["Scott"],
+        "authorsLast": ["Westerfeld"],
+        "genres": ["YA, Dystopian"],
+        "pagecount": 425
+    },
+    {
+        "index": 55,
+        "title": "Specials",
+        "series": "UGLIES",
+        "authorsFirst": ["Scott"],
+        "authorsLast": ["Westerfeld"],
+        "genres": ["YA, Dystopian"],
+        "pagecount": 372
+    },
+    {
+        "index": 56,
+        "title": "Extras",
+        "series": "UGLIES",
+        "authorsFirst": ["Scott"],
+        "authorsLast": ["Westerfeld"],
+        "genres": ["YA, Dystopian"],
+        "pagecount": 417
+    },
+    {
+        "index": 57,
+        "title": "The Life of Pi",
+        "series": "",
+        "authorsFirst": ["Yann"],
+        "authorsLast": ["Martel"],
+        "genres": ["Fiction"],
+        "pagecount": 401
+    },
+    {
+        "index": 58,
+        "title": "The Amber Spyglass",
+        "series": "His Dark Materials",
+        "authorsFirst": ["Phillip"],
+        "authorsLast": ["Pullman"],
+        "genres": ["Fantasy"],
+        "pagecount": 518
+    },
+    {
+        "index": 59,
+        "title": "The Golden Compass",
+        "series": "His Dark Materials",
+        "authorsFirst": ["Phillip"],
+        "authorsLast": ["Pullman"],
+        "genres": ["Fantasy"],
+        "pagecount": 399
+    },
+    {
+        "index": 60,
+        "title": "Grandma's Magical Storybook",
+        "series": "",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 189
+    },
+    {
+        "index": 61,
+        "title": "The Subtle Knife",
+        "series": "His Dark Materials",
+        "authorsFirst": ["Phillip"],
+        "authorsLast": ["Pullman"],
+        "genres": ["Fantasy"],
+        "pagecount": 326
+    },
+    {
+        "index": 62,
+        "title": "DUNE",
+        "series": "",
+        "authorsFirst": ["Frank"],
+        "authorsLast": ["Herbert"],
+        "genres": ["Science Fiction"],
+        "pagecount": 794
+    },
+    {
+        "index": 63,
+        "title": "A Garden in Lucca",
+        "series": "",
+        "authorsFirst": ["Paul"],
+        "authorsLast": ["Gervais"],
+        "genres": ["Memoir"],
+        "pagecount": 309
+    },
+    {
+        "index": 64,
+        "title": "The Star Wars Trilogy",
+        "series": "",
+        "authorsFirst": ["George"],
+        "authorsLast": ["Lucas"],
+        "genres": ["Science Fiction"],
+        "pagecount": 705
+    },
+    {
+        "index": 65,
+        "title": "The Help",
+        "series": "",
+        "authorsFirst": ["Kathryn"],
+        "authorsLast": ["Stockett"],
+        "genres": ["Historical Fiction"],
+        "pagecount": 522
+    },
+    {
+        "index": 66,
+        "title": "The Colussus Rises",
+        "series": "Seven Wonders",
+        "authorsFirst": ["Peter"],
+        "authorsLast": ["Lerangis"],
+        "genres": ["Fantasy"],
+        "pagecount": 348
+    },
+    {
+        "index": 67,
+        "title": "Inkheart",
+        "series": "",
+        "authorsFirst": ["Cornelia"],
+        "authorsLast": ["Funke"],
+        "genres": ["Fantasy"],
+        "pagecount": 534
+    },
+    {
+        "index": 68,
+        "title": "Between the Bridge and the River",
+        "series": "",
+        "authorsFirst": ["Craig"],
+        "authorsLast": ["Ferguson"],
+        "genres": ["Fiction"],
+        "pagecount": 329
+    },
+    {
+        "index": 69,
+        "title": "Between, Georgia",
+        "series": "",
+        "authorsFirst": ["Joshilyn"],
+        "authorsLast": ["Jackson"],
+        "genres": ["Fiction"],
+        "pagecount": 294
+    },
+    {
+        "index": 70,
+        "title": "A Thread of Sky",
+        "series": "",
+        "authorsFirst": ["Deanna"],
+        "authorsLast": ["Fei"],
+        "genres": ["Fiction"],
+        "pagecount": 351
+    },
+    {
+        "index": 71,
+        "title": "Everything, Everything",
+        "series": "",
+        "authorsFirst": ["Nicola"],
+        "authorsLast": ["Yoon"],
+        "genres": ["YA, Romance"],
+        "pagecount": 305
+    },
+    {
+        "index": 72,
+        "title": "An Abundance of Katherines",
+        "series": "",
+        "authorsFirst": ["John"],
+        "authorsLast": ["Green"],
+        "genres": ["YA, Romance"],
+        "pagecount": 215
+    },
+    {
+        "index": 73,
+        "title": "The Girl Who Could Fly",
+        "series": "",
+        "authorsFirst": ["Victoria"],
+        "authorsLast": ["Forester"],
+        "genres": ["Fantasy"],
+        "pagecount": 328
+    },
+    {
+        "index": 74,
+        "title": "Gamer Girl",
+        "series": "",
+        "authorsFirst": ["Mari"],
+        "authorsLast": ["Mancusi"],
+        "genres": ["YA, Romance"],
+        "pagecount": 248
+    },
+    {
+        "index": 75,
+        "title": "Tuesdays with Morrie",
+        "series": "",
+        "authorsFirst": ["Mitch"],
+        "authorsLast": ["Albom"],
+        "genres": ["Memoir"],
+        "pagecount": 199
+    },
+    {
+        "index": 76,
+        "title": "The Silver Star",
+        "series": "",
+        "authorsFirst": ["Jeannette"],
+        "authorsLast": ["Walls"],
+        "genres": ["Fiction"],
+        "pagecount": 267
+    },
+    {
+        "index": 77,
+        "title": "The Lost Hero",
+        "series": "The Heroes of Olympus",
+        "authorsFirst": ["Rick"],
+        "authorsLast": ["Riordan"],
+        "genres": ["Fantasy"],
+        "pagecount": 553
+    },
+    {
+        "index": 78,
+        "title": "Stargirl",
+        "series": "Stargirl",
+        "authorsFirst": ["Jerry"],
+        "authorsLast": ["Spinelli"],
+        "genres": ["YA, Romance"],
+        "pagecount": 186
+    },
+    {
+        "index": 79,
+        "title": "Out of My Mind",
+        "series": "",
+        "authorsFirst": ["Sharon M."],
+        "authorsLast": ["Draper"],
+        "genres": ["Fiction"],
+        "pagecount": 295
+    },
+    {
+        "index": 80,
+        "title": "The Wide-Awake Princess",
+        "series": "Tales of the Wide-Awake Princess",
+        "authorsFirst": ["E. D."],
+        "authorsLast": ["Baker"],
+        "genres": ["Fantasy"],
+        "pagecount": 261
+    },
+    {
+        "index": 81,
+        "title": "A Question of Magic",
+        "series": "",
+        "authorsFirst": ["E. D."],
+        "authorsLast": ["Baker"],
+        "genres": ["Fantasy"],
+        "pagecount": 262
+    },
+    {
+        "index": 82,
+        "title": "Counting by 7s",
+        "series": "",
+        "authorsFirst": ["Holly Goldberg"],
+        "authorsLast": ["Sloan"],
+        "genres": ["Fiction"],
+        "pagecount": 378
+    },
+    {
+        "index": 83,
+        "title": "The Glass Castle",
+        "series": "",
+        "authorsFirst": ["Jeannette"],
+        "authorsLast": ["Walls"],
+        "genres": ["Memoir"],
+        "pagecount": 288
+    },
+    {
+        "index": 84,
+        "title": "Fin & Lady",
+        "series": "",
+        "authorsFirst": ["Cathleen"],
+        "authorsLast": ["Schine"],
+        "genres": ["Fiction"],
+        "pagecount": 273
+    },
+    {
+        "index": 85,
+        "title": "Not if I See You First",
+        "series": "",
+        "authorsFirst": ["Eric"],
+        "authorsLast": ["Lindstrom"],
+        "genres": ["YA, Romance"],
+        "pagecount": 310
+    },
+    {
+        "index": 86,
+        "title": "The Underneath",
+        "series": "",
+        "authorsFirst": ["Kathi"],
+        "authorsLast": ["Appelt"],
+        "genres": ["Animal Fiction"],
+        "pagecount": 311
+    },
+    {
+        "index": 87,
+        "title": "Perfected",
+        "series": "Perfected",
+        "authorsFirst": ["Kate Jarvic"],
+        "authorsLast": ["Birch"],
+        "genres": ["YA, Dystopian"],
+        "pagecount": 281
+    },
+    {
+        "index": 88,
+        "title": "Tarnished",
+        "series": "Perfected",
+        "authorsFirst": ["Kate Jarvic"],
+        "authorsLast": ["Birch"],
+        "genres": ["YA, Dystopian"],
+        "pagecount": 299
+    },
+    {
+        "index": 89,
+        "title": "All I Need",
+        "series": "",
+        "authorsFirst": ["Susane"],
+        "authorsLast": ["Colasanti"],
+        "genres": ["YA, Romance"],
+        "pagecount": 212
+    },
+    {
+        "index": 90,
+        "title": "Eleanor & Park",
+        "series": "",
+        "authorsFirst": ["Rainbow"],
+        "authorsLast": ["Rowell"],
+        "genres": ["YA, Romance"],
+        "pagecount": 328
+    },
+    {
+        "index": 91,
+        "title": "The Hunger Games",
+        "series": "The Hunger Games",
+        "authorsFirst": ["Suzanne"],
+        "authorsLast": ["Collins"],
+        "genres": ["YA, Dystopian"],
+        "pagecount": 374
+    },
+    {
+        "index": 92,
+        "title": "The Signature of All Things",
+        "series": "",
+        "authorsFirst": ["Elizabeth"],
+        "authorsLast": ["Gilbert"],
+        "genres": ["Historical Fiction"],
+        "pagecount": 499
+    },
+    {
+        "index": 93,
+        "title": "Cavedweller",
+        "series": "",
+        "authorsFirst": ["Dorothy"],
+        "authorsLast": ["Allison"],
+        "genres": ["Fiction"],
+        "pagecount": 434
+    },
+    {
+        "index": 94,
+        "title": "Complete Well-Being",
+        "series": "",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Health and Wellness"],
+        "pagecount": 249
+    },
+    {
+        "index": 95,
+        "title": "Hope was Here",
+        "series": "",
+        "authorsFirst": ["Joan"],
+        "authorsLast": ["Bauer"],
+        "genres": ["Fiction"],
+        "pagecount": 186
+    },
+    {
+        "index": 96,
+        "title": "Fantastic 4: The Photo Novel",
+        "series": "",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": 92
+    },
+    {
+        "index": 97,
+        "title": "Archie Super 3 Pack [314]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 98,
+        "title": "Archie Jumbo Comics [103]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 99,
+        "title": "Betty and Veronica: Jumbo Comics [287]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 100,
+        "title": "Archie Jumbo Comics [314]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 101,
+        "title": "Laugh Digest Magazine [150]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 102,
+        "title": "Archie's Pals 'n' Ga's Double Digest [58]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 103,
+        "title": "Betty and Veronica Digest [120]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 104,
+        "title": "Archie's Double Digest [152]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 105,
+        "title": "Jughead's Double Digest [60]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 106,
+        "title": "Archie Digest [166]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 107,
+        "title": "Archie Digest [162]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 108,
+        "title": "Betty and Verionica Double Digest [91]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 109,
+        "title": "Jughead's Double Digest [139]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 110,
+        "title": "Archie Digest [223]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 111,
+        "title": "Jughead's Double Digest [67]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 112,
+        "title": "Archie Jumbo Comics [333]",
+        "series": "Archie Comics",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Manga/Comic"],
+        "pagecount": "?"
+    },
+    {
+        "index": 113,
+        "title": "Emily Windsnap and the Castle in the Midst",
+        "series": "Emily Windsnap",
+        "authorsFirst": ["Liz"],
+        "authorsLast": ["Kessler"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 204
+    },
+    {
+        "index": 114,
+        "title": "The Tail of Emily Windsnap",
+        "series": "Emily Windsnap",
+        "authorsFirst": ["Liz"],
+        "authorsLast": ["Kessler"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 209
+    },
+    {
+        "index": 115,
+        "title": "Amorelle",
+        "series": "",
+        "authorsFirst": ["Grace Livingston"],
+        "authorsLast": ["Hill"],
+        "genres": ["Historical Fiction, Romance"],
+        "pagecount": 265
+    },
+    {
+        "index": 116,
+        "title": "Project Mulberry",
+        "series": "",
+        "authorsFirst": ["Linda Sue"],
+        "authorsLast": ["Park"],
+        "genres": ["Children's, Realistic Fiction"],
+        "pagecount": 225
+    },
+    {
+        "index": 117,
+        "title": "Muffins",
+        "series": "",
+        "authorsFirst": ["Elizabeth"],
+        "authorsLast": ["Alston"],
+        "genres": ["Cooking"],
+        "pagecount": 88
+    },
+    {
+        "index": 118,
+        "title": "Ella Enchanted",
+        "series": "",
+        "authorsFirst": ["Gail Carson"],
+        "authorsLast": ["Levine"],
+        "genres": ["Fantasy"],
+        "pagecount": 232
+    },
+    {
+        "index": 119,
+        "title": "Kira-Kira",
+        "series": "",
+        "authorsFirst": ["Cynthia"],
+        "authorsLast": ["Kadohata"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 244
+    },
+    {
+        "index": 120,
+        "title": "Wild Wings",
+        "series": "",
+        "authorsFirst": ["Gill"],
+        "authorsLast": ["Lewis"],
+        "genres": ["Historical Fiction, Realistic Fiction"],
+        "pagecount": 283
+    },
+    {
+        "index": 121,
+        "title": "The City of Ember",
+        "series": "Books of Ember",
+        "authorsFirst": ["Jeanne"],
+        "authorsLast": ["DuPrau"],
+        "genres": ["Dystopian"],
+        "pagecount": 270
+    },
+    {
+        "index": 122,
+        "title": "Tuesday Mooney Talks to Ghosts",
+        "series": "",
+        "authorsFirst": ["Kate"],
+        "authorsLast": ["Racculia"],
+        "genres": ["Fiction"],
+        "pagecount": 357
+    },
+    {
+        "index": 123,
+        "title": "Son",
+        "series": "The Giver Quartet",
+        "authorsFirst": ["Lois"],
+        "authorsLast": ["Lowry"],
+        "genres": ["Dystopian"],
+        "pagecount": 393
+    },
+    {
+        "index": 124,
+        "title": "Gathering Blue",
+        "series": "The Giver Quartet",
+        "authorsFirst": ["Lois"],
+        "authorsLast": ["Lowry"],
+        "genres": ["Dystopian"],
+        "pagecount": 241
+    },
+    {
+        "index": 125,
+        "title": "The Giver",
+        "series": "The Giver Quartet",
+        "authorsFirst": ["Lois"],
+        "authorsLast": ["Lowry"],
+        "genres": ["Dystopian"],
+        "pagecount": 225
+    },
+    {
+        "index": 126,
+        "title": "Nobody's Prize",
+        "series": "",
+        "authorsFirst": ["Esther"],
+        "authorsLast": ["Friesner"],
+        "genres": ["Historical Fiction"],
+        "pagecount": 306
+    },
+    {
+        "index": 127,
+        "title": "Nobody's Princess",
+        "series": "",
+        "authorsFirst": ["Esther"],
+        "authorsLast": ["Friesner"],
+        "genres": ["Historical Fiction"],
+        "pagecount": 305
+    },
+    {
+        "index": 128,
+        "title": "The Secret Garden",
+        "series": "",
+        "authorsFirst": ["Frances Hodgson"],
+        "authorsLast": ["Burnett"],
+        "genres": ["Historical Fiction"],
+        "pagecount": 276
+    },
+    {
+        "index": 129,
+        "title": "Jane Eyre",
+        "series": "",
+        "authorsFirst": ["Charlotte"],
+        "authorsLast": ["Brontë"],
+        "genres": ["Historical Fiction"],
+        "pagecount": 527
+    },
+    {
+        "index": 130,
+        "title": "To Kill a Mockingbird",
+        "series": "",
+        "authorsFirst": ["Harper"],
+        "authorsLast": ["Lee"],
+        "genres": ["Historical Fiction"],
+        "pagecount": 376
+    },
+    {
+        "index": 131,
+        "title": "Every Soul a Star",
+        "series": "",
+        "authorsFirst": ["Wendy"],
+        "authorsLast": ["Mass"],
+        "genres": ["Fiction"],
+        "pagecount": 322
+    },
+    {
+        "index": 132,
+        "title": "Sleeping Beauty",
+        "series": "",
+        "authorsFirst": ["Wendy"],
+        "authorsLast": ["Mass"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 172
+    },
+    {
+        "index": 133,
+        "title": "Rapunzel",
+        "series": "",
+        "authorsFirst": ["Wendy"],
+        "authorsLast": ["Mass"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 205
+    },
+    {
+        "index": 134,
+        "title": "The Last Present",
+        "series": "",
+        "authorsFirst": ["Wendy"],
+        "authorsLast": ["Mass"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 246
+    },
+    {
+        "index": 135,
+        "title": "13 Gifts",
+        "series": "",
+        "authorsFirst": ["Wendy"],
+        "authorsLast": ["Mass"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 339
+    },
+    {
+        "index": 136,
+        "title": "12 Finally",
+        "series": "",
+        "authorsFirst": ["Wendy"],
+        "authorsLast": ["Mass"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 296
+    },
+    {
+        "index": 137,
+        "title": "11 Birthdays",
+        "series": "",
+        "authorsFirst": ["Wendy"],
+        "authorsLast": ["Mass"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 267
+    },
+    {
+        "index": 138,
+        "title": "Pish Posh",
+        "series": "",
+        "authorsFirst": ["Ellen"],
+        "authorsLast": ["Potter"],
+        "genres": ["Mystery, Fiction"],
+        "pagecount": 166
+    },
+    {
+        "index": 139,
+        "title": "It's a Mall World After All",
+        "series": "",
+        "authorsFirst": ["Janette"],
+        "authorsLast": ["Rallison"],
+        "genres": ["Fiction"],
+        "pagecount": 230
+    },
+    {
+        "index": 140,
+        "title": "The Sky is Everywhere",
+        "series": "",
+        "authorsFirst": ["Jandy"],
+        "authorsLast": ["Nelson"],
+        "genres": ["Children's, Realistic Fiction"],
+        "pagecount": 311
+    },
+    {
+        "index": 141,
+        "title": "Miss Spitfire",
+        "series": "",
+        "authorsFirst": ["Sarah"],
+        "authorsLast": ["Miller"],
+        "genres": ["Historical Fiction"],
+        "pagecount": 208
+    },
+    {
+        "index": 142,
+        "title": "Unlocking the Spell",
+        "series": "Tales of the Wide-Awake Princess",
+        "authorsFirst": ["E. D."],
+        "authorsLast": ["Baker"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 261
+    },
+    {
+        "index": 143,
+        "title": "The Phantom Tollbooth",
+        "series": "",
+        "authorsFirst": ["Norton"],
+        "authorsLast": ["Juster"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 256
+    },
+    {
+        "index": 144,
+        "title": "The Tale of Desperaux",
+        "series": "",
+        "authorsFirst": ["Kate"],
+        "authorsLast": ["DiCamillo"],
+        "genres": ["Fantasy, Animal Fiction"],
+        "pagecount": 269
+    },
+    {
+        "index": 145,
+        "title": "Redwall",
+        "series": "",
+        "authorsFirst": ["Brian"],
+        "authorsLast": ["Jaques"],
+        "genres": ["Fantasy, Animal Fiction"],
+        "pagecount": 351
+    },
+    {
+        "index": 146,
+        "title": "A Mind Awake",
+        "series": "",
+        "authorsFirst": ["C. S."],
+        "authorsLast": ["Lewis"],
+        "genres": ["Christianity"],
+        "pagecount": 296
+    },
+    {
+        "index": 147,
+        "title": "Counter Culture",
+        "series": "",
+        "authorsFirst": ["David"],
+        "authorsLast": ["Platt"],
+        "genres": ["Christianity"],
+        "pagecount": 280
+    },
+    {
+        "index": 148,
+        "title": "Chasing Vermeer",
+        "series": "",
+        "authorsFirst": ["Blue"],
+        "authorsLast": ["Balliett"],
+        "genres": ["Mystery"],
+        "pagecount": 254
+    },
+    {
+        "index": 149,
+        "title": "The House on the Cerulean Sea",
+        "series": "",
+        "authorsFirst": ["TJ"],
+        "authorsLast": ["Klune"],
+        "genres": ["Fantasy"],
+        "pagecount": 396
+    },
+    {
+        "index": 150,
+        "title": "Ender's Shadow",
+        "series": "",
+        "authorsFirst": ["Orson Scott"],
+        "authorsLast": ["Card"],
+        "genres": ["Science Fiction"],
+        "pagecount": 467
+    },
+    {
+        "index": 151,
+        "title": "Harry Potter and the Goblet of Fire",
+        "series": "Harry Potter",
+        "authorsFirst": ["J. K."],
+        "authorsLast": ["Rowling"],
+        "genres": ["Fantasy"],
+        "pagecount": 734
+    },
+    {
+        "index": 152,
+        "title": "Tesla's Attic",
+        "series": "",
+        "authorsFirst": ["Neal Shusterman, "],
+        "authorsLast": ["Eric Elfman"],
+        "genres": ["Science Fiction"],
+        "pagecount": 246
+    },
+    {
+        "index": 153,
+        "title": "The Friday Night Knitting Club",
+        "series": "",
+        "authorsFirst": ["Kate"],
+        "authorsLast": ["Jacobs"],
+        "genres": ["Fiction"],
+        "pagecount": 356
+    },
+    {
+        "index": 154,
+        "title": "The Lies about Truth",
+        "series": "",
+        "authorsFirst": ["Courtney C."],
+        "authorsLast": ["Stevens"],
+        "genres": ["Fiction"],
+        "pagecount": 326
+    },
+    {
+        "index": 155,
+        "title": "Because of Mr. Terupt",
+        "series": "",
+        "authorsFirst": ["Rob"],
+        "authorsLast": ["Buyea"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 268
+    },
+    {
+        "index": 156,
+        "title": "My Grandmother Asked Me to Tell You She's Sorry",
+        "series": "",
+        "authorsFirst": ["Fredrik"],
+        "authorsLast": ["Backman"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 370
+    },
+    {
+        "index": 157,
+        "title": "Between Shades of Gray",
+        "series": "",
+        "authorsFirst": ["Ruta"],
+        "authorsLast": ["Sepetys"],
+        "genres": ["War Fiction"],
+        "pagecount": 338
+    },
+    {
+        "index": 158,
+        "title": "The Night Circus",
+        "series": "",
+        "authorsFirst": ["Erin"],
+        "authorsLast": ["Morgenstern"],
+        "genres": ["Fiction"],
+        "pagecount": 512
+    },
+    {
+        "index": 159,
+        "title": "My Sister's Keeper",
+        "series": "",
+        "authorsFirst": ["Jodi"],
+        "authorsLast": ["Picoult"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 423
+    },
+    {
+        "index": 160,
+        "title": "The Dangerous Days of Daniel X",
+        "series": "",
+        "authorsFirst": ["James"],
+        "authorsLast": ["Patterson"],
+        "genres": ["Science Fiction"],
+        "pagecount": 238
+    },
+    {
+        "index": 161,
+        "title": "Fangirl",
+        "series": "",
+        "authorsFirst": ["Rainbow"],
+        "authorsLast": ["Rowell"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 433
+    },
+    {
+        "index": 162,
+        "title": "Harry Potter and the Deathly Hallows",
+        "series": "",
+        "authorsFirst": ["J. K."],
+        "authorsLast": ["Rowling"],
+        "genres": ["Fantasy"],
+        "pagecount": 759
+    },
+    {
+        "index": 163,
+        "title": "Wilde Like Me",
+        "series": "",
+        "authorsFirst": ["Louise"],
+        "authorsLast": ["Pentland"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 385
+    },
+    {
+        "index": 164,
+        "title": "The Indigo King",
+        "series": "",
+        "authorsFirst": ["James A."],
+        "authorsLast": ["Owen"],
+        "genres": ["Fantasy"],
+        "pagecount": 372
+    },
+    {
+        "index": 165,
+        "title": "John Carter of Mars: The First Five Novels",
+        "series": "",
+        "authorsFirst": ["Edgar Rice"],
+        "authorsLast": ["Burroughs"],
+        "genres": ["Fantasy"],
+        "pagecount": 929
+    },
+    {
+        "index": 166,
+        "title": "The Samantha American Girl Series",
+        "series": "",
+        "authorsFirst": [""],
+        "authorsLast": [""],
+        "genres": ["Children's, Historical Fiction"],
+        "pagecount": "?"
+    },
+    {
+        "index": 167,
+        "title": "Coral Island",
+        "series": "",
+        "authorsFirst": ["R. M."],
+        "authorsLast": ["Ballantyne"],
+        "genres": ["Children's, Historical Fiction"],
+        "pagecount": 184
+    },
+    {
+        "index": 168,
+        "title": "So Much Closer",
+        "series": "",
+        "authorsFirst": ["Susane"],
+        "authorsLast": ["Colasanti"],
+        "genres": ["Romance"],
+        "pagecount": 241
+    },
+    {
+        "index": 169,
+        "title": "Just Listen",
+        "series": "",
+        "authorsFirst": ["Sarah"],
+        "authorsLast": ["Dessen"],
+        "genres": ["Realistic Fiction, YA"],
+        "pagecount": 371
+    },
+    {
+        "index": 170,
+        "title": "That Summer",
+        "series": "",
+        "authorsFirst": ["Sarah"],
+        "authorsLast": ["Dessen"],
+        "genres": ["Realistic Fiction, YA"],
+        "pagecount": 198
+    },
+    {
+        "index": 171,
+        "title": "So B. It",
+        "series": "",
+        "authorsFirst": ["Sarah"],
+        "authorsLast": ["Weeks"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 243
+    },
+    {
+        "index": 172,
+        "title": "A Girl Named Digit",
+        "series": "",
+        "authorsFirst": ["Annabel"],
+        "authorsLast": ["Monaghan"],
+        "genres": ["Mystery"],
+        "pagecount": 187
+    },
+    {
+        "index": 173,
+        "title": "The Girl Who Drank the Moon",
+        "series": "",
+        "authorsFirst": ["Kelly"],
+        "authorsLast": ["Barnhill"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 386
+    },
+    {
+        "index": 174,
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "series": "Harry Potter",
+        "authorsFirst": ["J. K."],
+        "authorsLast": ["Rowling"],
+        "genres": ["Fantasy"],
+        "pagecount": 435
+    },
+    {
+        "index": 175,
+        "title": "The Hate U Give",
+        "series": "",
+        "authorsFirst": ["Angie"],
+        "authorsLast": ["Thomas"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 444
+    },
+    {
+        "index": 176,
+        "title": "The Son of Neptune",
+        "series": "The Heroes of Olympus",
+        "authorsFirst": ["Rick"],
+        "authorsLast": ["Riordan"],
+        "genres": ["Fantasy"],
+        "pagecount": 513
+    },
+    {
+        "index": 177,
+        "title": "Halo",
+        "series": "",
+        "authorsFirst": ["Alexandra"],
+        "authorsLast": ["Adornetto"],
+        "genres": ["Romance, Fantasy"],
+        "pagecount": 484
+    },
+    {
+        "index": 178,
+        "title": "Harry Potter and the Order of the Phoenix",
+        "series": "",
+        "authorsFirst": ["J. K."],
+        "authorsLast": ["Rowling"],
+        "genres": ["Fantasy"],
+        "pagecount": 870
+    },
+    {
+        "index": 179,
+        "title": "The Frog Princess",
+        "series": "Tales of the Frog Princess",
+        "authorsFirst": ["E. D."],
+        "authorsLast": ["Baker"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 214
+    },
+    {
+        "index": 180,
+        "title": "Love, Stargirl",
+        "series": "Stargirl",
+        "authorsFirst": ["Jerry"],
+        "authorsLast": ["Spinelli"],
+        "genres": ["YA, Romance"],
+        "pagecount": 274
+    },
+    {
+        "index": 181,
+        "title": "The Fault in Our Stars",
+        "series": "",
+        "authorsFirst": ["John"],
+        "authorsLast": ["Green"],
+        "genres": ["Realistic Fiction, YA"],
+        "pagecount": 313
+    },
+    {
+        "index": 182,
+        "title": "Althea & Oliver",
+        "series": "",
+        "authorsFirst": ["Cristina"],
+        "authorsLast": ["Moracho"],
+        "genres": ["YA, Romance"],
+        "pagecount": 364
+    },
+    {
+        "index": 183,
+        "title": "If I Stay",
+        "series": "",
+        "authorsFirst": ["Gayle"],
+        "authorsLast": ["Forman"],
+        "genres": ["YA, Romance"],
+        "pagecount": 234
+    },
+    {
+        "index": 184,
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "series": "Harry Potter",
+        "authorsFirst": ["J. K."],
+        "authorsLast": ["Rowling"],
+        "genres": ["Fantasy"],
+        "pagecount": 309
+    },
+    {
+        "index": 185,
+        "title": "The Probability of Miracles",
+        "series": "",
+        "authorsFirst": ["Wendy"],
+        "authorsLast": ["Wunder"],
+        "genres": ["YA, Romance"],
+        "pagecount": 357
+    },
+    {
+        "index": 186,
+        "title": "City of Bones",
+        "series": "",
+        "authorsFirst": ["Cassandra"],
+        "authorsLast": ["Clare"],
+        "genres": ["Fantasy"],
+        "pagecount": 485
+    },
+    {
+        "index": 187,
+        "title": "The Daughters",
+        "series": "The Daughters",
+        "authorsFirst": ["Joanna"],
+        "authorsLast": ["Philbin"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 297
+    },
+    {
+        "index": 188,
+        "title": "Close to Famous",
+        "series": "",
+        "authorsFirst": ["Joan"],
+        "authorsLast": ["Bauer"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 250
+    },
+    {
+        "index": 189,
+        "title": "Learning to Swear in America",
+        "series": "",
+        "authorsFirst": ["Katie"],
+        "authorsLast": ["Kennedy"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 340
+    },
+    {
+        "index": 190,
+        "title": "Once Upon a Curse",
+        "series": "Tales of the Frog Princess",
+        "authorsFirst": ["E. D."],
+        "authorsLast": ["Baker"],
+        "genres": ["Children's, Fantasy"],
+        "pagecount": 244
+    },
+    {
+        "index": 191,
+        "title": "The Pricess Tales Vol.2",
+        "series": "",
+        "authorsFirst": ["Gail Carson"],
+        "authorsLast": ["Levine"],
+        "genres": ["Fantasy"],
+        "pagecount": 248
+    },
+    {
+        "index": 192,
+        "title": "The Great Gilly Hopkins",
+        "series": "",
+        "authorsFirst": ["Katherine"],
+        "authorsLast": ["Paterson"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 148
+    },
+    {
+        "index": 193,
+        "title": "The BFG",
+        "series": "",
+        "authorsFirst": ["Roald"],
+        "authorsLast": ["Dahl"],
+        "genres": ["Fantasy"],
+        "pagecount": 208
+    },
+    {
+        "index": 194,
+        "title": "From the Mixed-Up Files of Mrs. Basil E. Frankweiler",
+        "series": "",
+        "authorsFirst": ["E. L."],
+        "authorsLast": ["Konigsburg"],
+        "genres": ["Fiction"],
+        "pagecount": 162
+    },
+    {
+        "index": 195,
+        "title": "James and the Giant Peach",
+        "series": "",
+        "authorsFirst": ["Roald"],
+        "authorsLast": ["Dahl"],
+        "genres": ["Fantasy"],
+        "pagecount": 126
+    },
+    {
+        "index": 196,
+        "title": "Harry Potter and the Chamber of Secrets",
+        "series": "Harry Potter",
+        "authorsFirst": ["J. K."],
+        "authorsLast": ["Rowling"],
+        "genres": ["Fantasy"],
+        "pagecount": 341
+    },
+    {
+        "index": 197,
+        "title": "Much Ado About Anne",
+        "series": "The Mother-Daughter Book Club",
+        "authorsFirst": ["Heather Vogel"],
+        "authorsLast": ["Frederick"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 315
+    },
+    {
+        "index": 198,
+        "title": "The Mother-Daughter Book Club",
+        "series": "The Mother-Daughter Book Club",
+        "authorsFirst": ["Heather Vogel"],
+        "authorsLast": ["Frederick"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 236
+    },
+    {
+        "index": 199,
+        "title": "Ostrich",
+        "series": "",
+        "authorsFirst": ["Matt"],
+        "authorsLast": ["Greene"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 322
+    },
+    {
+        "index": 200,
+        "title": "Insurgent",
+        "series": "Divergent",
+        "authorsFirst": ["Veronica"],
+        "authorsLast": ["Roth"],
+        "genres": ["Dystopian"],
+        "pagecount": 525
+    },
+    {
+        "index": 201,
+        "title": "Divergent",
+        "series": "Divergent",
+        "authorsFirst": ["Veronica"],
+        "authorsLast": ["Roth"],
+        "genres": ["Dystopian"],
+        "pagecount": 487
+    },
+    {
+        "index": 202,
+        "title": "Let it Snow",
+        "series": "",
+        "authorsFirst": ["John Green, Maureen Johnson,"],
+        "authorsLast": ["Lauren Myracle"],
+        "genres": ["YA, Romance"],
+        "pagecount": 352
+    },
+    {
+        "index": 203,
+        "title": "Mosquitoland",
+        "series": "",
+        "authorsFirst": ["David"],
+        "authorsLast": ["Arnold"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 342
+    },
+    {
+        "index": 204,
+        "title": "All the Bright Places",
+        "series": "",
+        "authorsFirst": ["Jennifer"],
+        "authorsLast": ["Niven"],
+        "genres": ["Realistic Fiction, YA"],
+        "pagecount": 376
+    },
+    {
+        "index": 205,
+        "title": "The Mark of Athena",
+        "series": "The Heroes of Olympus",
+        "authorsFirst": ["Rick"],
+        "authorsLast": ["Riordan"],
+        "genres": ["Fantasy"],
+        "pagecount": 574
+    },
+    {
+        "index": 206,
+        "title": "Eleanor",
+        "series": "",
+        "authorsFirst": ["Jason"],
+        "authorsLast": ["Gurley"],
+        "genres": ["Science Fiction"],
+        "pagecount": 370
+    },
+    {
+        "index": 207,
+        "title": "Bad Unicorn",
+        "series": "",
+        "authorsFirst": ["Platte F."],
+        "authorsLast": ["Clark"],
+        "genres": ["Fantasy"],
+        "pagecount": 423
+    },
+    {
+        "index": 208,
+        "title": "Zip",
+        "series": "",
+        "authorsFirst": ["Ellie"],
+        "authorsLast": ["Rollins"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 323
+    },
+    {
+        "index": 209,
+        "title": "Harry Potter and the Half-Blood Prince",
+        "series": "Harry Potter",
+        "authorsFirst": ["J. K."],
+        "authorsLast": ["Rowling"],
+        "genres": ["Fantasy"],
+        "pagecount": 652
+    },
+    {
+        "index": 210,
+        "title": "Reboot",
+        "series": "",
+        "authorsFirst": ["Amy"],
+        "authorsLast": ["Tinera"],
+        "genres": ["Dystopian"],
+        "pagecount": 365
+    },
+    {
+        "index": 211,
+        "title": "Super Sad True Love Story",
+        "series": "",
+        "authorsFirst": ["Gary"],
+        "authorsLast": ["Shteyngart"],
+        "genres": ["Dystopian"],
+        "pagecount": 331
+    },
+    {
+        "index": 212,
+        "title": "Pay It Forward",
+        "series": "",
+        "authorsFirst": ["Catherine Ryan"],
+        "authorsLast": ["Hyde"],
+        "genres": ["Children's, Fiction"],
+        "pagecount": 261
+    },
+    {
+        "index": 213,
+        "title": "What My Mother Doesn't Know",
+        "series": "",
+        "authorsFirst": ["Sonya"],
+        "authorsLast": ["Sones"],
+        "genres": ["YA, Romance"],
+        "pagecount": 259
+    },
+    {
+        "index": 214,
+        "title": "Get Noticed!",
+        "series": "",
+        "authorsFirst": ["Brenda Joyce"],
+        "authorsLast": ["Johnson"],
+        "genres": ["Self-Help+"],
+        "pagecount": 238
+    },
+    {
+        "index": 215,
+        "title": "The Daughters Join the Party",
+        "series": "The Daughters",
+        "authorsFirst": ["Joanna"],
+        "authorsLast": ["Philbin"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 269
+    },
+    {
+        "index": 216,
+        "title": "Love Wins",
+        "series": "",
+        "authorsFirst": ["Rob"],
+        "authorsLast": ["Bell"],
+        "genres": ["Christianity"],
+        "pagecount": 139
+    },
+    {
+        "index": 217,
+        "title": "Fateful",
+        "series": "",
+        "authorsFirst": ["Claudia"],
+        "authorsLast": ["Gray"],
+        "genres": ["Historical Fiction"],
+        "pagecount": 325
+    },
+    {
+        "index": 218,
+        "title": "Something, Maybe",
+        "series": "",
+        "authorsFirst": ["Elizabeth"],
+        "authorsLast": ["Scott"],
+        "genres": ["YA, Romance"],
+        "pagecount": 217
+    },
+    {
+        "index": 219,
+        "title": "Precious",
+        "series": "",
+        "authorsFirst": ["Sapphire"],
+        "authorsLast": [""],
+        "genres": ["Fiction"],
+        "pagecount": "?"
+    },
+    {
+        "index": 220,
+        "title": "Someone Like You",
+        "series": "",
+        "authorsFirst": ["Sarah"],
+        "authorsLast": ["Dessen"],
+        "genres": ["YA, Romance"],
+        "pagecount": 281
+    },
+    {
+        "index": 221,
+        "title": "The Night Tourist",
+        "series": "",
+        "authorsFirst": ["Katherine"],
+        "authorsLast": ["Marsh"],
+        "genres": ["Fantasy"],
+        "pagecount": 232
+    },
+    {
+        "index": 222,
+        "title": "Can You Keep a Secret?",
+        "series": "",
+        "authorsFirst": ["Sophie"],
+        "authorsLast": ["Kinsella"],
+        "genres": ["Realistic Fiction, Romance"],
+        "pagecount": 357
+    },
+    {
+        "index": 223,
+        "title": "Momo",
+        "series": "",
+        "authorsFirst": ["Michael"],
+        "authorsLast": ["Ende"],
+        "genres": ["Fantasy"],
+        "pagecount": 225
+    },
+    {
+        "index": 224,
+        "title": "The Inner Self",
+        "series": "",
+        "authorsFirst": ["Raqurra"],
+        "authorsLast": ["Ishmar"],
+        "genres": ["Fantasy"],
+        "pagecount": 275
+    },
+    {
+        "index": 225,
+        "title": "Emancipated",
+        "series": "",
+        "authorsFirst": ["M. G."],
+        "authorsLast": ["Reyes"],
+        "genres": ["Fiction"],
+        "pagecount": 384
+    },
+    {
+        "index": 226,
+        "title": "This Lullaby",
+        "series": "",
+        "authorsFirst": ["Sarah"],
+        "authorsLast": ["Dessen"],
+        "genres": ["YA, Romance"],
+        "pagecount": 345
+    },
+    {
+        "index": 227,
+        "title": "Shopaholic Takes Manhattan",
+        "series": "Shopaholic",
+        "authorsFirst": ["Sophie"],
+        "authorsLast": ["Kinsella"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 323
+    },
+    {
+        "index": 228,
+        "title": "Confessions of a Shopaholic",
+        "series": "Shopaholic",
+        "authorsFirst": ["Sophie"],
+        "authorsLast": ["Kinsella"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 310
+    },
+    {
+        "index": 229,
+        "title": "Shopaholic Ties the Knot",
+        "series": "Shopaholic",
+        "authorsFirst": ["Sophie"],
+        "authorsLast": ["Kinsella"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 327
+    },
+    {
+        "index": 230,
+        "title": "The Bravest Princess",
+        "series": "Tales of the Wide-Awake Princess",
+        "authorsFirst": ["E. D."],
+        "authorsLast": ["Baker"],
+        "genres": ["Fantasy"],
+        "pagecount": 263
+    },
+    {
+        "index": 231,
+        "title": "A Desirable Residence",
+        "series": "",
+        "authorsFirst": ["Madeleine"],
+        "authorsLast": ["Wickham"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 296
+    },
+    {
+        "index": 232,
+        "title": "A Ring of Endless Light",
+        "series": "",
+        "authorsFirst": ["Madeleine"],
+        "authorsLast": ["L'Engle"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 324
+    },
+    {
+        "index": 233,
+        "title": "Captive",
+        "series": "",
+        "authorsFirst": ["Brighton"],
+        "authorsLast": ["Walsh"],
+        "genres": ["Romance"],
+        "pagecount": 274
+    },
+    {
+        "index": 234,
+        "title": "Two Way Street",
+        "series": "",
+        "authorsFirst": ["Lauren"],
+        "authorsLast": ["Barnholdt"],
+        "genres": ["Romance"],
+        "pagecount": 288
+    },
+    {
+        "index": 235,
+        "title": "Savages",
+        "series": "",
+        "authorsFirst": ["Don"],
+        "authorsLast": ["Winslow"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 290
+    },
+    {
+        "index": 236,
+        "title": "Clout",
+        "series": "",
+        "authorsFirst": ["Jenni"],
+        "authorsLast": ["Catron"],
+        "genres": ["Christianity"],
+        "pagecount": 186
+    },
+    {
+        "index": 237,
+        "title": "Before I Go To Sleep",
+        "series": "",
+        "authorsFirst": ["S. J."],
+        "authorsLast": ["Watson"],
+        "genres": ["Dystopian"],
+        "pagecount": "?"
+    },
+    {
+        "index": 238,
+        "title": "Instructions for a Broken Heart",
+        "series": "",
+        "authorsFirst": ["Kim"],
+        "authorsLast": ["Culbertson"],
+        "genres": ["Romance"],
+        "pagecount": 291
+    },
+    {
+        "index": 239,
+        "title": "The False Prince",
+        "series": "",
+        "authorsFirst": ["Jennifer A."],
+        "authorsLast": ["Nielsen"],
+        "genres": ["Fantasy"],
+        "pagecount": 342
+    },
+    {
+        "index": 240,
+        "title": "Something Like Fate",
+        "series": "",
+        "authorsFirst": ["Susane"],
+        "authorsLast": ["Colasanti"],
+        "genres": ["YA, Romance"],
+        "pagecount": 268
+    },
+    {
+        "index": 241,
+        "title": "The Boy Who Knew Everything",
+        "series": "",
+        "authorsFirst": ["Victoria"],
+        "authorsLast": ["Forester"],
+        "genres": ["Fantasy"],
+        "pagecount": 404
+    },
+    {
+        "index": 242,
+        "title": "The Golden Specific",
+        "series": "Mapmakers",
+        "authorsFirst": ["S.E."],
+        "authorsLast": ["Grove"],
+        "genres": ["Fantasy"],
+        "pagecount": 501
+    }
     ]
 }
