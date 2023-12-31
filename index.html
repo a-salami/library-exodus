@@ -1,42 +1,92 @@
+<!-- cntrl + shift + v to open a side panel to preview the site -->
 <!DOCTYPE html>
 <html lang = "en">
     <head>
         <title> Home | Library Exodus</title>
-        <!-- make a favicon for each page -->
-        <link rel = "stylesheet" href = "css-js/bootstrap.min.css"/>
-        <link rel = "stylesheet" href = "css-js/library.css"/>
+        <link rel = "stylesheet" href = "../css-js/bootstrap.min.css"/>
+        <link rel = "stylesheet" href = "css-js/library2.css"/>
         <script src = "css-js/library.js"></script>
+        <script src = "css-js/visuals.js"></script>
+        <link rel = "icon" type = "image/x-icon" href = "le-fav.png">
     </head>
-    <body>  
-        <div class = "container">
-            <!-- Header, Navigation -->
+    <body>
+        <script>
+            const booksList = fetch("../css-js/books.json")
+            .then((response) => response.json())
+            .then((user) => {
+                return user.books;
+            });
+    
+            // responsible for setting the table with books in the json file
+            const printAddress = () => {
+              booksList.then((a) => {
+                setTable("tableSpace", a)
+            });};
+    
+            printAddress()
+        </script>
+
+        <div class = "container-fluid">
+            <div class = "row navbar fixed-top">
+                <img src = "le-banner.png" style = "height: 60px; width: 300px;">
+            </div>
+            
             <div class = "row">
-                <div class = "pageHeader" id = "top"></div>
-                <div class = "navbar" id = "nav"></div>
-                <script>
-                    setHeader("top"); //sets element with id "top" with the page header html
-                    setNavbar("nav");//sets element with id "nav" with the navigation html 
-                </script>
+                <div class = "col-sm-2 sorts">
+                    <h3>Sort ( )</h3>
+                    <p onclick = "tableSort('A-Z: Book Title')">Book Title (ascending)</p>
+                    <p onclick = "tableSort('Z-A: Book Title')">Book Title (descending)</p>
+                    <p onclick = "tableSort('A-Z: Author\'s First Name')">Author (first name, ascending)</p>
+                    <p onclick = "tableSort('Z-A: Author\'s First Name')">Author (first name, descending)</p>
+                    <p onclick = "tableSort('A-Z: Author\'s Last Name')">Author (last name, ascending)</p>
+                    <p onclick = "tableSort('Z-A: Author\'s Last Name')">Author (last name, descending)</p>
+                    <p onclick = "tableSort('Genre')">Genres</p>
+                    <p onclick = "tableSort('Page Count: Low -> High')">Page Count (ascending)</p>
+                    <p onclick = "tableSort('Page Count: High -> Low')">Page Count(descending)</p>
+                    <p onclick = "tableSort('Oldest First (default)')">Oldest First (default)</p>
+                    <p onclick = "tableSort('Newest First')">Newest First</p>
+                    <p onclick = "tableSort('Favorite')">Favorites</p>
+                    <hr>
+                    <h3>Search ( )</h3>
+                    <div style = "display: flex;">
+                        <input class = "inputText" type = "text" id = "search" placeholder = "e.g. the golden" onclick = "clearSearchbar()"><br>
+                        <!-- make this textbox respond to the enter key as pushing the submit button -->
+                        <input type = "submit" value = "Seach" onclick = "tableSort('search');">
+                        <div id = "searchDisplay"></div>
+                    </div>
+                </div>
+
+                <div id = "tableSpace" class = "col-sm-7 tableSpace"></div>
+
+                <div class = "col-sm-3 wishlist">
+                    <button class = "collapsible"><h3>Wishlist ↓</h3></button>
+                    <div id = "wishlist-content" class = "wishlist-content">
+                        <script>wishlist("wishlist-content")</script>
+                    </div>
+  
+                    <script>
+                        var coll = document.getElementsByClassName("collapsible");
+                        var i;
+                        
+                        for (i = 0; i < coll.length; i++) {
+                          coll[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            if (content.style.maxHeight){
+                              content.style.maxHeight = null;
+                            } else {
+                              content.style.maxHeight = content.scrollHeight + "px";
+                            } 
+                          });
+                        }
+                    </script>
+                </div>
             </div>
 
-            <!-- "Body" -->
-            <div class = "row">
-              <!-- WELCOME -->
-              <div class = "col-sm-12">
-                <h3 id = "welcome">-WELCOME-</h3>
-                <p><b>This is my library.</b> Every book I see fit to remain amongst my physical selection is proudly displayed here. Not all of these books are my favorite. I did not enjoy all of them. But that's the best part, no? Literature is a gift.</p>
-                <p>One never knows what one might get when a book's first pages flutter open.</p>
-                <p>We welcome the new and the old, the scent of a fresh-cracked binding or of time-weathered pages. Here, a few words are worth a thousand pictures, if only they're in the right order.</p>
-                <p>Now, <a href = "pages/look-books.html">go look for books</a>!</p>
-              </div>
+            <div id = "footer" class = "row footer fixed-bottom">
+                <script>footer("footer")</script>
             </div>
+        </div>
 
-            <!-- Footer -->
-              <div class = "row pageFooter" id = "footer">
-                <script>
-                  setFooter("footer");
-                </script>
-              </div>
-          </div>
     </body>
 </html>
