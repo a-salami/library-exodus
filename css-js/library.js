@@ -45,24 +45,6 @@ function setNavbar(id){
     document.getElementById(id).innerHTML += content;
 }
 
-//customizes a greeting for the page user; called exclusively to edit setFooter()
-function customizedGreeting(){
-    var greeting = document.getElementById("userGreeting").value; //gets the current value of the userGreeting element in the footer
-    localStorage.setItem("greeting", greeting); //assigns to local storage to ensure data retention
-
-    if (greeting == ""){ //if the user (re)submitted a blank text field
-        localStorage.setItem("greeting", "friend"); //set to 'friend'
-    }
-
-    document.getElementById("greeting").innerHTML = "Welcome, " + localStorage.getItem("greeting") + "."; //post the user's personalized/reset greeting
-}
-
-//resets the greeting for the page user; called exclusively to edit setFooter()
-function resetGreeting(){
-    localStorage.setItem("greeting", "friend"); //reset to 'friend'
-    document.getElementById("greeting").innerHTML = "Welcome, " + localStorage.getItem("greeting") + "."; //set the userGreeting element accordingly
-}
-
 //determines when last the current page was modified; called exclusively to edit setFooter()
 function pageLastModified(){
     lastModified = document.lastModified.slice(0, -3); //cutting off the seconds in the time output format hh:mm:ss
@@ -168,8 +150,278 @@ function lightDarkMode(){
     document.getElementById("footer").classList.toggle("pageFooter-light-mode"); //change the footer background color
 }
 
-//holds the array of books; returns the entire thing on call. seperated for use between tableSort and setTable
-function fetchBooks(){
+//searches for specific books and returns them if found. for use with tableSort()
+// function fetchSearch(search){
+//     searchFound = []; //array that will hold books found from the search criteria
+
+//     for (book = 0; book < books.length; book++){ //iterate through books[]
+//         for (info = 0; info < books[book].length; info++){ //iterate through the chosen book
+//             if (String(books[book][info]).toUpperCase().search(search.toUpperCase()) != -1){ //if 'search' appears anywhere in this book (toUpperCase()-es used to mitigate case sentitivity, String() used so pagecount can be searched on)
+//                 searchFound.push(books[book]); //push the entire book entry into searchFound[]
+//                 break; //break and search the next book entry
+//             }
+//         }
+//     }
+
+//     if (searchFound.length > 0){ //if at least one book was found
+//         if (searchFound.length == 1){ //if only one book was found
+//             //display the search return string with "result" instead of "results"
+//             document.getElementById("searchDisplay").innerHTML = 'Your search "' + search + '" yielded ' + searchFound.length + " result, displayed in the table below.";
+//         }
+//         else{ //if more than one book was found
+//             //display the search return string with "results"
+//             document.getElementById("searchDisplay").innerHTML = 'Your search "' + search + '" yielded ' + searchFound.length + " results, displayed in the table below."; 
+//         }
+//         return searchFound; //only returns if something was found
+//     }
+//     else{ //otherwise, no return. this will not replace the current contents of books[] and will display every book in 'default' sort order
+//         document.getElementById("searchDisplay").innerHTML = 'Your search "' + search + '" yielded no results.';
+//     }
+// }
+
+//duplicates the index of the sorting crieteria to the front of books[] and sorts by that, then removes the duplicate. for use with tableSort()
+// function bookSortBy(books, criteria){
+//     duplicateBooks = [] //array to hold the duplicates
+//     sortIndex = -1; //variable to hold index of the sorting criteria to sort by
+
+//     if (criteria == "favorite-books"){
+//         favBooks = value => ["A Girl Named Digit", "So B. It", "Fangirl", "The Phantom Tollbooth", "Pish Posh", "The Underneath", "The Voyage of the Dawn Treader", "Fangirl"].some(element => value[0].includes(element)); //filter full book information from books[] into favBooks[] if the title of value[0] contains value
+//         return books.filter(favBooks).sort(); //returned filtered array
+//     }
+//     else if (criteria == ("a-z-authFirst" || "z-a-authFirst")){ //if the criteria is sorting by author's first name (a-z/z-a is handled by tableSort())
+//         sortIndex = 1; //that correlates to index 5 in books[]
+//     }
+//     else if (criteria == ("a-z-authLast" || "z-a-authLast")){ //if the criteria is sorting by author's last name
+//         sortIndex = 2; //that correlates to index 6 in books[]
+//     }
+//     else if (criteria == "genre"){ //if the criteria is sorting by author's last name
+//         sortIndex = 3; //that correlates to index 6 in books[]
+//     }
+//     else if (criteria == ("page-count-low-high" || "page-count-high-low")){ //if the criteria is sorting by author's last name
+//         sortIndex = 4; //that correlates to index 4 in books[]
+//     }
+
+//     //create an array that will be sorted by the criteria variable
+//     for (book = 0; book < books.length; book++){ //iterate through books[]
+//         newBook = []; //clearing a new array to be populated and placed as a subarray in duplicateBooks[]
+//         newBook.push(books[book][sortIndex]); //pushing the sorting criteria into newBook[] as the first index
+
+//         for (info = 0; info < books[book].length; info++){ //iterate through the chosen book
+//             newBook.push(books[book][info]); //pushing the rest of the information into newBook[] as normal
+//         }
+//         duplicateBooks.push(newBook); //pushing newBook[] to the end of duplicateBooks[]
+//     }
+//     duplicateBooks.sort(); //sort the array alphabetically via the sorting criteria index in front
+
+//     //can now remove the duplicate sorting index in front
+//     for (dupeBook = 0; dupeBook < duplicateBooks.length; dupeBook++){ //iterate through duplicateBooks[]
+//         duplicateBooks[dupeBook].shift(); //removing the first element in each sub array
+//     }
+
+//     return duplicateBooks;
+// }
+
+//adds different versions of sorting for the butttons on look-books.html
+
+function clearSearchbar(){ //leaves the search text visible until the user clicks on it again
+    document.getElementById("search").value = "";//clear the search bar without reloading the page
+}
+
+function tableSort(sortType){
+    switch(sortType){
+        case "search":
+            books = booksGlobal;
+            let search = document.getElementById("search").value; //save the text in the search bar
+            fitsCriteria = []
+            
+            for (b = 0; b < books.length; b++){ //iterate through the array of books
+                auth = [] //formatting the authors to display joint names
+                firstnames = books[b].authorsFirst //get array of first names from json
+                lastnames = books[b].authorsLast //get array of last names
+                for(c = 0; c < firstnames.length; c++){
+                    auth.push([`${firstnames[c]} ${lastnames[c]}`]); //format the two together for print
+                }
+        
+                authors = auth.join(", ");
+                genres = books[b].genres.sort().join(", ");
+
+                //if any field in the book contains search, add it to fitsCriteria (as a normal array, which tableSort() accounts for)
+                if (books[b].title.toLowerCase().includes(search.toLowerCase()) || authors.toLowerCase().includes(search.toLowerCase()) || genres.toLowerCase().includes(search.toLowerCase()) || String(books[b].pagecount).toLowerCase().includes(search.toLowerCase()) || books[b].series.toLowerCase().includes(search.toLowerCase())){
+                    fitsCriteria.push([books[b].index, books[b].title, authors, genres, books[b].pagecount, books[b].series])
+                }
+            }
+
+            books = fitsCriteria;
+        break
+        case "A-Z: Book Title":
+            function compareTitles(a, b){ //custom sort function for json array
+                if (a.title < b.title) { return -1; } //sorts via specified key
+                if (a.title > b.title) { return 1; }
+                return 0;
+            }
+            books = booksGlobal.sort(compareTitles);
+        break
+        case "Z-A: Book Title":
+            books = booksGlobal.sort(compareTitles).reverse();
+        break
+        case "A-Z: Author's First Name":
+            function compareAuthorsFirst(a, b){ //custom sort function for json array
+                if (a.authorsFirst[0] < b.authorsFirst[0]) { return -1; } //sorts via specified key
+                if (a.authorsFirst[0] > b.authorsFirst[0]) { return 1; }
+                return 0;
+            }
+            books = booksGlobal.sort(compareAuthorsFirst);
+        break
+        case "Z-A: Author's First Name":
+            books = booksGlobal.sort(compareAuthorsFirst).reverse();
+        break
+        case "A-Z: Author's Last Name":
+            // document.getElementById("sortText").innerHTML += "<br>*<i>if there are multiple authors, sort is based on the first listed author</i>"
+            
+            function compareAuthorsLast(a, b){ //custom sort function for json array
+                if (a.authorsLast[0] < b.authorsLast[0]) { return -1; } //sorts via specified key
+                if (a.authorsLast[0] > b.authorsLast[0]) { return 1; }
+                return 0;
+            }
+            books = booksGlobal.sort(compareAuthorsLast);
+        break
+        case "Z-A: Author's Last Name":
+            books = booksGlobal.sort(compareAuthorsLast).reverse();
+        break
+        case "Page Count: Low -> High":
+            function comparePages(a, b){ //custom sort function for json array
+                if (a.pagecount < b.pagecount) { return -1; } //sorts via specified key
+                if (a.pagecount > b.pagecount) { return 1; }
+                return 0;
+            }
+            books = booksGlobal.sort(comparePages);
+        break
+        case "Page Count: High -> Low":
+            books = booksGlobal.sort(comparePages).reverse();
+        break
+        case "Oldest First (default)":
+            function compareIndex(a, b){ //custom sort function for json array
+                if (a.index < b.index) { return -1; } //sorts via specified key
+                if (a.index > b.index) { return 1; }
+                return 0;
+            }
+            books = booksGlobal.sort(compareIndex);
+        break
+        case "Newest First":
+            books = booksGlobal.sort(compareIndex).reverse();
+        break
+        case "Genre":
+            function compareGenres(a, b){ //custom sort function for json array
+                if (a.genres[0] < b.genres[0]) { return -1; } //sorts via specified key
+                if (a.genres[0] > b.genres[0]) { return 1; }
+                return 0;
+            }
+            books = booksGlobal.sort(compareGenres);
+        break
+    }
+
+    document.getElementById("tableSpace").innerHTML = ""; //blank out the table to prepare it for the new table 
+    if (sortType == "search") { setTable("tableSpace", books, true); } //call setTable with the newly sorted array
+    else { setTable("tableSpace", books, false); }
+}
+
+//creates a table and populates it
+function setTable(id, books, search = false){
+    booksGlobal = books; //making this variable global upon pageload for use in other ufnc
+    
+    content = `<table> <tr> <th colspan = "6">BOOKS (` + books.length + `)</th> </tr>`; //adding a row to the table for the title
+    content += `<tr><th>#</th> <th>Title</th> <th>Author</th> <th>Genre</th> <th>Pages</th><th>Series</th> </tr>`; //adding rows to the table for headings
+
+    if (search){ //if this is a search, display the information from fitCriteria in tableSort()
+        for (b = 0; b < books.length; b++){
+            content += `<tr>
+            <td class = "tCenter">${books[0][0]}</td>
+            <td>${books[0][1]}</td>
+            <td>${books[0][2]}</td>
+            <td>${books[0][3]}</td>
+            <td class = "tCenter">${books[0][4]}</td>
+            <td>${books[0][5]}</td></tr>`;
+        }
+    } 
+    else{ //otherwise its a normal sort type; display accordingly
+        for (b = 0; b < books.length; b++){ //iterate through the array of books
+            authors = [] //formatting the authors to display joint names
+            firstnames = books[b].authorsFirst //get array of first names from json
+            lastnames = books[b].authorsLast //get array of last names
+            for(c = 0; c < firstnames.length; c++){
+                authors.push([`${firstnames[c]} ${lastnames[c]}`]); //format the two together for print
+            }
+
+            authorsFormatted = authors.join(", ");
+            genresFormatted = books[b].genres.sort().join(", ");
+            content += `<tr>
+            <td class = "tCenter">${books[b].index}</td>
+            <td>${books[b].title}</td>
+            <td>${authorsFormatted}</td>
+            <td>${genresFormatted}</td>
+            <td class = "tCenter">${books[b].pagecount}</td>
+            <td>${books[b].series}</td></tr>`;
+        }
+    }
+
+    content += `</table>`; //closing and completing the table
+    document.getElementById(id).innerHTML += content;
+    a() //this function is for formatting the rest of the text as json; just log the proper output to console
+    // and then copy and paste it in lol, not that hard
+}
+
+//creates and populates a static table for books I want and don't have. used on want-books.html
+function wishlist(id){
+    wishes = [
+        ["Ruby's Wish", "Shirin Yim Bridges"],
+        ["Extra Yarn", "Mac Barnett"],
+        ["The Survival Kit", "Donna Freitas"],
+        ["Double Digit", "Anabel Monaghan"],
+        ["Harbor Me", "Jaqueline Woodson"],
+        ["Chains", "Laurie Halse Anderson"],
+        ["Love that Dog", "Sharon Creese"],
+        ["The Iron Ring", "Lloyd Alexander"],
+        ["The Other Half of my Heart", "Sundee T. Frazier"],
+        ["The Complete Persepolis", "Marjane Satrapi"],
+        ["The Dragonnette Prophecy", "Tui T. Sutherland"],
+        ["They Both Die at the End", "Adam Silvera"],
+        ["Educated", "Terra Westover"],
+        ["Fearless Series", "Francine Pascal"],
+        ["Ender's Game", "Orson Scott Card"],
+        ["A Lady's Guide to Mischief and Mayhem", "Manda Col"],
+        ["The Memo", "Minda Hart"],
+        ["The Haters", "Jesse Andrews"],
+        ["Promise of Blood", "Powder Mage Series"],
+        ["The Invisible Life of Addie La Rue", ""],
+        ["One For All", "Lillie Lainoff"],
+        ["Moon and the Mars", "Kia Corthron"],
+        ["Opposite of Always", "Justin A. Reynolds"],
+        ["Song of Achilles", ""],
+        ["The Elephant Vanishes"],
+        ["Out of My Heart", "Sharon M. Draper"],
+        ["A Bloodsmoor", ""],
+        ["Brown Girl Dreaming", "Jaqueline Woodson"]
+    ].sort();
+
+    content = `<ul>`;
+    for (b = 0; b < wishes.length; b++){  content += `<li><b>${wishes[b][0]}</b>, ${wishes[b][1]}</li>`; } //adding to the unordered list
+    content += `</ul>`; //closing and completing the table
+    document.getElementById(id).innerHTML += content;
+}
+
+//creates the footer for all pages
+function setFooter(id){
+    content = `<div class = "col-sm-7">
+        <h4>This page was last updated:</h4>
+        <input type = "submit" id = "modified" value = "` + pageLastModified() + `" onclick = "dateDisplay();"><br>
+        <a href = "#top"><input type = "submit" value = "To Top"></a><br>
+        <input type = "submit" id = "lD" value = "Change to Light Mode" onclick = "lightDarkMode();">
+    </div>`;
+
+    document.getElementById(id).innerHTML += content;
+}
+
+function a(){
     series = [ //holds all series
     "The Wildwood Chronicles", "The Chronicles of Narnia", "Percy Jackson & The Olympians", "The Legend of Zelda", "Tales of the Wide-Awake Princess", //4
     "The Heroes of Olympus", "Emily Windsnap", "Anne of Green Gables", "UGLIES", "His Dark Materials", "Perfected", //10
@@ -190,11 +442,8 @@ function fetchBooks(){
         "Animal Fiction", "Health and Wellness", "Cooking", "Mystery", "Christianity", //15
         "War Fiction", "Self-Help+"
     ]
-
-    //add an alphasort method to alphabetize the genre output on each line
-    //put the method in the html string so it bulk-applies to each data row if possible
-
-    books = [ //holds all books. title, author first name, author last name, genre, page count, series
+   
+    books2 = [ //holds all books. title, author first name, author last name, genre, page count, series
         ["The Legend of Zelda: Ocarina of Time", "Akira", "Himekawa", genres[4], "?", series[3]],
         ["The Legend of Zelda: Oracle of Seasons / Oracle of Ages", "Akira", "Himekawa", genres[4], "?", series[3]],
         ["Where the Mountain Meeets the Moon", "Grace", "Lin", genres[0], 279],
@@ -436,275 +685,23 @@ function fetchBooks(){
         ["The False Prince", "Jennifer A.", "Nielsen", genres[0], 342],
         ["Something Like Fate", authors[3][0], authors[3][1], `${genres[2]}, ${genres[3]}`, 268],
         ["The Boy Who Knew Everything", "Victoria", "Forester", genres[0], 404]
-];
-    return books;
-}
+    ];
+ 
+    data = ""
 
-//searches for specific books and returns them if found. for use with tableSort()
-function fetchSearch(search){
-    searchFound = []; //array that will hold books found from the search criteria
-
-    for (book = 0; book < books.length; book++){ //iterate through books[]
-        for (info = 0; info < books[book].length; info++){ //iterate through the chosen book
-            if (String(books[book][info]).toUpperCase().search(search.toUpperCase()) != -1){ //if 'search' appears anywhere in this book (toUpperCase()-es used to mitigate case sentitivity, String() used so pagecount can be searched on)
-                searchFound.push(books[book]); //push the entire book entry into searchFound[]
-                break; //break and search the next book entry
-            }
-        }
+    counter = 1;
+    for(a = 0; a < books2.length; a++){
+        data += `{
+            "index": ${counter},
+            "title": "${books2[a][0]}",
+            "series": "${books2[a][5]}",
+            "authorsFirst": ["${books2[a][1]}"],
+            "authorsLast": ["${books2[a][2]}"],
+            "genres": ["${books2[a][3]}"],
+            "pagecount": ${books2[a][4]}
+            },\n`;
+        counter += 1
     }
 
-    if (searchFound.length > 0){ //if at least one book was found
-        if (searchFound.length == 1){ //if only one book was found
-            //display the search return string with "result" instead of "results"
-            document.getElementById("searchDisplay").innerHTML = 'Your search "' + search + '" yielded ' + searchFound.length + " result, displayed in the table below.";
-        }
-        else{ //if more than one book was found
-            //display the search return string with "results"
-            document.getElementById("searchDisplay").innerHTML = 'Your search "' + search + '" yielded ' + searchFound.length + " results, displayed in the table below."; 
-        }
-        return searchFound; //only returns if something was found
-    }
-    else{ //otherwise, no return. this will not replace the current contents of books[] and will display every book in 'default' sort order
-        document.getElementById("searchDisplay").innerHTML = 'Your search "' + search + '" yielded no results.';
-    }
-}
-
-//duplicates the index of the sorting crieteria to the front of books[] and sorts by that, then removes the duplicate. for use with tableSort()
-function bookSortBy(books, criteria){
-    duplicateBooks = [] //array to hold the duplicates
-    sortIndex = -1; //variable to hold index of the sorting criteria to sort by
-
-    if (criteria == "favorite-books"){
-        favBooks = value => ["A Girl Named Digit", "So B. It", "Fangirl", "The Phantom Tollbooth", "Pish Posh", "The Underneath", "The Voyage of the Dawn Treader", "Fangirl"].some(element => value[0].includes(element)); //filter full book information from books[] into favBooks[] if the title of value[0] contains value
-        return books.filter(favBooks).sort(); //returned filtered array
-    }
-    else if (criteria == ("a-z-authFirst" || "z-a-authFirst")){ //if the criteria is sorting by author's first name (a-z/z-a is handled by tableSort())
-        sortIndex = 1; //that correlates to index 5 in books[]
-    }
-    else if (criteria == ("a-z-authLast" || "z-a-authLast")){ //if the criteria is sorting by author's last name
-        sortIndex = 2; //that correlates to index 6 in books[]
-    }
-    else if (criteria == "genre"){ //if the criteria is sorting by author's last name
-        sortIndex = 3; //that correlates to index 6 in books[]
-    }
-    else if (criteria == ("page-count-low-high" || "page-count-high-low")){ //if the criteria is sorting by author's last name
-        sortIndex = 4; //that correlates to index 4 in books[]
-    }
-
-    //create an array that will be sorted by the criteria variable
-    for (book = 0; book < books.length; book++){ //iterate through books[]
-        newBook = []; //clearing a new array to be populated and placed as a subarray in duplicateBooks[]
-        newBook.push(books[book][sortIndex]); //pushing the sorting criteria into newBook[] as the first index
-
-        for (info = 0; info < books[book].length; info++){ //iterate through the chosen book
-            newBook.push(books[book][info]); //pushing the rest of the information into newBook[] as normal
-        }
-        duplicateBooks.push(newBook); //pushing newBook[] to the end of duplicateBooks[]
-    }
-    duplicateBooks.sort(); //sort the array alphabetically via the sorting criteria index in front
-
-    //can now remove the duplicate sorting index in front
-    for (dupeBook = 0; dupeBook < duplicateBooks.length; dupeBook++){ //iterate through duplicateBooks[]
-        duplicateBooks[dupeBook].shift(); //removing the first element in each sub array
-    }
-
-    return duplicateBooks;
-}
-
-//adds different versions of sorting for the butttons on look-books.html
-function tableSort(sortType){
-    books = fetchBooks(); //fetching the default-sorted array of books
-
-    if (sortType == "search"){ //if requested sort is via a user search from the search bar
-        document.getElementById("sortText").innerHTML = "Chosen Sort > -"; //blank out the sort display text
-
-        search = document.getElementById("search").value; //save the text in the search bar
-        document.getElementById("search").value = "";//clear the search bar without reloading the page
-        books = fetchSearch(search); //call fetchSearch() to fetch all books with the search string present in any data category. returned array replaced books[]
-    } //the search bar is attached to tableSort() to make displaying search results more intuitive; it's already handled by this function
-
-    else{ //if sorttype is any other request, it's a sort request and not a search request
-        document.getElementById("searchDisplay").innerHTML = ""; //so clear the search bar display <p> without reloading the page
-
-        if (sortType == "a-z-title" || sortType == "z-a-title"){ //if requested sort is by title
-            books = books.sort(); //sort books[] by alphabetical title order
-            document.getElementById("sortText").innerHTML = "Chosen Sort > A-Z: Book Title"; //change display text to reflect the chosen sort
-    
-            if (sortType[0] == "z"){ //if the sort request is z-a (if the first letter is z and not a)
-                document.getElementById("sortText").innerHTML = "Chosen Sort > Z-A: Book Title"; //reverse the display text
-                books.reverse(); //reverse books[]
-            }
-        }
-    
-        else if (sortType == "a-z-authFirst" || sortType == "z-a-authFirst"){ //if requested sort is by author's first name
-            books = bookSortBy(books, "a-z-authFirst"); //sort books[] by ascending alphabetical author's first name
-            document.getElementById("sortText").innerHTML = "Chosen Sort > A-Z: Author's First Name"; //change display text to reflect the chosen sort
-    
-            if (sortType[0] == "z"){ //if the sort request is z-a (if the first letter is z and not a)
-                document.getElementById("sortText").innerHTML = "Chosen Sort > Z-A: Author's First Name"; //reverse the display text
-                books.reverse(); //reverse books[]
-            }
-        }
-    
-        else if (sortType == "a-z-authLast" || sortType == "z-a-authLast"){ //if requested sort is by author's last name
-            books = bookSortBy(books, "a-z-authLast"); //sort books[] by ascending alphabetical author's last name
-            document.getElementById("sortText").innerHTML = "Chosen Sort > A-Z: Author's Last Name"; //change display text to reflect the chosen sort
-    
-            if (sortType[0] == "z"){ //if the sort request is z-a (if the first letter is z and not a)
-                document.getElementById("sortText").innerHTML = "Chosen Sort > Z-A: Author's Last Name"; //reverse the display text
-                books.reverse(); //reverse books[]
-            }
-        }
-    
-        else if (sortType == "page-count-low-high" || sortType == "page-count-high-low"){ //if requested sort is by page count
-            books = bookSortBy(books, "page-count-low-high"); //sort books[] by ascending page count
-            document.getElementById("sortText").innerHTML = "Chosen Sort > Page Count: Low to High"; //change display text to reflect the chosen sort
-    
-            if (sortType[11] == "h"){ //if the sort request is high to low
-                document.getElementById("sortText").innerHTML = "Chosen Sort > Page Count: High to Low"; //reverse the display text
-                books.reverse(); //reverse books[]
-            }
-        }
-        else if (sortType == "favorite-books"){ //if requested sort is by page count
-            books = bookSortBy(books, "favorite-books"); //sort books[] by ascending page count
-            document.getElementById("sortText").innerHTML = "Chosen Sort > Favorite Books"; //change display text to reflect the chosen sort
-        }
-        else if (sortType == "genre"){ //if requested sort is by page count
-            books = bookSortBy(books, "genre"); //sort books[] by ascending page count
-            document.getElementById("sortText").innerHTML = "Chosen Sort > Genre"; //change display text to reflect the chosen sort
-        }
-        else if (sortType == "default"){ //if requested sort is the default / page load version
-            document.getElementById("sortText").innerHTML = "Chosen Sort > Default"; //don't sort books[], change display text
-        }
-
-        //add categories favorite books and favorite authors
-    }
-    
-    document.getElementById("tableSpace").innerHTML = ""; //blank out the display div to prepare it for the new table 
-    setTable("tableSpace", books); //call setTable with the newly sorted array
-}
-
-//creates a table and populates it
-function setTable(id, sortedBooks = ""){
-    if (sortedBooks == ""){ //if sortedBooks is empty, meaning tableSort hasn't been called to re-sort the array
-        books = fetchBooks(); //the fetch the books array as-is with no sorting
-    } 
-    else{ //in any other scenario, a sorting button on look-books.html has been pressed and tableSort() was called
-        books = sortedBooks;  //tableSort() calls setTable() again after it has sorted books[] to display the proper sorting
-    } //set the sorted array from tableSort() as the array to be displayed
-
-    content = `<table> <tr> <th colspan = "6">BOOKS (` + books.length + `)</th> </tr>`; //adding a row to the table for the title
-    content += `<tr> <th>Title</th> 
-    <th>Author</th> 
-    <th>Genre</th> 
-    <th>Page Count</th>
-    <th>Series</th> 
-    </tr>`; //adding rows to the table for headings
-
-    for (book = 0; book < books.length; book++){ //iterate through the array of books
-        content += "<tr>"; //creating a new row for this book entry
-
-        //iterate through the info on one book held in a subarray
-        for (info = 0; info < books[book].length; info++){
-            if (info == 1){ //if the current info is author's first name
-                content += "<td>" + books[book][info] + " "; //start the table data html section; add a space for the last name
-            }
-            else if (info == 2){ //if the current info is author's last name
-                content += books[book][info] + "</td>"; //include the last name and close the table data html section
-            }
-            else{ //otherwise it has nothing to do with the author; start the table data html section, add the data, and end the section all at once
-                content += "<td>" + books[book][info] + "</td>";
-            }
-        }
-
-       if (books[book].length < 6) { content += "<td></td>"; } //adds an empty td section for books missing a series; helps CSS' td:hover
-        content += "</tr>"; //closing the row for this table entry
-    }
-
-    content += `</table>`; //closing and completing the table
-    document.getElementById(id).innerHTML += content;
-}
-
-//creates and populates a static table for books I want and don't have. used on want-books.html
-function setWantedBooks(id, age = "adult"){
-    if (age == "kids"){
-        wantedBooks = [
-            ["Ruby's Wish", "Shirin Yim Bridges"],
-            ["Extra Yarn", "Mac Barnett"]
-        ];
-    }
-    else {
-        wantedBooks = [
-            ["The Survival Kit", "Donna Freitas"],
-            ["I'll Give You the Sun", "Jandy Nelson"],
-            ["Double Digit", "Anabel Monaghan"],
-            ["Harbor Me", "Jaqueline Woodson"],
-            ["Chains", "Laurie Halse Anderson"],
-            ["Love that Dog", "Sharon Creese"],
-            ["The Iron Ring", "Lloyd Alexander"],
-            ["Shadow and Bone", "Leigh Bardugo"],
-            ["The Other Half of my Heart", "Sundee T. Frazier"],
-            ["The Complete Persepolis", "Marjane Satrapi"],
-            ["The Dragonnette Prophecy", "Tui T. Sutherland"],
-            ["They Both Die at the End", "Adam Silvera"],
-            ["Educated", "Terra Westover"],
-            ["Fearless Series", "Francine Pascal"],
-            ["Books 2, 3, and 4 of  the Ember Series", "Jeanne DuPrau"],
-            ["Aru Shah Series", "Riordan?"],
-            ["Ender's Game", "Orson Scott Card"],
-            ["A Lady's Guide to Mischief and Mayhem", "Manda Col"],
-            ["The Memo", "Minda Hart"],
-            ["The Haters", "Jesse Andrews"],
-            ["Promise of Blood", "Powder Mage Series"],
-            ["The Invisible Life of Addie La Rue"],
-            ["One For All", "Lillie Lainoff"],
-            ["Moon and the Mars", "Kia Corthron"],
-            ["Opposite of Always", "Justin A. Reynolds"],
-            ["Song of Achilles"],
-            ["The Elephant Vanishes"],
-            ["Out of My Heart", "Sharon M. Draper"],
-            ["A Bloodsmoor"],
-            ["Brown Girl Dreaming", "Jaqueline Woodson"]
-        ];
-    }
-
-    wantedBooks = wantedBooks.sort();
-    content = `<table> <tr> <th>Title</th> <th>Author</th> </tr>`; //adding rows to the table for headings
-
-    for (book = 0; book < wantedBooks.length; book++){ //iterate through the array of books
-        content += "<tr>"; //creating a new row for this book entry
-
-        //iterate through the info on one book held in a subarray. 
-        for (info = 0; info < wantedBooks[book].length; info++){
-            content += "<td>" + wantedBooks[book][info] + "</td>";
-        }
-        content += "</tr>"; //closing the row for this table entry
-    }
-
-    content += `</table>`; //closing and completing the table
-    document.getElementById(id).innerHTML += content;
-}
-
-//creates the footer for all pages
-function setFooter(id){
-    content = `
-    <div class = "col-sm-5 greeting">
-        <h4 id = "greeting">Welcome, ` + localStorage.getItem("greeting") + `.</h4>
-        <h5>Want to customize this greeting?</h5>
-
-        <form onsubmit = "customizedGreeting(); this.reset();">
-            <input class = "inputText" type = "text" id = "userGreeting" placeholder = "Enter your name here..."><br>
-            <input type = "submit" value = "Submit Name">
-        </form>
-        <input type = "submit" value = "Reset" onclick = "resetGreeting();">
-    </div>
-
-    <div class = "col-sm-7">
-        <h4>This page was last updated:</h4>
-        <input type = "submit" id = "modified" value = "` + pageLastModified() + `" onclick = "dateDisplay();"><br>
-        <a href = "#top"><input type = "submit" value = "To Top"></a><br>
-        <input type = "submit" id = "lD" value = "Change to Light Mode" onclick = "lightDarkMode();">
-    </div>`;
-
-    document.getElementById(id).innerHTML += content;
+    console.log(data)
 }
