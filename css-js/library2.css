@@ -1,0 +1,130 @@
+body{
+    font-family: 'Spectral', serif;
+    background-color: #1b1b1b;
+    color: white;
+}
+
+.container-fluid{
+    margin-top: 120px;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2% 0.5% 0.5% 0.5%;
+    background-color: #1b1b1b;
+    border-bottom: 2px solid #636363;
+}
+
+.navbar p:hover{
+    background-color: #8cb4ff91;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.sorts{
+    width: 250px;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+}
+
+.sorts p{
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.sorts p:hover{
+    text-decoration: underline;
+    border-left: 4px solid #8cb4ff;
+    background-color: #8cb4ff91;
+    transition: 0.5s;
+}
+
+.tableSpace{
+    height: 650px;
+    overflow-y: scroll;
+    color: white;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    text-align: center;
+}
+
+tr, th, td{
+    border: 1.5px solid #636363;
+    padding: 2px;
+}
+
+tr, td{
+    padding-left: .5%;
+}
+
+tr:hover{
+    background-color: #8cb4ff91;
+    transition: 0.5s;
+}
+
+td{
+    /* font-size: 16px; */
+    width: fit-content;
+}
+
+input[type="submit"], button{
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: #1b1b1b;
+    color: white;
+    text-align: center;
+    margin-left: 2px;
+}
+
+input[type="submit"]:hover, button:hover{
+    background-color: #8cb4ff91;
+    font-style: italic;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:active, button:active{
+    background-color: #8cb4ff;
+}
+
+.collapsible {
+    background-color: #1b1b1b;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid #636363;
+}
+
+.active, .collapsible:hover {
+    background-color: #8cb4ff91;
+    border: 1px solid white;
+}
+
+.wishlist-content{
+    max-height: 0px;
+    height: 550px;
+    overflow: scroll;
+    transition: max-height 0.2s ease-out;
+    background-color: #1b1b1b;
+}
+
+.wishlist-content li{
+    padding-bottom: 6px;
+}
+
+.footer{
+    height: 140px;
+    padding: 0.5% 0.5% 0.5% 1.5%;
+    background-color: #1b1b1b;
+    border-top: 2px solid #636363;
+}
