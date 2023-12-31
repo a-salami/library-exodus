@@ -11,7 +11,7 @@
     </head>
     <body>
         <script>
-            const booksList = fetch("../css-js/books.json")
+            const booksList = fetch("css-js/books.json")
             .then((response) => response.json())
             .then((user) => {
                 return user.books;
