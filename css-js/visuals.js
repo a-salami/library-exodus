@@ -1,5 +1,3 @@
-
-
 //determines when last the current page was modified; called exclusively to edit footer()
 function pageLastModified(){
     lastModified = document.lastModified.slice(0, -3); //cutting off the seconds in the time output format hh:mm:ss
@@ -92,12 +90,20 @@ function setModDate(id){
 
 function footer(id){
     document.getElementById(id).innerHTML = `
-    <div class = "col-sm-9">
+    <div class = "col-sm-2">
         <h3>the library, Exodus</h3>
         <p>a catalogue of other wor(l)ds</p>
         <img href = "https://github.com/a-salami" target = "_blank" src = "gh.png" style = "height: 4%; cursor: pointer;">
     </div>
-    
+
+    <div class = "col-sm-5" style = "margin-left: 300px;">
+    <h5>To-do:</h5>
+    <ul>
+    <li>Fix sorting; look at Page Count</li>
+    <li>Adapt for mobile screens / smaller screens</li>
+    </ul>
+    </div>
+
     <div class = "col-sm-3">
         <span>Last Update:<p style = "cursor: pointer;" onclick = "dateDisplay('modDate')" id = "modDate">${pageLastModified()}</p></span>
     </div>`;
