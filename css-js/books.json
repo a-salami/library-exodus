@@ -651,7 +651,7 @@
     {
         "index": 73,
         "title": "The Girl Who Could Fly",
-        "series": "",
+        "series": "Piper McCloud",
         "authorsFirst": ["Victoria"],
         "authorsLast": ["Forester"],
         "genres": ["Fantasy"],
@@ -1081,15 +1081,6 @@
         "pagecount": 283
     },
     {
-        "index": 121,
-        "title": "The City of Ember",
-        "series": "Books of Ember",
-        "authorsFirst": ["Jeanne"],
-        "authorsLast": ["DuPrau"],
-        "genres": ["Dystopian"],
-        "pagecount": 270
-    },
-    {
         "index": 122,
         "title": "Tuesday Mooney Talks to Ghosts",
         "series": "",
@@ -1257,7 +1248,7 @@
         "series": "",
         "authorsFirst": ["Jandy"],
         "authorsLast": ["Nelson"],
-        "genres": ["Children's, Realistic Fiction"],
+        "genres": ["Realistic Fiction"],
         "pagecount": 311
     },
     {
@@ -2163,7 +2154,7 @@
     {
         "index": 241,
         "title": "The Boy Who Knew Everything",
-        "series": "",
+        "series": "Piper McCloud",
         "authorsFirst": ["Victoria"],
         "authorsLast": ["Forester"],
         "genres": ["Fantasy"],
@@ -2177,6 +2168,69 @@
         "authorsLast": ["Grove"],
         "genres": ["Fantasy"],
         "pagecount": 501
+    },
+    {
+        "index": 243,
+        "title": "I'll Give You the Sun",
+        "series": "",
+        "authorsFirst": ["Jandy"],
+        "authorsLast": ["Nelson"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 371
+    },
+    {
+        "index": 244,
+        "title": "The Books of Ember",
+        "series": "Ember",
+        "authorsFirst": ["Jeanne"],
+        "authorsLast": ["DuPrau"],
+        "genres": ["Children's, Dystopia"],
+        "pagecount": 921
+    },
+    {
+        "index": 245,
+        "title": "Shanghai Girls",
+        "series": "",
+        "authorsFirst": ["Lisa"],
+        "authorsLast": ["See"],
+        "genres": ["War Fiction"],
+        "pagecount": 309
+    },
+    {
+        "index": 246,
+        "title": "Monsters of Men",
+        "series": "Chaos Walking",
+        "authorsFirst": ["Patrick"],
+        "authorsLast": ["Ness"],
+        "genres": ["Science Fiction"],
+        "pagecount": 643
+    },
+    {
+        "index": 247,
+        "title": "Frankly in Love",
+        "series": "",
+        "authorsFirst": ["David"],
+        "authorsLast": ["Yoon"],
+        "genres": ["Realistic Fiction, Romance"],
+        "pagecount": 406
+    },
+    {
+        "index": 248,
+        "title": "Opposite of Always",
+        "series": "",
+        "authorsFirst": ["Justin A."],
+        "authorsLast": ["Reynolds"],
+        "genres": ["Realistic Fiction, Romance"],
+        "pagecount": 449
+    },
+    {
+        "index": 249,
+        "title": "Princess Daisy",
+        "series": "",
+        "authorsFirst": ["Judith"],
+        "authorsLast": ["Krantz"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 464
     }
     ]
 }
