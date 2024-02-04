@@ -517,18 +517,18 @@
         "index": 58,
         "title": "The Amber Spyglass",
         "series": "His Dark Materials",
-        "authorsFirst": ["Phillip"],
+        "authorsFirst": ["Philip"],
         "authorsLast": ["Pullman"],
-        "genres": ["Fantasy"],
+        "genres": ["Fantasy, Science Fiction"],
         "pagecount": 518
     },
     {
         "index": 59,
         "title": "The Golden Compass",
         "series": "His Dark Materials",
-        "authorsFirst": ["Phillip"],
+        "authorsFirst": ["Philip"],
         "authorsLast": ["Pullman"],
-        "genres": ["Fantasy"],
+        "genres": ["Fantasy, Science Fiction"],
         "pagecount": 399
     },
     {
@@ -544,9 +544,9 @@
         "index": 61,
         "title": "The Subtle Knife",
         "series": "His Dark Materials",
-        "authorsFirst": ["Phillip"],
+        "authorsFirst": ["Philip"],
         "authorsLast": ["Pullman"],
-        "genres": ["Fantasy"],
+        "genres": ["Fantasy, Science Fiction"],
         "pagecount": 326
     },
     {
@@ -2231,6 +2231,78 @@
         "authorsLast": ["Krantz"],
         "genres": ["Realistic Fiction"],
         "pagecount": 464
+    },
+    {
+        "index": 250,
+        "title": "The Other Half of my Heart",
+        "series": "",
+        "authorsFirst": ["Sundee T."],
+        "authorsLast": ["Frazier"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": 294
+    },
+    {
+        "index": 251,
+        "title": "The Girl Who Fell Out of the Sky",
+        "series": "Piper McCloud",
+        "authorsFirst": ["Victoria"],
+        "authorsLast": ["Forester"],
+        "genres": ["Fantasy"],
+        "pagecount": 464
+    },
+    {
+        "index": 252,
+        "title": "The Blood of Olympus",
+        "series": "The Heroes of Olympus",
+        "authorsFirst": ["Rick"],
+        "authorsLast": ["Riordan"],
+        "genres": ["Fantasy"],
+        "pagecount": 502
+    },
+    {
+        "index": 253,
+        "title": "Lyra's Oxford",
+        "series": "His Dark Materials",
+        "authorsFirst": ["Philip"],
+        "authorsLast": ["Pullman"],
+        "genres": ["Fantasy, Science Fiction"],
+        "pagecount": "?"
+    },
+    {
+        "index": 254,
+        "title": "Unraveled",
+        "series": "Perfected",
+        "authorsFirst": ["Kate Jarvic"],
+        "authorsLast": ["Birch"],
+        "genres": ["YA, Dystopian"],
+        "pagecount": 272
+    },
+    {
+        "index": 255,
+        "title": "Mistborn",
+        "series": "Mistborn",
+        "authorsFirst": ["Brandon"],
+        "authorsLast": ["Sanderson"],
+        "genres": ["Fantasy"],
+        "pagecount": 543
+    },
+    {
+        "index": 256,
+        "title": "Thisby Thestoop and the Wretched Scrattle",
+        "series": "Thisby Thestoop",
+        "authorsFirst": ["Zac"],
+        "authorsLast": ["Gorman"],
+        "genres": ["Fantasy"],
+        "pagecount": 372
+    },
+    {
+        "index": 257,
+        "title": "Thisby Thestoop and the Black Mountain",
+        "series": "Thisby Thestoop",
+        "authorsFirst": ["Zac"],
+        "authorsLast": ["Gorman"],
+        "genres": ["Fantasy"],
+        "pagecount": "?"
     }
     ]
 }
