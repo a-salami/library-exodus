@@ -2279,7 +2279,7 @@
     },
     {
         "index": 255,
-        "title": "Mistborn",
+        "title": "Mistborn (The Final Empire)",
         "series": "Mistborn",
         "authorsFirst": ["Brandon"],
         "authorsLast": ["Sanderson"],
@@ -2312,6 +2312,87 @@
         "authorsLast": ["Freitas"],
         "genres": ["Realistic Fiction"],
         "pagecount": "351"
+    },
+    {
+        "index": 259,
+        "title": "A Man Called Ove",
+        "series": "",
+        "authorsFirst": ["Fredrik"],
+        "authorsLast": ["Backman"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": "294"
+    },
+    {
+        "index": 260,
+        "title": "Beartown",
+        "series": "Beartown",
+        "authorsFirst": ["Fredrik"],
+        "authorsLast": ["Backman"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": "415"
+    },
+    {
+        "index": 261,
+        "title": "Us Against You",
+        "series": "Beartown",
+        "authorsFirst": ["Fredrik"],
+        "authorsLast": ["Backman"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": "435"
+    },
+    {
+        "index": 262,
+        "title": "The Winners",
+        "series": "Beartown",
+        "authorsFirst": ["Fredrik"],
+        "authorsLast": ["Backman"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": "670"
+    },
+    {
+        "index": 263,
+        "title": "Anxious People",
+        "series": "",
+        "authorsFirst": ["Fredrik"],
+        "authorsLast": ["Backman"],
+        "genres": ["Realistic Fiction"],
+        "pagecount": "335"
+    },
+    {
+        "index": 264,
+        "title": "Attachments",
+        "series": "",
+        "authorsFirst": ["Rainbow"],
+        "authorsLast": ["Rowell"],
+        "genres": ["Realistic Fiction, Romance"],
+        "pagecount": "321"
+    },
+    {
+        "index": 265,
+        "title": "Super Fake Love Song",
+        "series": "",
+        "authorsFirst": ["David"],
+        "authorsLast": ["Yoon"],
+        "genres": ["Realistic Fiction, Romance"],
+        "pagecount": "349"
+    },
+    {
+        "index": 266,
+        "title": "The Well of Ascension",
+        "series": "Mistborn",
+        "authorsFirst": ["Brandon"],
+        "authorsLast": ["Sanderson"],
+        "genres": ["Fantasy"],
+        "pagecount": ""
+    },
+    {
+        "index": 267,
+        "title": "The Hero of Ages",
+        "series": "Mistborn",
+        "authorsFirst": ["Brandon"],
+        "authorsLast": ["Sanderson"],
+        "genres": ["Fantasy"],
+        "pagecount": ""
     }
     ]
 }

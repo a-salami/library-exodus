@@ -187,14 +187,13 @@ function wishlist(id){ //creates and populates a status <ul> for books I want
         ["The Memo", "Minda Hart"],
         ["The Haters", "Jesse Andrews"],
         ["Promise of Blood", "Powder Mage Series"],
-        ["The Invisible Life of Addie La Rue", ""],
         ["One For All", "Lillie Lainoff"],
         ["Moon and the Mars", "Kia Corthron"],
         ["Song of Achilles", ""],
         ["The Elephant Vanishes"],
         ["Out of My Heart", "Sharon M. Draper"],
         ["A Bloodsmoor", ""],
-        ["Brown Girl Dreaming", "Jaqueline Woodson"]
+        ["Misborn Series 2", "Brandon Sanderson"]
     ].sort();
 
     content = `<ul>`;
