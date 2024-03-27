@@ -2383,7 +2383,7 @@
         "authorsFirst": ["Brandon"],
         "authorsLast": ["Sanderson"],
         "genres": ["Fantasy"],
-        "pagecount": ""
+        "pagecount": "598"
     },
     {
         "index": 267,
@@ -2393,6 +2393,87 @@
         "authorsLast": ["Sanderson"],
         "genres": ["Fantasy"],
         "pagecount": ""
+    },
+    {
+        "index": 268,
+        "title": "The Night and its Moon",
+        "series": "The Night & its Moon",
+        "authorsFirst": ["Piper"],
+        "authorsLast": ["CJ"],
+        "genres": ["Romance, Fantasy"],
+        "pagecount": "524"
+    },
+    {
+        "index": 269,
+        "title": "The Whiz Mob and the Grenadine Kid",
+        "series": "",
+        "authorsFirst": ["Colin"],
+        "authorsLast": ["Meloy"],
+        "genres": ["Fiction"],
+        "pagecount": "413"
+    },
+    {
+        "index": 270,
+        "title": "An Ember in the Ashes",
+        "series": "An Ember in the Ashes",
+        "authorsFirst": ["Sabaa"],
+        "authorsLast": ["Tahir"],
+        "genres": ["Fantasy"],
+        "pagecount": "446"
+    },
+    {
+        "index": 271,
+        "title": "Starry River of the Sky",
+        "series": "",
+        "authorsFirst": ["Grace"],
+        "authorsLast": ["Lin"],
+        "genres": ["Fantasy"],
+        "pagecount": "289"
+    },
+    {
+        "index": 272,
+        "title": "Holding Up the Universe",
+        "series": "",
+        "authorsFirst": ["Jennifer"],
+        "authorsLast": ["Niven"],
+        "genres": ["Realistic Fiction, Romance"],
+        "pagecount": "387"
+    },
+    {
+        "index": 273,
+        "title": "The Deal of a Lifetime and Other Stories",
+        "series": "",
+        "authorsFirst": ["Fredrik"],
+        "authorsLast": ["Backman"],
+        "genres": ["Short Stories"],
+        "pagecount": "178"
+    },
+    {
+        "index": 274,
+        "title": "Things My Son Needs to Know About the World",
+        "series": "",
+        "authorsFirst": ["Fredrik"],
+        "authorsLast": ["Backman"],
+        "genres": ["Non-Fiction"],
+        "pagecount": "193"
+    },
+    {
+        "index": 275,
+        "title": "The Beast Player",
+        "series": "The Beast Player",
+        "authorsFirst": ["Nahoko"],
+        "authorsLast": ["Uehashi"],
+        "genres": ["Fantasy"],
+        "pagecount": "344"
+    },
+    {
+        "index": 276,
+        "title": "Daughter of the Moon Goddess",
+        "series": "Celestial Kingdom",
+        "authorsFirst": ["Sue Lynn"],
+        "authorsLast": ["Tan"],
+        "genres": ["Fantasy"],
+        "pagecount": "498"
     }
     ]
 }
