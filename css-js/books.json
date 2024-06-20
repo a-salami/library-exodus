@@ -24,7 +24,7 @@
         "series": "",
         "authorsFirst": ["Grace"],
         "authorsLast": ["Lin"],
-        "genres": ["Fantasy"],
+        "genres": ["Fantasy", "Chinese Literature"],
         "pagecount": 279
     },
     {
@@ -444,7 +444,7 @@
     {
         "index": 50,
         "title": "The Mysterious Benedict Society",
-        "series": "",
+        "series": "The Mysterious Benedict Society",
         "authorsFirst": ["Trenton Lee"],
         "authorsLast": ["Stewart"],
         "genres": ["Science Fiction"],
@@ -627,7 +627,7 @@
         "series": "",
         "authorsFirst": ["Deanna"],
         "authorsLast": ["Fei"],
-        "genres": ["Fiction"],
+        "genres": ["Fiction", "Chinese Literature"],
         "pagecount": 351
     },
     {
@@ -2190,10 +2190,10 @@
     {
         "index": 245,
         "title": "Shanghai Girls",
-        "series": "",
+        "series": "Shanghai Girls",
         "authorsFirst": ["Lisa"],
         "authorsLast": ["See"],
-        "genres": ["War Fiction"],
+        "genres": ["Historical Fiction", "War Fiction", "Chinese Literature"],
         "pagecount": 309
     },
     {
@@ -2427,7 +2427,7 @@
         "series": "",
         "authorsFirst": ["Grace"],
         "authorsLast": ["Lin"],
-        "genres": ["Fantasy"],
+        "genres": ["Fantasy", "Chinese Literature"],
         "pagecount": "289"
     },
     {
@@ -2472,8 +2472,98 @@
         "series": "Celestial Kingdom",
         "authorsFirst": ["Sue Lynn"],
         "authorsLast": ["Tan"],
-        "genres": ["Fantasy"],
+        "genres": ["Fantasy", "Chinese Literature"],
         "pagecount": "498"
+    },
+    {
+        "index": 277,
+        "title": "Heart of the Sun Warrior",
+        "series": "Celestial Kingdom",
+        "authorsFirst": ["Sue Lynn"],
+        "authorsLast": ["Tan"],
+        "genres": ["Fantasy", "Chinese Literature"],
+        "pagecount": "456"
+    },
+    {
+        "index": 278,
+        "title": "The Ask and the Answer",
+        "series": "Chaos Walking",
+        "authorsFirst": ["Patrick"],
+        "authorsLast": ["Ness"],
+        "genres": ["Science Fiction"],
+        "pagecount": ""
+    },
+    {
+        "index": 279,
+        "title": "The Mysterious Benedict Society and the Perilous Journey (#2)",
+        "series": "The Mysterious Benedict Society",
+        "authorsFirst": ["Trenton Lee"],
+        "authorsLast": ["Stewart"],
+        "genres": ["Science Fiction"],
+        "pagecount": "440"
+    },
+    {
+        "index": 280,
+        "title": "The Mysterious Benedict Society and the Prisoner's Dilemma (#3)",
+        "series": "The Mysterious Benedict Society",
+        "authorsFirst": ["Trenton Lee"],
+        "authorsLast": ["Stewart"],
+        "genres": ["Science Fiction"],
+        "pagecount": "391"
+    },
+    {
+        "index": 281,
+        "title": "Artemis Fowl: The Last Guardian (#8)",
+        "series": "Artemis Fowl",
+        "authorsFirst": ["Eoin"],
+        "authorsLast": ["Colfer"],
+        "genres": ["Science Fiction", "Fantasy"],
+        "pagecount": "328"
+    },
+    {
+        "index": 282,
+        "title": "Artemis Fowl: The Lost Colony",
+        "series": "Artemis Fowl",
+        "authorsFirst": ["Eoin"],
+        "authorsLast": ["Colfer"],
+        "genres": ["Science Fiction", "Fantasy"],
+        "pagecount": "369"
+    },
+    {
+        "index": 283,
+        "title": "Artemis Fowl: The Time Paradox",
+        "series": "Artemis Fowl",
+        "authorsFirst": ["Eoin"],
+        "authorsLast": ["Colfer"],
+        "genres": ["Science Fiction", "Fantasy"],
+        "pagecount": "385"
+    },
+    {
+        "index": 284,
+        "title": "Artemis Fowl: The Atlantis Complex",
+        "series": "Artemis Fowl",
+        "authorsFirst": ["Eoin"],
+        "authorsLast": ["Colfer"],
+        "genres": ["Science Fiction", "Fantasy"],
+        "pagecount": "357"
+    },
+    {
+        "index": 285,
+        "title": "Artemis Fowl: The Opal Deception",
+        "series": "Artemis Fowl",
+        "authorsFirst": ["Eoin"],
+        "authorsLast": ["Colfer"],
+        "genres": ["Science Fiction", "Fantasy"],
+        "pagecount": "342"
+    },
+    {
+        "index": 286,
+        "title": "Dreams of Joy",
+        "series": "Shanghai Girls",
+        "authorsFirst": ["Lisa"],
+        "authorsLast": ["See"],
+        "genres": ["Historical Fiction", "War Fiction", "Chinese Literature"],
+        "pagecount": "349"
     }
     ]
 }
