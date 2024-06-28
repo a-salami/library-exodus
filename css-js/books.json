@@ -2472,7 +2472,7 @@
         "series": "Celestial Kingdom",
         "authorsFirst": ["Sue Lynn"],
         "authorsLast": ["Tan"],
-        "genres": ["Fantasy", "Chinese Literature"],
+        "genres": ["Fantasy, Chinese Literature"],
         "pagecount": "498"
     },
     {
@@ -2481,7 +2481,7 @@
         "series": "Celestial Kingdom",
         "authorsFirst": ["Sue Lynn"],
         "authorsLast": ["Tan"],
-        "genres": ["Fantasy", "Chinese Literature"],
+        "genres": ["Fantasy, Chinese Literature"],
         "pagecount": "456"
     },
     {
@@ -2517,7 +2517,7 @@
         "series": "Artemis Fowl",
         "authorsFirst": ["Eoin"],
         "authorsLast": ["Colfer"],
-        "genres": ["Science Fiction", "Fantasy"],
+        "genres": ["Science Fiction, Fantasy"],
         "pagecount": "328"
     },
     {
@@ -2526,7 +2526,7 @@
         "series": "Artemis Fowl",
         "authorsFirst": ["Eoin"],
         "authorsLast": ["Colfer"],
-        "genres": ["Science Fiction", "Fantasy"],
+        "genres": ["Science Fiction, Fantasy"],
         "pagecount": "369"
     },
     {
@@ -2535,7 +2535,7 @@
         "series": "Artemis Fowl",
         "authorsFirst": ["Eoin"],
         "authorsLast": ["Colfer"],
-        "genres": ["Science Fiction", "Fantasy"],
+        "genres": ["Science Fiction, Fantasy"],
         "pagecount": "385"
     },
     {
@@ -2544,7 +2544,7 @@
         "series": "Artemis Fowl",
         "authorsFirst": ["Eoin"],
         "authorsLast": ["Colfer"],
-        "genres": ["Science Fiction", "Fantasy"],
+        "genres": ["Science Fiction, Fantasy"],
         "pagecount": "357"
     },
     {
@@ -2553,7 +2553,7 @@
         "series": "Artemis Fowl",
         "authorsFirst": ["Eoin"],
         "authorsLast": ["Colfer"],
-        "genres": ["Science Fiction", "Fantasy"],
+        "genres": ["Science Fiction, Fantasy"],
         "pagecount": "342"
     },
     {
@@ -2562,8 +2562,44 @@
         "series": "Shanghai Girls",
         "authorsFirst": ["Lisa"],
         "authorsLast": ["See"],
-        "genres": ["Historical Fiction", "War Fiction", "Chinese Literature"],
+        "genres": ["Historical Fiction, War Fiction, Chinese Literature"],
         "pagecount": "349"
+    },
+    {
+        "index": 287,
+        "title": "When the Sea Turned to Silver",
+        "series": "",
+        "authorsFirst": ["Grace"],
+        "authorsLast": ["Lin"],
+        "genres": ["Fantasy, Chinese Literature"],
+        "pagecount": "366"
+    },
+    {
+        "index": 288,
+        "title": "Artemis Fowl (#1)",
+        "series": "Artemis Fowl",
+        "authorsFirst": ["Eoin"],
+        "authorsLast": ["Colfer"],
+        "genres": ["Science Fiction, Fantasy"],
+        "pagecount": "277"
+    },
+    {
+        "index": 289,
+        "title": "Artemis Fowl: The Eternity Code (#3)",
+        "series": "Artemis Fowl",
+        "authorsFirst": ["Eoin"],
+        "authorsLast": ["Colfer"],
+        "genres": ["Science Fiction, Fantasy"],
+        "pagecount": "309"
+    },
+    {
+        "index": 290,
+        "title": "Artemis Fowl: The Arctic Incident (#2)",
+        "series": "Artemis Fowl",
+        "authorsFirst": ["Eoin"],
+        "authorsLast": ["Colfer"],
+        "genres": ["Science Fiction, Fantasy"],
+        "pagecount": "277"
     }
     ]
 }
